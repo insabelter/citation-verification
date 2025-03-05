@@ -7,6 +7,5 @@ Ablauf der Implementierung:
 - Versuch, PDFs automatisch zu downloaden mit Crawler - nicht erfolgreich
 - Automatisch in Zotero importieren über Titel und DOI unter Verwendung von https://anystyle.io/
 - Auto-Download der PDFs über Zotero, falls nicht gefunden manuell überprüfen
-    - Für einige PDF kein Institutional Access
-    - Für einige PDF nur online Ansicht 
-    - Einige PDFs sind retracted 
+    - Für einige PDF kein Institutional Access (dann über Google, sci-hub gesucht)
+    - Einige PDFs sind retracted (TODO: Check, dass alle Zeilen richtig als retracted markiert über Python Skript + Check, dass verfügbar von ihnen mit meiner Spalte übereinstimmt)
