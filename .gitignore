@@ -1,3 +1,5 @@
+.vscode/
+
 open_ai_key.txt
 similar_chunks/
 vector_indices/
