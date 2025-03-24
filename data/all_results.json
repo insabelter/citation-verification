@@ -294,5 +294,65 @@
                 "false_negatives": 11
             }
         }
+    },
+    "te3l_no_prev_chunking_batched": {
+        "full_model_texts": {
+            "all_labels": {
+                "accuracy": 0.5709,
+                "total": 247,
+                "correct": 141,
+                "false_predictions": 106,
+                "type_false_predictions": {
+                    "unsubstantiate": {
+                        "partially substantiate": 17,
+                        "fully substantiate": 15
+                    },
+                    "partially substantiate": {
+                        "unsubstantiate": 2,
+                        "fully substantiate": 4
+                    },
+                    "fully substantiate": {
+                        "unsubstantiate": 9,
+                        "partially substantiate": 58
+                    }
+                }
+            },
+            "all_labels_exclude_not_available": {
+                "accuracy": 0.5738,
+                "total": 244,
+                "correct": 140,
+                "false_predictions": 104,
+                "type_false_predictions": {
+                    "unsubstantiate": {
+                        "partially substantiate": 17,
+                        "fully substantiate": 14
+                    },
+                    "partially substantiate": {
+                        "unsubstantiate": 2,
+                        "fully substantiate": 4
+                    },
+                    "fully substantiate": {
+                        "unsubstantiate": 8,
+                        "partially substantiate": 58
+                    }
+                }
+            },
+            "two_labels": {
+                "accuracy": 0.8219,
+                "total": 247,
+                "correct": 203,
+                "false_predictions": 44,
+                "false_positives": 32,
+                "false_negatives": 11
+            },
+            "two_labels_exclude_not_available": {
+                "accuracy": 0.8279,
+                "total": 244,
+                "correct": 202,
+                "false_predictions": 42,
+                "false_positives": 31,
+                "false_negatives": 10
+            }
+        }
     }
 }
