@@ -1,0 +1,2342 @@
+{
+    "0": {
+        "id": "batch_req_67e3f66ca9e08190af68289b2a2932e0",
+        "custom_id": "request-0",
+        "response": {
+            "status_code": 200,
+            "request_id": "ffe57df5bc3436abb99959553d87203c",
+            "body": {
+                "id": "chatcmpl-BFKNvTfovSy3j9ve8zmC0b5EDWmcP",
+                "object": "chat.completion",
+                "created": 1742992979,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on fault analysis and diagnosis methods for three-phase induction motors using spiking neural P systems and related techniques. It does not discuss reducing irreversibility or optimizing energy-consumed devices, which is the subject of the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1172,
+                    "completion_tokens": 75,
+                    "total_tokens": 1247,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "1": {
+        "id": "batch_req_67e3f74cb92c8190a37d8c544877c46b",
+        "custom_id": "request-1",
+        "response": {
+            "status_code": 200,
+            "request_id": "bc705c89e51ec039e192f40ccf9be8a1",
+            "body": {
+                "id": "chatcmpl-BFKRTct89Bk9wHfDcFDScRbRCxfVy",
+                "object": "chat.completion",
+                "created": 1742993199,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses various heat transfer studies and devices, which aligns with the statement about researchers studying heat exchange devices. However, the primary focus of the reference article is on artificial neural networks and their optimization, not specifically on enhancing the efficiency of heat exchange devices. Therefore, while there is some relevance, the reference does not fully substantiate the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1144,
+                    "completion_tokens": 93,
+                    "total_tokens": 1237,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "2": {
+        "id": "batch_req_67e3f76d7cac81908ae9cb9e3a58259b",
+        "custom_id": "request-2",
+        "response": {
+            "status_code": 200,
+            "request_id": "444e6bc76a01ff33a16ec98051d0b319",
+            "body": {
+                "id": "chatcmpl-BFKSPMEOZTVgsCiBBmlCrEURBevfR",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on a smartphone-based blood lipid data acquisition dongle and its application in measuring blood lipid levels. It does not discuss the relative content of total flavonoids or phenolic acids in any phase, nor does it provide any relevant data or context to support the statement about the content of flavonoids and phenolic acids in Sophora flavescens.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1240,
+                    "completion_tokens": 98,
+                    "total_tokens": 1338,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "3": {
+        "id": "batch_req_67e3f7cbe4f08190be24cef15b1d7d87",
+        "custom_id": "request-3",
+        "response": {
+            "status_code": 200,
+            "request_id": "20c5f6f2423954524a153a34f412d2d1",
+            "body": {
+                "id": "chatcmpl-BFKTx4SkVdT5gkpf2VXxaKgv2ZLAh",
+                "object": "chat.completion",
+                "created": 1742993353,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the effects of propofol on breast cancer cells, the immune system, and patient outcomes, and does not discuss remimazolam tosylate, dexmedetomidine, or awakening times in gastroscopic practices. Therefore, it does not substantiate the statement from the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1282,
+                    "completion_tokens": 87,
+                    "total_tokens": 1369,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "20": {
+        "id": "batch_req_67e3f66cc1588190bf3ca26638094e72",
+        "custom_id": "request-20",
+        "response": {
+            "status_code": 200,
+            "request_id": "749901cabe8fa466a3efde807bc2bd9d",
+            "body": {
+                "id": "chatcmpl-BFKNx4UB1eoS6K5NjVBHvYvVzcVEA",
+                "object": "chat.completion",
+                "created": 1742992981,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on bi-level energy optimization models and mathematical optimization problems in wireless communication systems. It does not discuss the process of parties putting forward opinions, gaining experience, or working according to objectives in public management contexts.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1151,
+                    "completion_tokens": 67,
+                    "total_tokens": 1218,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "21": {
+        "id": "batch_req_67e3f74cd9588190918f05fe7761f7c2",
+        "custom_id": "request-21",
+        "response": {
+            "status_code": 200,
+            "request_id": "8b5be0194617d857056753bd2380b55c",
+            "body": {
+                "id": "chatcmpl-BFKRWJk6EDFwg50hV1JSkNJAesqY9",
+                "object": "chat.completion",
+                "created": 1742993202,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on cyberattack detection using unsupervised machine learning and Gaussian mixture models. It does not discuss urban planning, natural environment constraints, or resilience development in cities.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1209,
+                    "completion_tokens": 59,
+                    "total_tokens": 1268,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "22": {
+        "id": "batch_req_67e3f76d8a008190b3ad01994413846d",
+        "custom_id": "request-22",
+        "response": {
+            "status_code": 200,
+            "request_id": "80a676becb2541cbb8abd547cf863fd7",
+            "body": {
+                "id": "chatcmpl-BFKSPHDgNWVRiNYjB4SbJcq8W1Pkk",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article 'DeepCleave: a deep learning predictor for caspase and matrix metalloprotease substrates and cleavage sites' focuses on deep learning methods for predicting protease substrates and cleavage sites. It does not address issues related to arranging classes or summarizing grades in a high-level management context, which is the subject of the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1277,
+                    "completion_tokens": 95,
+                    "total_tokens": 1372,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "23": {
+        "id": "batch_req_67e3f7cbf8508190965f51c1d50bcaee",
+        "custom_id": "request-23",
+        "response": {
+            "status_code": 200,
+            "request_id": "8dd3a3ebe31ba35fa078be032496f6be",
+            "body": {
+                "id": "chatcmpl-BFKT0cFNc43m7Vpd5YbjrlonlrLRu",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the cost-effectiveness of stereotactic ablative body radiation therapy compared to other treatments for liver cancer. It does not discuss nursing-sensitive quality indicators or their application in the context of orthopedic nursing, making it unrelated to the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1303,
+                    "completion_tokens": 78,
+                    "total_tokens": 1381,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "40": {
+        "id": "batch_req_67e3f66cd55c819094c36d35f2cd0a94",
+        "custom_id": "request-40",
+        "response": {
+            "status_code": 200,
+            "request_id": "15c66328f53715137f7f8bf445aaa7fe",
+            "body": {
+                "id": "chatcmpl-BFKNzDNYIaX2gt3Ovpk96FaMPEMKs",
+                "object": "chat.completion",
+                "created": 1742992983,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the monotonicity properties of a function involving the psi function and its applications in mathematical analysis. It does not discuss recent developments in science and technology or their impact on human health and life.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1143,
+                    "completion_tokens": 66,
+                    "total_tokens": 1209,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "41": {
+        "id": "batch_req_67e3f74cf82c8190a3eaf3f0be900bf4",
+        "custom_id": "request-41",
+        "response": {
+            "status_code": 200,
+            "request_id": "c90ad2f4aa1e42ccfb0496e2a23b1259",
+            "body": {
+                "id": "chatcmpl-BFKRYaVbqH1wOL5jjkBQBOIOpJxNW",
+                "object": "chat.completion",
+                "created": 1742993204,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on bug report classification in software systems and does not discuss coordination chemistry, DNA binding, redox reactivity, or metal-specific geometries. Therefore, it does not substantiate the statement from the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1277,
+                    "completion_tokens": 69,
+                    "total_tokens": 1346,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "42": {
+        "id": "batch_req_67e3f76d98c081909db1dabb2ba910d4",
+        "custom_id": "request-42",
+        "response": {
+            "status_code": 200,
+            "request_id": "e7ad487ef6cf998321f0049b246e3cf9",
+            "body": {
+                "id": "chatcmpl-BFKSPSfZR9XCmTjkifKO65X1ZbfAa",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the synthesis and properties of aluminum hydride (AlH3) for hydrogen storage applications and does not discuss metal complexes, their cationic characteristics, ligands, structural geometries, electronic properties, kinetic properties, mechanisms of drug action, gene regulation, DNA interactions, or therapeutic agent design.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1334,
+                    "completion_tokens": 87,
+                    "total_tokens": 1421,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "43": {
+        "id": "batch_req_67e3f7cc087c81909d8a37cec98ad1dc",
+        "custom_id": "request-43",
+        "response": {
+            "status_code": 200,
+            "request_id": "1d480b02880b8617ff640c3dc06e312f",
+            "body": {
+                "id": "chatcmpl-BFKT0YOztaOYcqZyCBRKDGCunDjGV",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the mechanochemical synthesis and properties of \u03b1-AlH3 as a hydrogen storage material, and does not discuss metal complexes, their cationic characteristics, ligands, structural geometries, electronic properties, kinetic properties, mechanisms of drug action, gene regulation, DNA probing, or therapeutic agent design.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1325,
+                    "completion_tokens": 87,
+                    "total_tokens": 1412,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "60": {
+        "id": "batch_req_67e3f66ceab48190b0f925c7de619f86",
+        "custom_id": "request-60",
+        "response": {
+            "status_code": 200,
+            "request_id": "caa967d7bdd3001f34f6986189daa987",
+            "body": {
+                "id": "chatcmpl-BFKO27WV8vsvzHXWjGincNvljtzyp",
+                "object": "chat.completion",
+                "created": 1742992986,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on acoustic emission signal processing technology and does not discuss coordination polymers, their construction, or their properties. Therefore, it does not substantiate the statement about coordination polymers in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1137,
+                    "completion_tokens": 64,
+                    "total_tokens": 1201,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "61": {
+        "id": "batch_req_67e3f74d1ad08190b31f671fc9da7454",
+        "custom_id": "request-61",
+        "response": {
+            "status_code": 200,
+            "request_id": "b07793e0b6d04485c427fdaf10297398",
+            "body": {
+                "id": "chatcmpl-BFKRazmVVijuUBKfeZB5LAHUWFGV1",
+                "object": "chat.completion",
+                "created": 1742993206,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the application of big data technology and ant colony optimization in vehicular ad hoc networks for smart cities. It does not discuss or provide information about a professional team with theoretical knowledge and practical skills in education management.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1182,
+                    "completion_tokens": 69,
+                    "total_tokens": 1251,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "62": {
+        "id": "batch_req_67e3f76da88481908b5fc2d3d562f4da",
+        "custom_id": "request-62",
+        "response": {
+            "status_code": 200,
+            "request_id": "7a2925be3ae8245cc380665b53f8148f",
+            "body": {
+                "id": "chatcmpl-BFKSPRcPWoVBagDKQtLUbPeZlmQuM",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article does not mention the SIMPLE scheme or the convergence metric set to 10^\u20136. It focuses on the effects of pin angle on friction stir welding and the use of CFD for simulation, but does not provide any information related to the pressure-velocity coupling scheme or convergence criteria.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1032,
+                    "completion_tokens": 82,
+                    "total_tokens": 1114,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "63": {
+        "id": "batch_req_67e3f7cc19d08190a71b3665af0979be",
+        "custom_id": "request-63",
+        "response": {
+            "status_code": 200,
+            "request_id": "432e82013f8dd1fa648fbb369cde290c",
+            "body": {
+                "id": "chatcmpl-BFKT0ItDCLm3frFxhDYvOwH6Kl0wf",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on stormwater management and urban water allocation systems under drought conditions. It does not mention the SIMPLE scheme, pressure-velocity coupling, or convergence metrics, which are the key points in the statement from the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1134,
+                    "completion_tokens": 70,
+                    "total_tokens": 1204,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "80": {
+        "id": "batch_req_67e3f66d02448190afb1fcea1d5ae303",
+        "custom_id": "request-80",
+        "response": {
+            "status_code": 200,
+            "request_id": "05b45b6e9de7b532fd5207a3031ce984",
+            "body": {
+                "id": "chatcmpl-BFKO3K89seq4HYBNhmkpIBk5VpqdG",
+                "object": "chat.completion",
+                "created": 1742992987,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article indicates that salivary oxytocin concentrations were significantly reduced after choir singing and did not change in response to solo singing. This contradicts the statement that oxytocin is increased when participating in group singing.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1241,
+                    "completion_tokens": 68,
+                    "total_tokens": 1309,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "81": {
+        "id": "batch_req_67e3f74d3d648190843d73cf7e950123",
+        "custom_id": "request-81",
+        "response": {
+            "status_code": 200,
+            "request_id": "4e20ed47eeed042e01bba6ebe9536289",
+            "body": {
+                "id": "chatcmpl-BFKRdLfoVD0pVt3ztXSTY1UyD2d60",
+                "object": "chat.completion",
+                "created": 1742993209,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article by Beyer et al. does not discuss the mechanism of action for extracellular loop peptides. It focuses on the families of gap junction proteins, including connexins, innexins, and pannexins, and their roles in forming gap junction channels.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1109,
+                    "completion_tokens": 76,
+                    "total_tokens": 1185,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "82": {
+        "id": "batch_req_67e3f76db9008190be1acfd88f31db3d",
+        "custom_id": "request-82",
+        "response": {
+            "status_code": 200,
+            "request_id": "9abc24ac901241b1702f3d4c81d09e09",
+            "body": {
+                "id": "chatcmpl-BFKSPNNBG4ev4lKpkDa5FNyw3SdHh",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article supports the statement regarding the effects of Peptide 5 on chronic kidney disease but does not mention its effects on retinal pigment epithelial cell barrier function or diabetic retinopathy. Therefore, the reference partially substantiates the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1814,
+                    "completion_tokens": 70,
+                    "total_tokens": 1884,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "83": {
+        "id": "batch_req_67e3f7cc2c908190bb8df5b2bcd439cf",
+        "custom_id": "request-83",
+        "response": {
+            "status_code": 200,
+            "request_id": "de5618071d3de319d9984c87435f562f",
+            "body": {
+                "id": "chatcmpl-BFKT0xnRX7gVioYlY1EO1KeLDPlP1",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article focuses on the effects of the connexin43 mimetic peptide Gap19 on astrocytes and its role in inhibiting hemichannels without affecting gap junction channels. It does not discuss Peptide5 or its effects on retinal pigment epithelial cell barrier function, diabetic retinopathy, or chronic kidney disease.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1207,
+                    "completion_tokens": 87,
+                    "total_tokens": 1294,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "100": {
+        "id": "batch_req_67e3f66d18448190aa3c2170cc1f0dfb",
+        "custom_id": "request-100",
+        "response": {
+            "status_code": 200,
+            "request_id": "1a5b84e40384f887d2f3e7c92e3f5e1e",
+            "body": {
+                "id": "chatcmpl-BFKO5tTQPzzSiaWaFu96cABNWRd9f",
+                "object": "chat.completion",
+                "created": 1742992989,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article supports the idea that human diets with reduced livestock products can contribute to sustainable food systems and reduce environmental impact. However, it does not explicitly mention the role of agro-industries, farms, and civil society in developing a worldwide strategy, nor does it directly address the reduction of food waste.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1198,
+                    "completion_tokens": 83,
+                    "total_tokens": 1281,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "101": {
+        "id": "batch_req_67e3f74d5df881908324f52366824742",
+        "custom_id": "request-101",
+        "response": {
+            "status_code": 200,
+            "request_id": "0e2c3224288fe81aab931dbee9fdf54e",
+            "body": {
+                "id": "chatcmpl-BFKRf1Lxad9FzahdGiqyL0qo9pjco",
+                "object": "chat.completion",
+                "created": 1742993211,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article confirms that E2-2 is a central regulator of pDC development, which supports part of the statement. However, it does not mention Pitt-Hopkins syndrome (PHS), abnormal craniofacial and neural development, severe mental retardation, motor dysfunction, or the gene 7CF4. Therefore, the reference only partially substantiates the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1211,
+                    "completion_tokens": 98,
+                    "total_tokens": 1309,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "102": {
+        "id": "batch_req_67e3f76dc6f8819091fcf65a138ba589",
+        "custom_id": "request-102",
+        "response": {
+            "status_code": 200,
+            "request_id": "86b19702487b236afdaa2b4c7bf81b72",
+            "body": {
+                "id": "chatcmpl-BFKSPqN3weE6sFzayC6Bl7U7WIYIQ",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article by Vaquerizas et al. describes a high-confidence data set of 1,391 transcription factors, which aligns with the statement that the collection included 84% of the high-confidence TFs described by Vaquerizas et al. This indicates that the citing article's claim is fully supported by the reference article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1113,
+                    "completion_tokens": 88,
+                    "total_tokens": 1201,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "103": {
+        "id": "batch_req_67e3f7cc3dd88190a1b6d7c5f7dd849c",
+        "custom_id": "request-103",
+        "response": {
+            "status_code": 200,
+            "request_id": "6d89290d5562bf7dc083e091cbab99f0",
+            "body": {
+                "id": "chatcmpl-BFKT0PFgpDJHHqCNysV7fGkreCbcX",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the development and advantages of low-loss photopatternable polymer dielectrics for LWIR-metamaterial applications, highlighting their potential for scalability and economic benefits. However, it does not explicitly state that polymeric photonics is a growing field. The statement in the citing article is generally supported by the reference, but the specific claim about the growth of the field is not directly addressed.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1284,
+                    "completion_tokens": 104,
+                    "total_tokens": 1388,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "120": {
+        "id": "batch_req_67e3f66d2b1c8190a452112c46264c6b",
+        "custom_id": "request-120",
+        "response": {
+            "status_code": 200,
+            "request_id": "d2afcc5d8c3ad1513edc2d30a10a9a6f",
+            "body": {
+                "id": "chatcmpl-BFKO78fIThEfScHKeVQKDKgJKI6Ig",
+                "object": "chat.completion",
+                "created": 1742992991,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article provides details on the use of a 7-nA 30-kV gallium ion beam and the generation of isotropic voxel image stacks, which aligns with the statement. However, it does not mention the specific use of an InLens detector or the filtering of secondary electrons through sample biasing, which are key components of the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1277,
+                    "completion_tokens": 94,
+                    "total_tokens": 1371,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "121": {
+        "id": "batch_req_67e3f74d7ef08190b100bcb8ff89a38c",
+        "custom_id": "request-121",
+        "response": {
+            "status_code": 200,
+            "request_id": "5dbaa63e32504e3a52692ab5dc938749",
+            "body": {
+                "id": "chatcmpl-BFKRhVOCAOhu5QXkq2uKb6TIIAig5",
+                "object": "chat.completion",
+                "created": 1742993213,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article discusses the pressure-temperature phase relations and phase transitions of MAPbX3 (X = Cl, Br, I) crystals, but it does not provide any information about the pyroelectric response of tetragonal MAPbBr3. Therefore, it does not substantiate the statement regarding the pyroelectric measurements of tetragonal MAPbBr3.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1289,
+                    "completion_tokens": 95,
+                    "total_tokens": 1384,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "122": {
+        "id": "batch_req_67e3f76dd55c819096075f0755cc5651",
+        "custom_id": "request-122",
+        "response": {
+            "status_code": 200,
+            "request_id": "6f17f2bd89e0629902bd6e85a154dc8b",
+            "body": {
+                "id": "chatcmpl-BFKSPggabpve9JCAu03CqELg5nDUc",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article describes the use of baseline MRI scans to ensure that Wistar rats had normal brain ventricular anatomy before proceeding with further studies. This directly supports the statement that all animals underwent MRI before sonication to ensure normal brain ventricular anatomy.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1170,
+                    "completion_tokens": 69,
+                    "total_tokens": 1239,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "123": {
+        "id": "batch_req_67e3f7cc4fe48190839fc69ed4c9a687",
+        "custom_id": "request-123",
+        "response": {
+            "status_code": 200,
+            "request_id": "fbf57a0c4c6a3ca6376ac56534e46f36",
+            "body": {
+                "id": "chatcmpl-BFKT0VQUKQ9PC9x7FGwZBIbdFYYYw",
+                "object": "chat.completion",
+                "created": 1742993294,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article provides values for the Gr\u00fcneisen parameter and Poisson ratio, which are used in the context of the study. Specifically, the Gr\u00fcneisen parameter (g) and Poisson ratio (r) are mentioned in the context of elastic properties and thermal conductivity calculations, supporting the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1046,
+                    "completion_tokens": 86,
+                    "total_tokens": 1132,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "140": {
+        "id": "batch_req_67e3f66d3ed8819089f492d3161cf0e7",
+        "custom_id": "request-140",
+        "response": {
+            "status_code": 200,
+            "request_id": "46acb203460d57e9fb378796d95ebe2f",
+            "body": {
+                "id": "chatcmpl-BFKO9dI7DNEZSDTCoFfGjSxltm4bY",
+                "object": "chat.completion",
+                "created": 1742992993,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the enhancement of laser linewidth due to the Petermann factor, which is consistent with the statement. However, it does not specifically address the third-order exceptional point, making the statement only partially substantiated.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1119,
+                    "completion_tokens": 67,
+                    "total_tokens": 1186,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "141": {
+        "id": "batch_req_67e3f74d9f5c819083add205320b9b7d",
+        "custom_id": "request-141",
+        "response": {
+            "status_code": 200,
+            "request_id": "94c3c4bcbf2c2542436a027528f513a0",
+            "body": {
+                "id": "chatcmpl-BFKRjpibK0kSsj8hwvPRr7XPOElHj",
+                "object": "chat.completion",
+                "created": 1742993215,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the Trinity method for de novo assembly and its effectiveness, which supports the use of Trinity in the statement. However, the reference article does not mention the specific version of Trinity (r2012-01-25) used in the citing article, nor does it discuss the use of TopHat and Cufflinks with the specified versions and parameters. Therefore, while the reference supports the use of Trinity for de novo assembly, it does not fully substantiate the entire statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1209,
+                    "completion_tokens": 121,
+                    "total_tokens": 1330,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "142": {
+        "id": "batch_req_67e3f76de3548190b3e1fdca79ea10ae",
+        "custom_id": "request-142",
+        "response": {
+            "status_code": 200,
+            "request_id": "eec2a0ffc6d20197625eef3042de21ca",
+            "body": {
+                "id": "chatcmpl-BFKSPOR5polBcNPUwqF0xrneKjP8f",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the strategy of identifying and managing specific reef areas with natural resistance and resilience to bleaching, which aligns with the concept of identifying and protecting spatial refugia for conservation purposes mentioned in the statement from the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1214,
+                    "completion_tokens": 67,
+                    "total_tokens": 1281,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "143": {
+        "id": "batch_req_67e3f7cc618881909b8a19034b60b449",
+        "custom_id": "request-143",
+        "response": {
+            "status_code": 200,
+            "request_id": "8c3cde6af8f1b9388987391b6df5b97c",
+            "body": {
+                "id": "chatcmpl-BFKT1lb1ehl4YtEeFA788fwzj1HG7",
+                "object": "chat.completion",
+                "created": 1742993295,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article describes the voom method, which includes calculating precision weights, scaling read counts by library size, and quantile normalization. These steps are consistent with the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1124,
+                    "completion_tokens": 61,
+                    "total_tokens": 1185,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "160": {
+        "id": "batch_req_67e3f66d52f8819090ecda0b73fd7c64",
+        "custom_id": "request-160",
+        "response": {
+            "status_code": 200,
+            "request_id": "2c74131211951d13f242beb2caaf5ec8",
+            "body": {
+                "id": "chatcmpl-BFKOAY3uAqo2eqCw5GT6JVW554DDB",
+                "object": "chat.completion",
+                "created": 1742992994,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the short lifetime and transport length of hot electrons, mentioning timescales on the order of 100 fs to 180 fs, which is shorter than the picosecond timescale mentioned in the citing article. However, it does support the general idea that hot carriers lose their excess energy quickly, which aligns with the main challenge described in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1151,
+                    "completion_tokens": 97,
+                    "total_tokens": 1248,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "161": {
+        "id": "batch_req_67e3f74dc12c8190b6dbe22be05a6abc",
+        "custom_id": "request-161",
+        "response": {
+            "status_code": 200,
+            "request_id": "b243d7fd8cdd72cf5e74a79dfc0fdac9",
+            "body": {
+                "id": "chatcmpl-BFKRljcMQqGuywM6nygXQlx7NQENC",
+                "object": "chat.completion",
+                "created": 1742993217,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the detection of Majorana fermions through zero-bias conductance peaks and their modulation, which aligns with the statement. However, it does not explicitly mention the modulation by external electrical fields, only magnetic fields. Thus, the reference partially supports the statement but misses a specific detail.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1259,
+                    "completion_tokens": 83,
+                    "total_tokens": 1342,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "162": {
+        "id": "batch_req_67e3f76df2ac81908b986927f27e0d4c",
+        "custom_id": "request-162",
+        "response": {
+            "status_code": 200,
+            "request_id": "3b726b46e5358535ec34d5c1429d54b0",
+            "body": {
+                "id": "chatcmpl-BFKSPfeEfzAqeif5ndrNBAEnzrzJb",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses ejecta mass (Mej) and velocity (vej) values that are in the same order of magnitude as those cited in the statement (Mej = 0.05 M\u2609, vej = 0.1c). However, the specific values mentioned in the statement are not directly supported by the reference article, which provides a range of values and a fiducial model with different parameters (Mej = 5 \u00d7 10^-3 M\u2609, vej = 0.2c).\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1291,
+                    "completion_tokens": 131,
+                    "total_tokens": 1422,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "163": {
+        "id": "batch_req_67e3f7cc73948190a2ad0cc9fa2099e9",
+        "custom_id": "request-163",
+        "response": {
+            "status_code": 200,
+            "request_id": "643f92df59889c745ce4d0b5b1e66209",
+            "body": {
+                "id": "chatcmpl-BFKT1xfsuIEjmLuxREU29VaH57kU8",
+                "object": "chat.completion",
+                "created": 1742993295,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the interaction between Cu and ZnO, including the structural changes and electronic interactions that enhance methanol production. However, it does not explicitly mention ZnO acting as a hydrogen reservoir or direct promoter for bond activation. Therefore, while the reference supports the idea of synergy at the Cu/ZnO interface, it does not fully substantiate all the roles attributed to ZnO in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1075,
+                    "completion_tokens": 104,
+                    "total_tokens": 1179,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "180": {
+        "id": "batch_req_67e3f66d690c81909c75a8502fe62dc7",
+        "custom_id": "request-180",
+        "response": {
+            "status_code": 200,
+            "request_id": "6dad369d601ba2e7f06d651abe9d48ad",
+            "body": {
+                "id": "chatcmpl-BFKOCxVcvKPurWKfKyVvyDl0KwYMB",
+                "object": "chat.completion",
+                "created": 1742992996,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article provides evidence that brooding species like Seriatopora hystrix exhibit local-scale genetic differentiation due to localized dispersal of larvae and sperm. This supports the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1274,
+                    "completion_tokens": 62,
+                    "total_tokens": 1336,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "181": {
+        "id": "batch_req_67e3f74de238819087a9bcd20730af28",
+        "custom_id": "request-181",
+        "response": {
+            "status_code": 200,
+            "request_id": "cecd6e38a2904e7e275cd7bc61fc6aa3",
+            "body": {
+                "id": "chatcmpl-BFKRnbWhzNc9N3zmC9A0zT6IiNpqw",
+                "object": "chat.completion",
+                "created": 1742993219,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article does not mention the specific binding energies for Ni0, Ni2+, and Ni3+ as stated in the citing article. The reference article discusses the presence of Ni0 and Ni2+ but does not provide the detailed spectral peaks or binding energies mentioned in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1265,
+                    "completion_tokens": 80,
+                    "total_tokens": 1345,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "182": {
+        "id": "batch_req_67e3f76e01148190a2a837b31ea3d6b2",
+        "custom_id": "request-182",
+        "response": {
+            "status_code": 200,
+            "request_id": "20a9d6f68e72f94909d0bf676d49e26c",
+            "body": {
+                "id": "chatcmpl-BFKSPftHSqetKhmJ4aKGQnL74YYwC",
+                "object": "chat.completion",
+                "created": 1742993257,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the global warming 'hiatus' and mentions the importance of tracking Earth's heat and ocean heat in understanding this phenomenon. This directly supports the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1139,
+                    "completion_tokens": 59,
+                    "total_tokens": 1198,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "183": {
+        "id": "batch_req_67e3f7cc852481909fcbf2607769dfd6",
+        "custom_id": "request-183",
+        "response": {
+            "status_code": 200,
+            "request_id": "ac9b4224aeda8ee4dea1086624ec8be7",
+            "body": {
+                "id": "chatcmpl-BFKT1VQDQDDRs4gmqG30OFbAf4gzE",
+                "object": "chat.completion",
+                "created": 1742993295,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses various descriptors and kernels used in machine learning potentials for energy prediction tasks, which aligns with the statement in the citing article about resorting to extensive research on suitable kernels and descriptors for energy prediction.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1181,
+                    "completion_tokens": 64,
+                    "total_tokens": 1245,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "200": {
+        "id": "batch_req_67e3f66d803c8190a5e582cf81b4fa44",
+        "custom_id": "request-200",
+        "response": {
+            "status_code": 200,
+            "request_id": "aec8a187569f64499c1bb88640cfdefe",
+            "body": {
+                "id": "chatcmpl-BFKOENEkB07Q5o2pZ47o1o0biorlq",
+                "object": "chat.completion",
+                "created": 1742992998,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article supports the idea that dependencies between network structure and node attributes can be tested and modeled, which aligns with the statement about explaining dependencies between metadata and network structure. However, it does not explicitly mention the inference of community structure or learning the relationship between metadata and network topology, making the support partial.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1203,
+                    "completion_tokens": 84,
+                    "total_tokens": 1287,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "201": {
+        "id": "batch_req_67e3f74e03bc81908d7bcfad96266864",
+        "custom_id": "request-201",
+        "response": {
+            "status_code": 200,
+            "request_id": "be8b8bb9d325ce3230c833de8bd80f4b",
+            "body": {
+                "id": "chatcmpl-BFKRpYBvxFiaDHQELC26ZaZ7jBsq0",
+                "object": "chat.completion",
+                "created": 1742993221,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the challenges related to the placement, micromotion, and wiring of nanowires to external recording systems, which aligns with the statement in the citing article. Specifically, it mentions the logistical challenges of transmitting information from recording sites, the issue of electrode micromotions, and the need for flexible micro-wires or nanowires to decouple recording sites from electronics.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1127,
+                    "completion_tokens": 99,
+                    "total_tokens": 1226,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "202": {
+        "id": "batch_req_67e3f76e10bc8190a71566df87f37416",
+        "custom_id": "request-202",
+        "response": {
+            "status_code": 200,
+            "request_id": "13f566e385161e98f11a139298659ef5",
+            "body": {
+                "id": "chatcmpl-BFKSQxXM8hkOyKSN4EaPin88KUmPw",
+                "object": "chat.completion",
+                "created": 1742993258,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article describes a touch panel made of a highly deformable conductive gel with electrodes attached at each corner, capable of detecting both touch and stretch. This aligns with the statement in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1174,
+                    "completion_tokens": 62,
+                    "total_tokens": 1236,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "203": {
+        "id": "batch_req_67e3f7cc964081909d5245567d0334b9",
+        "custom_id": "request-203",
+        "response": {
+            "status_code": 200,
+            "request_id": "e89ceab30df843d8a58522c535e19092",
+            "body": {
+                "id": "chatcmpl-BFKT2QSsL0gJJjuqVkgtlxkvIK5n2",
+                "object": "chat.completion",
+                "created": 1742993296,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses dielectric loss spectra and mentions low-frequency ionic relaxation and high-frequency electronic processes in MAPbI3. However, the specific frequency ranges cited in the statement (low-frequency <104 Hz and high-frequency ~105 to 106 Hz) are not explicitly supported by the reference article, which mentions a low-/high-frequency boundary at ~103 Hz and other frequency behaviors. Thus, while the general concept is supported, the exact frequency ranges are not.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1260,
+                    "completion_tokens": 115,
+                    "total_tokens": 1375,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "220": {
+        "id": "batch_req_67e3f66d8fc8819080ca64a9f20e486a",
+        "custom_id": "request-220",
+        "response": {
+            "status_code": 200,
+            "request_id": "e178266577b162f8db79fb5224b4c3c1",
+            "body": {
+                "id": "chatcmpl-BFKOG2UobnSZ3hC6nN8cAOuibY0cC",
+                "object": "chat.completion",
+                "created": 1742993000,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article discusses the use of anisotropic nanostructures to create photonic structures with tunable properties, which aligns with the concept of bio-inspired structural color materials. However, it does not specifically mention hydrogels or their applications in switches, optical devices, sensing materials, and wearable electronics. Therefore, while it supports the general idea of bio-inspired structural color materials, it does not fully substantiate the specific claims made in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1094,
+                    "completion_tokens": 113,
+                    "total_tokens": 1207,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "221": {
+        "id": "batch_req_67e3f74e26f0819096f91674519f4783",
+        "custom_id": "request-221",
+        "response": {
+            "status_code": 200,
+            "request_id": "c3a32e7def9ef45ce4745c68a4be7c37",
+            "body": {
+                "id": "chatcmpl-BFKRsNmBKAhvJjZuwBwIzlSWoDHaT",
+                "object": "chat.completion",
+                "created": 1742993224,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the adverse impacts of elevated chloride concentrations on freshwater ecosystems, including potential harm to aquatic species and water quality. This supports the statement in the citing article that elevated chloride concentrations can have adverse effects on water quality and aquatic ecosystems.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1225,
+                    "completion_tokens": 70,
+                    "total_tokens": 1295,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "222": {
+        "id": "batch_req_67e3f76e1f2c81909459a67fc46a6984",
+        "custom_id": "request-222",
+        "response": {
+            "status_code": 200,
+            "request_id": "584c005a9deebf1503b8b18f7ecb9f99",
+            "body": {
+                "id": "chatcmpl-BFKSSkeWY609EwqyddYuf5ByztpXl",
+                "object": "chat.completion",
+                "created": 1742993260,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article provides evidence that phosphorylation preferentially targets nuclear proteins, as stated in the citing article. Specifically, it mentions that almost half of the phosphorylation events occurred on nuclear proteins, which supports the claim made in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1183,
+                    "completion_tokens": 68,
+                    "total_tokens": 1251,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "223": {
+        "id": "batch_req_67e3f7cca8948190be372f9681a90934",
+        "custom_id": "request-223",
+        "response": {
+            "status_code": 200,
+            "request_id": "762b79f7abb2f1e2cc3f93adc937ea3d",
+            "body": {
+                "id": "chatcmpl-BFKT4NtNyear2SSICbJBVqUPEBVqM",
+                "object": "chat.completion",
+                "created": 1742993298,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the high inter-observer variation in identifying osteophytes in skeletal samples, which aligns with the statement in the citing article. The reference article specifically mentions the need for better operational definitions and the variability in diagnosing osteoarthritis, supporting the claim that osteophytes were not used as a diagnostic criterion due to this variation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1207,
+                    "completion_tokens": 89,
+                    "total_tokens": 1296,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "240": {
+        "id": "batch_req_67e3f66da42c8190949386ec88899210",
+        "custom_id": "request-240",
+        "response": {
+            "status_code": 200,
+            "request_id": "634d52bc70514eef2bf9776b64450423",
+            "body": {
+                "id": "chatcmpl-BFKOIs3kpNViVBYG9hMTpkonc6MA5",
+                "object": "chat.completion",
+                "created": 1742993002,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article discusses the role of Yap in C2C12 myogenesis, including its phosphorylation and localization changes during differentiation. However, it does not provide information about a transition zone with nuclear localization increasing from 2 to 38 kPa, nor does it compare YAP expression and nuclear localization patterns between C2C12 myoblasts and stem cells.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1369,
+                    "completion_tokens": 95,
+                    "total_tokens": 1464,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "241": {
+        "id": "batch_req_67e3f74e489481909b2c9c06fd27fc28",
+        "custom_id": "request-241",
+        "response": {
+            "status_code": 200,
+            "request_id": "7b3368a869b1c5b604fa92c35315b2cb",
+            "body": {
+                "id": "chatcmpl-BFKRuR5CzRkgjxe6wG7LxqXfRjVJn",
+                "object": "chat.completion",
+                "created": 1742993226,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Fully substantiate\",\n  \"explanation\": \"The reference article discusses the role of Mdm1 as an interorganelle tethering protein that localizes to ER-lysosome (vacuole in yeast) membrane contact sites. This supports the statement that ER appositions were found with lysosomes, as mentioned in the citing article.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1271,
+                    "completion_tokens": 82,
+                    "total_tokens": 1353,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "242": {
+        "id": "batch_req_67e3f76e2e448190b2600839802a181a",
+        "custom_id": "request-242",
+        "response": {
+            "status_code": 200,
+            "request_id": "6d3ec9fc51812b2f10d244dbea842dd7",
+            "body": {
+                "id": "chatcmpl-BFKSQmhsEuF5TkKXxuw21ioc7tfwL",
+                "object": "chat.completion",
+                "created": 1742993258,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiate\",\n  \"explanation\": \"The reference article does not provide any information about the neurological scores of wild-type and NSEMT1-GFP mice 2 hours after pMCAO. It focuses on the effects of ICE-like protease inhibitors on ischemic and excitotoxic neuronal damage, and the neurological deficits were assessed at different time points and under different conditions.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1437,
+                    "completion_tokens": 89,
+                    "total_tokens": 1526,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    },
+    "243": {
+        "id": "batch_req_67e3f7ccbc7c81908895e03ce5c9a743",
+        "custom_id": "request-243",
+        "response": {
+            "status_code": 200,
+            "request_id": "038ff009702a43bbb090da2d6f7077ed",
+            "body": {
+                "id": "chatcmpl-BFKT66K9u9o5APJj03wWB23rh9fUi",
+                "object": "chat.completion",
+                "created": 1742993300,
+                "model": "gpt-4o-2024-05-13",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Partially substantiate\",\n  \"explanation\": \"The reference article provides evidence for GPCR signaling from endosomes, which supports part of the statement. However, it does not mention GPCRs on endoplasmic reticulum, nuclear, or mitochondrial membranes, making the statement only partially substantiated.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1309,
+                    "completion_tokens": 73,
+                    "total_tokens": 1382,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_49b7ecf55e"
+            }
+        },
+        "error": null
+    }
+}
