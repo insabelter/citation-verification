@@ -3,7 +3,7 @@
         "small_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5223,
+                    "accuracy": 0.522,
                     "total": 247,
                     "correct": 129,
                     "false_predictions": 118,
@@ -32,7 +32,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5205,
+                    "accuracy": 0.52,
                     "total": 244,
                     "correct": 127,
                     "false_predictions": 117,
@@ -61,7 +61,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8016,
+                    "accuracy": 0.802,
                     "total": 247,
                     "correct": 198,
                     "false_predictions": 49,
@@ -69,7 +69,7 @@
                     "false_negatives": 18
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8033,
+                    "accuracy": 0.803,
                     "total": 244,
                     "correct": 196,
                     "false_predictions": 48,
@@ -81,7 +81,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5425,
+                    "accuracy": 0.543,
                     "total": 247,
                     "correct": 134,
                     "false_predictions": 113,
@@ -139,7 +139,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.7854,
+                    "accuracy": 0.785,
                     "total": 247,
                     "correct": 194,
                     "false_predictions": 53,
@@ -147,7 +147,7 @@
                     "false_negatives": 19
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.7869,
+                    "accuracy": 0.787,
                     "total": 244,
                     "correct": 192,
                     "false_predictions": 52,
@@ -159,7 +159,7 @@
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5182,
+                    "accuracy": 0.518,
                     "total": 247,
                     "correct": 128,
                     "false_predictions": 119,
@@ -188,7 +188,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5205,
+                    "accuracy": 0.52,
                     "total": 244,
                     "correct": 127,
                     "false_predictions": 117,
@@ -217,7 +217,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.7773,
+                    "accuracy": 0.777,
                     "total": 247,
                     "correct": 192,
                     "false_predictions": 55,
@@ -225,7 +225,7 @@
                     "false_negatives": 19
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.7828,
+                    "accuracy": 0.783,
                     "total": 244,
                     "correct": 191,
                     "false_predictions": 53,
@@ -239,7 +239,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5385,
+                    "accuracy": 0.538,
                     "total": 247,
                     "correct": 133,
                     "false_predictions": 114,
@@ -297,7 +297,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8057,
+                    "accuracy": 0.806,
                     "total": 247,
                     "correct": 199,
                     "false_predictions": 48,
@@ -305,7 +305,7 @@
                     "false_negatives": 15
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8115,
+                    "accuracy": 0.811,
                     "total": 244,
                     "correct": 198,
                     "false_predictions": 46,
@@ -317,7 +317,7 @@
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5425,
+                    "accuracy": 0.543,
                     "total": 247,
                     "correct": 134,
                     "false_predictions": 113,
@@ -346,7 +346,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5451,
+                    "accuracy": 0.545,
                     "total": 244,
                     "correct": 133,
                     "false_predictions": 111,
@@ -375,7 +375,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.7976,
+                    "accuracy": 0.798,
                     "total": 247,
                     "correct": 197,
                     "false_predictions": 50,
@@ -383,7 +383,7 @@
                     "false_negatives": 15
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8033,
+                    "accuracy": 0.803,
                     "total": 244,
                     "correct": 196,
                     "false_predictions": 48,
@@ -397,7 +397,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5425,
+                    "accuracy": 0.543,
                     "total": 247,
                     "correct": 134,
                     "false_predictions": 113,
@@ -426,7 +426,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5451,
+                    "accuracy": 0.545,
                     "total": 244,
                     "correct": 133,
                     "false_predictions": 111,
@@ -455,7 +455,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8097,
+                    "accuracy": 0.81,
                     "total": 247,
                     "correct": 200,
                     "false_predictions": 47,
@@ -463,7 +463,7 @@
                     "false_negatives": 15
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8156,
+                    "accuracy": 0.816,
                     "total": 244,
                     "correct": 199,
                     "false_predictions": 45,
@@ -475,7 +475,7 @@
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5668,
+                    "accuracy": 0.567,
                     "total": 247,
                     "correct": 140,
                     "false_predictions": 107,
@@ -504,7 +504,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5697,
+                    "accuracy": 0.57,
                     "total": 244,
                     "correct": 139,
                     "false_predictions": 105,
@@ -533,7 +533,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8138,
+                    "accuracy": 0.814,
                     "total": 247,
                     "correct": 201,
                     "false_predictions": 46,
@@ -541,7 +541,7 @@
                     "false_negatives": 12
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8197,
+                    "accuracy": 0.82,
                     "total": 244,
                     "correct": 200,
                     "false_predictions": 44,
@@ -555,7 +555,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5344,
+                    "accuracy": 0.534,
                     "total": 247,
                     "correct": 132,
                     "false_predictions": 115,
@@ -584,7 +584,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5369,
+                    "accuracy": 0.537,
                     "total": 244,
                     "correct": 131,
                     "false_predictions": 113,
@@ -613,7 +613,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8097,
+                    "accuracy": 0.81,
                     "total": 247,
                     "correct": 200,
                     "false_predictions": 47,
@@ -621,7 +621,7 @@
                     "false_negatives": 13
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8156,
+                    "accuracy": 0.816,
                     "total": 244,
                     "correct": 199,
                     "false_predictions": 45,
@@ -633,7 +633,7 @@
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5142,
+                    "accuracy": 0.514,
                     "total": 247,
                     "correct": 127,
                     "false_predictions": 120,
@@ -662,7 +662,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5164,
+                    "accuracy": 0.516,
                     "total": 244,
                     "correct": 126,
                     "false_predictions": 118,
@@ -691,7 +691,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.7895,
+                    "accuracy": 0.789,
                     "total": 247,
                     "correct": 195,
                     "false_predictions": 52,
@@ -699,7 +699,7 @@
                     "false_negatives": 15
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.7951,
+                    "accuracy": 0.795,
                     "total": 244,
                     "correct": 194,
                     "false_predictions": 50,
@@ -713,7 +713,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5668,
+                    "accuracy": 0.567,
                     "total": 247,
                     "correct": 140,
                     "false_predictions": 107,
@@ -742,7 +742,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5697,
+                    "accuracy": 0.57,
                     "total": 244,
                     "correct": 139,
                     "false_predictions": 105,
@@ -771,7 +771,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8219,
+                    "accuracy": 0.822,
                     "total": 247,
                     "correct": 203,
                     "false_predictions": 44,
@@ -779,7 +779,7 @@
                     "false_negatives": 13
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8279,
+                    "accuracy": 0.828,
                     "total": 244,
                     "correct": 202,
                     "false_predictions": 42,
@@ -789,7 +789,7 @@
             },
             "gpt-4-0125-preview": {
                 "all_labels": {
-                    "accuracy": 0.7004,
+                    "accuracy": 0.7,
                     "total": 247,
                     "correct": 173,
                     "false_predictions": 74,
@@ -818,7 +818,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.7008,
+                    "accuracy": 0.701,
                     "total": 244,
                     "correct": 171,
                     "false_predictions": 73,
@@ -847,7 +847,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8381,
+                    "accuracy": 0.838,
                     "total": 247,
                     "correct": 207,
                     "false_predictions": 40,
@@ -855,7 +855,7 @@
                     "false_negatives": 24
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8402,
+                    "accuracy": 0.84,
                     "total": 244,
                     "correct": 205,
                     "false_predictions": 39,
@@ -894,7 +894,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5861,
+                    "accuracy": 0.586,
                     "total": 244,
                     "correct": 143,
                     "false_predictions": 101,
@@ -923,7 +923,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8259,
+                    "accuracy": 0.826,
                     "total": 247,
                     "correct": 204,
                     "false_predictions": 43,
@@ -931,19 +931,95 @@
                     "false_negatives": 26
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8279,
+                    "accuracy": 0.828,
                     "total": 244,
                     "correct": 202,
                     "false_predictions": 42,
                     "false_positives": 17,
                     "false_negatives": 25
                 }
+            },
+            "llama3.1:70b": {
+                "all_labels": {
+                    "accuracy": 0.559,
+                    "total": 247,
+                    "correct": 138,
+                    "false_predictions": 109,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 109,
+                            "unsubstantiate": 95,
+                            "partially substantiate": 10,
+                            "fully substantiate": 4,
+                            "invalid label": 0
+                        },
+                        "partially substantiate": {
+                            "total": 14,
+                            "unsubstantiate": 4,
+                            "partially substantiate": 9,
+                            "fully substantiate": 1,
+                            "invalid label": 0
+                        },
+                        "fully substantiate": {
+                            "total": 124,
+                            "unsubstantiate": 33,
+                            "partially substantiate": 57,
+                            "fully substantiate": 34,
+                            "invalid label": 0
+                        }
+                    }
+                },
+                "all_labels_exclude_not_available": {
+                    "accuracy": 0.557,
+                    "total": 244,
+                    "correct": 136,
+                    "false_predictions": 108,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 108,
+                            "unsubstantiate": 94,
+                            "partially substantiate": 10,
+                            "fully substantiate": 4,
+                            "invalid label": 0
+                        },
+                        "partially substantiate": {
+                            "total": 14,
+                            "unsubstantiate": 4,
+                            "partially substantiate": 9,
+                            "fully substantiate": 1,
+                            "invalid label": 0
+                        },
+                        "fully substantiate": {
+                            "total": 122,
+                            "unsubstantiate": 32,
+                            "partially substantiate": 57,
+                            "fully substantiate": 33,
+                            "invalid label": 0
+                        }
+                    }
+                },
+                "two_labels": {
+                    "accuracy": 0.794,
+                    "total": 247,
+                    "correct": 196,
+                    "false_predictions": 51,
+                    "false_positives": 14,
+                    "false_negatives": 37
+                },
+                "two_labels_exclude_not_available": {
+                    "accuracy": 0.795,
+                    "total": 244,
+                    "correct": 194,
+                    "false_predictions": 50,
+                    "false_positives": 14,
+                    "false_negatives": 36
+                }
             }
         },
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5628,
+                    "accuracy": 0.563,
                     "total": 247,
                     "correct": 139,
                     "false_predictions": 108,
@@ -972,7 +1048,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5656,
+                    "accuracy": 0.566,
                     "total": 244,
                     "correct": 138,
                     "false_predictions": 106,
@@ -1001,7 +1077,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8138,
+                    "accuracy": 0.814,
                     "total": 247,
                     "correct": 201,
                     "false_predictions": 46,
@@ -1009,7 +1085,7 @@
                     "false_negatives": 12
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8197,
+                    "accuracy": 0.82,
                     "total": 244,
                     "correct": 200,
                     "false_predictions": 44,
@@ -1023,7 +1099,7 @@
         "full_model": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5911,
+                    "accuracy": 0.591,
                     "total": 247,
                     "correct": 146,
                     "false_predictions": 101,
@@ -1052,7 +1128,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5943,
+                    "accuracy": 0.594,
                     "total": 244,
                     "correct": 145,
                     "false_predictions": 99,
@@ -1089,7 +1165,7 @@
                     "false_negatives": 11
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8361,
+                    "accuracy": 0.836,
                     "total": 244,
                     "correct": 204,
                     "false_predictions": 40,
@@ -1101,7 +1177,7 @@
         "full_model_texts": {
             "gpt-3.5-turbo-0125": {
                 "all_labels": {
-                    "accuracy": 0.5709,
+                    "accuracy": 0.571,
                     "total": 247,
                     "correct": 141,
                     "false_predictions": 106,
@@ -1130,7 +1206,7 @@
                     }
                 },
                 "all_labels_exclude_not_available": {
-                    "accuracy": 0.5738,
+                    "accuracy": 0.574,
                     "total": 244,
                     "correct": 140,
                     "false_predictions": 104,
@@ -1159,7 +1235,7 @@
                     }
                 },
                 "two_labels": {
-                    "accuracy": 0.8219,
+                    "accuracy": 0.822,
                     "total": 247,
                     "correct": 203,
                     "false_predictions": 44,
@@ -1167,7 +1243,7 @@
                     "false_negatives": 11
                 },
                 "two_labels_exclude_not_available": {
-                    "accuracy": 0.8279,
+                    "accuracy": 0.828,
                     "total": 244,
                     "correct": 202,
                     "false_predictions": 42,
