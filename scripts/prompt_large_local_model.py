@@ -45,7 +45,7 @@ def send_prompt(prompt, model):
     response = ollama.chat(model=model, messages=[{'role': 'user', 'content': prompt}])
     return response['message']['content']
 
-def prompting_model(df, model, save_intermediate_results=False, save_every=10):
+def prompting_model(df, model, save_intermediate_results=False, save_every=10, ids_not_to_prompt=[]):
     print(f"Prompting model: {model}", flush=True)
 
     # Create a new column in the dataframe to store the responses
@@ -55,6 +55,13 @@ def prompting_model(df, model, save_intermediate_results=False, save_every=10):
     # Iterate through the dataframe
     for index, row in df.iterrows():
         if row['Reference Article Downloaded'] == 'Yes':
+            if pd.notna(row['Model Classification']):
+                print(f"Already processed: " + row['Reference Article ID'], flush=True)
+                continue
+
+            if len(ids_not_to_prompt) != 0 and row['Reference Article ID'] in ids_not_to_prompt:
+                continue
+
             start_time = time.time()
             print(f"Processing: " + row['Reference Article ID'], flush=True)
 
@@ -86,7 +93,11 @@ df = pd.read_pickle(path)
 models = ["llama3.1:70b", "llama3.1:405b", "llama3.3"]
 model = models[1]
 
+df2_old = pd.read_pickle(f"../data/dfs/{embedding}{'_no_prev_chunking' if no_prev_chunking else ''}/{grobid_model}/ReferenceErrorDetection_data_with_prompt_results_{model}_intermed.pkl")
+ids_not_to_prompt = df2_old[df2_old['Model Classification'].notna()]['Reference Article ID'].tolist()
+print(ids_not_to_prompt)
+
 print("Start prompting script", flush=True)
-df2 = prompting_model(df, model, save_intermediate_results=True, save_every=1)
+df2 = prompting_model(df2_old, model, save_intermediate_results=True, save_every=1, ids_not_to_prompt=ids_not_to_prompt)
 
 df2.to_pickle(f"../data/dfs/{embedding}{'_no_prev_chunking' if no_prev_chunking else ''}/{grobid_model}/ReferenceErrorDetection_data_with_prompt_results_{model}.pkl")
