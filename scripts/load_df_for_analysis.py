@@ -1,8 +1,12 @@
 import pandas as pd
 import json
 
-def load_df(model_type, embedding, no_prev_chunking, gpt_model, batched):
-    path = f"../data/dfs/{embedding}{'_no_prev_chunking' if no_prev_chunking else ''}/{model_type}/ReferenceErrorDetection_data_with_prompt_results{'_batched' if batched else ''}{'_'+gpt_model.replace(':','.') if gpt_model != "gpt-3.5-turbo-0125" else ''}.pkl"
+def sort_df(df):
+    df = df.sort_values(by=['Citing Article ID', 'Reference Article ID'], ascending=[True, True]).reset_index(drop=True)
+    return df
+
+def load_df(model_type, embedding, no_prev_chunking, gpt_model, batched, annotated=False, corrected_statements=False):
+    path = f"../data/dfs{'/annotated_data' if annotated else ''}{'/corrected_statements' if corrected_statements else ''}/{embedding}{'_no_prev_chunking' if no_prev_chunking else ''}/{model_type}/ReferenceErrorDetection_data_with_prompt_results{'_batched' if batched else ''}{'_'+gpt_model.replace(':','.') if gpt_model != 'gpt-3.5-turbo-0125' else ''}.pkl"
     df = pd.read_pickle(path)
     return df
 
