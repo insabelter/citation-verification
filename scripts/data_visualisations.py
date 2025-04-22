@@ -19,9 +19,23 @@ def show_distribution(df, column_name, include_nan=True):
 
     # Add the total number above each bar, aligned vertically with the middle of the bar
     for p in ax.patches:
-        ax.annotate(str(p.get_height()), (p.get_x() + p.get_width() / 2., p.get_height() + 3), 
+        ax.annotate(str(p.get_height()), (p.get_x() + p.get_width() / 2., p.get_height() + 1), 
                     ha='center', va='center')
 
+    plt.show()
+
+def show_distribution_pie(df, column_name, include_nan=True):
+    # Count the occurrences of each source, including NaN values if specified
+    source_counts = df[column_name].value_counts(dropna=(not include_nan))
+
+    # Replace NaN with a string label for visualization
+    if include_nan:
+        source_counts.index = source_counts.index.fillna('NaN')
+
+    # Plot the pie chart
+    plt.figure(figsize=(8, 8))
+    plt.pie(source_counts, labels=source_counts.index, autopct='%1.1f%%', startangle=140)
+    plt.title('Distribution of column: ' + column_name)
     plt.show()
 
 def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df2_name="False Predicted Data", include_nan=True):
