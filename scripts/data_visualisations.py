@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib.patches as mpatches
+import numpy as np
 
 citation_functions = {
     "Use": ["Apply", "Extend"],
@@ -277,4 +279,119 @@ def show_citation_function_sub_distribution_pie(df, show_totals=False):
     plt.figure(figsize=(8, 8))
     plt.pie(source_counts, labels=labels, autopct='%1.1f%%', startangle=90, counterclock=False, colors=colors)
     plt.title('Distribution of column: ' + "Citation Function: Sub")
+    plt.show()
+
+def show_preds_vs_correct_preds_vs_total(data_dicts, titles):
+    """
+    Plot the distribution of predictions, correct predictions, and total label counts for each dictionary.
+
+    Each dictionary should have the following structure:
+    {
+        "unsubstantiate": {
+            "preds": ...,
+            "correct_preds": ...,
+            "correct_total": ...,
+        },
+        "fully substantiate": {
+            "preds": ...,
+            "correct_preds": ...,
+            "correct_total": ...,
+        },
+    }
+    """
+    # Colors for the bars
+    colors = {'unsubstantiate': 'red', 'fully substantiate': 'green'}
+
+    # Create subplots
+    fig, axes = plt.subplots(1, len(data_dicts), figsize=(18, 6), sharey=True)
+
+    # Add a heading above all diagrams
+    fig.suptitle("Comparison of Predictions, Correct Predictions and Correct Total Across Datasets", fontsize=16)
+
+    # Fixed bar width
+    bar_width = 0.6
+
+    # Plot each dictionary
+    for ax, data, title in zip(axes, data_dicts, titles):
+        labels = list(data.keys())
+        total_preds = [data[label]['preds'] for label in labels]
+        correct_preds = [data[label]['correct_preds'] for label in labels]
+        correct_totals = [data[label]['correct_total'] for label in labels]
+
+        # Plot total predictions
+        bars_total = ax.bar(labels, total_preds, color=[colors[label] for label in labels], alpha=0.4, width=bar_width, label='Total Predictions')
+
+        # Plot correct predictions
+        bars_correct = ax.bar(labels, correct_preds, color=[colors[label] for label in labels], alpha=0.8, width=bar_width, label='Correct Predictions')
+
+        # Add dotted lines for correct totals
+        for i, (label, correct_total) in enumerate(zip(labels, correct_totals)):
+            ax.plot([i - bar_width / 2, i + bar_width / 2], [correct_total, correct_total], linestyle='dotted', color='black', label='Correct Total' if i == 0 else "")
+            ax.text(i, correct_total, f'{correct_total}', ha='center', va='bottom', fontsize=10, color='black')  # Add number to the dotted line
+
+        ax.set_title(title)
+        ax.set_ylabel("Count")
+        ax.set_xticks(range(len(labels)))
+        ax.set_xticklabels(labels, rotation=45, ha="right")
+
+        # Add number values above each bar
+        for bar, total, correct in zip(bars_total, total_preds, correct_preds):
+            ax.text(bar.get_x() + bar.get_width() / 2, total, f'{total}', ha='center', va='bottom', fontsize=10)
+            ax.text(bar.get_x() + bar.get_width() / 2, correct, f'{correct}', ha='center', va='bottom', fontsize=10, color='black')
+
+    # Add legend with gray color
+    legend_handles = [
+        mpatches.Patch(color='black', alpha=0.3, label='Total Predictions'),
+        mpatches.Patch(color='black', alpha=0.7, label='Correct Predictions'),
+        mpatches.Patch(color='black', linestyle='dotted', label='Correct Total')
+    ]
+    axes[0].legend(handles=legend_handles, loc='lower right')
+
+    plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
+    plt.show()
+
+def show_unsub_preds_per_error_type(data_dicts, titles):
+    """
+    Plots the distribution of error types within the unsubstantiated data rows and highlights the amount of correct predictions for each type.
+
+    Each dictionary should have the following structure:
+    {
+        '1 - Irrelevant': {'total': 14, 'correct_class': 14, 'false_class': 0},
+        '2 - Copy-Paste-Error': {'total': 3, 'correct_class': 0, 'false_class': 3},
+        '3.1 - Misunderstanding-nosup': {'total': 1, 'correct_class': 0, 'false_class': 1},
+        '3.2 - Misunderstanding-partsup': {'total': 5, 'correct_class': 1, 'false_class': 4},
+        '4 - Unwanted': {'total': 8, 'correct_class': 6, 'false_class': 2}
+    }
+    """
+    # Create subplots
+    fig, axes = plt.subplots(1, 4, figsize=(20, 6), sharey=True)
+
+    # Plot each dictionary
+    for ax, data, title in zip(axes, data_dicts, titles):
+        error_types = list(data.keys())
+        total_counts = [data[error_type]["total"] for error_type in error_types]
+        correct_counts = [data[error_type]["correct_class"] for error_type in error_types]
+
+        # Bar positions
+        x = np.arange(len(error_types))
+
+        # Plot bars
+        total_bars = ax.bar(x, total_counts, color='tab:blue', alpha=0.4, label='Total')
+        correct_bars = ax.bar(x, correct_counts, color='tab:blue', alpha=1.0, label='Correct')
+
+        # Add numbers above the bars
+        for bar, total, correct in zip(total_bars, total_counts, correct_counts):
+            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), f'{total}', ha='center', va='bottom', fontsize=10)
+        for bar, correct in zip(correct_bars, correct_counts):
+            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), f'{correct}', ha='center', va='bottom', fontsize=10)
+
+        # Set title and labels
+        ax.set_title(title)
+        ax.set_xticks(x)
+        ax.set_xticklabels(error_types, rotation=45, ha="right")
+        ax.set_ylabel("Count")
+        ax.legend()
+
+    # Adjust layout
+    plt.tight_layout()
     plt.show()

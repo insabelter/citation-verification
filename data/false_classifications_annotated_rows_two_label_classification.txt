@@ -1,0 +1,198 @@
+Row ID: 82
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r079
+Statement: Other investigations of Peptide5 in preclinical models have included elucidation of its salutary effects on retinal pigment epithelial cell barrier function [citation 107], diabetic retinopathy, and chronic kidney disease.
+
+Top 3 Chunk Texts:
+- Co-incubation of both HK2 and hPTECS with TGF-β1 and Peptide 5 significantly reduced dye uptake and restored ATP release to near basal, whilst Peptide 5 successfully prevented TGF-β1-evoked changes in expression of E-cadherin, Ncadherin, Claudin-2 and ZO-1 in human primary renal proximal tubule cells.Confirmation for Cx43 mediated ATP release in initiating these changes of early tubular injury, was confirmed in a Cx43 +/-heterogeneous knockout mouse model having undergone unilateral ureteral obstruction (UUO). The UUO model recapitulates the fundamental pathogenic mechanisms that typify all forms of CKD including diabetic nephropathy and is widely used for the study of renal fibrosis and inflammation [36]. Staining renal cortex slices from wildtype UUO mice confirmed a decrease in N-cadherin and ZO-1 expression, whilst immunoblotting of isolated renal cortex protein demonstrated reduced E-cadherin expression, with increased expression of β-catenin.
+
+- Human renal proximal tubule epithelial cells were incubated with TGF-β1 (10 ng/mL) ± Peptide 5 (25 μM) for 48 h. Co-incubation of hPTECs with TGF-β1 and Peptide 5 restored ECAD expression (Fig. 7a) from 31.5 ± 9.2% to 108.9 ± 17.1%; NCAD expression (Fig. 7b) from 280.5 ± 16.7% to 154.7 ± 10.6%; Claudin-2 expression (Fig. 7c) 65.3 ± 5.4% to 100.9 ± 10% and finally ZO-1 expression (Fig. 7c) from 59.63 ± 3.1% to 91.6 ± 12.8% as compared to low-glucose control. Incubation of cells with either Peptide 5 alone or a scrambled version of Peptide 5, failed to change expression of our candidate proteins.
+
+- For all experiments, inhibitors alone failed to induce any significant change in expression. Peptide 5 inhibits TGF-β1-induced Cx43 hemichannel activity and ATP releaseTo study the efficacy of Peptide 5 in blocking Cx43 mediated hemichannel activity in renal tubule epithelial cells, HK2 and hPTECs were incubated in TGF-β1 (10 ng/mL) ± Peptide 5 (25 μM) for 48 h. Dye uptake increased in TGF-β1-treated HK2 cells to 609.4 ± 46% compared to unstimulated control (Fig. 6a &b), whilst co-incubation with Peptide 5 reduced uptake to 163 ± 10.2%. Co-incubation with scrambled peptide failed to blunt the TGF-β1 response (671.5 ± 29.5%, Fig. 6a &b). The effects were matched in primary hPTECS, where Peptide 5 significantly reduced uptake to 141.7 ± 16.3% from 311.2 ± 39.6% in TGF-β1 treated cells (Fig. 6c &d).
+
+
+Model Explanation:
+The reference article provides evidence that Peptide 5 has a protective effect on early tubular injury in experimental chronic kidney disease by inhibiting Cx43-mediated hemichannel activity and ATP release, which is consistent with the statement that Peptide 5 has salutary effects on chronic kidney disease.
+================================================================================
+
+
+
+
+Row ID: 88
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r084
+Statement: In early studies, anti-Scl-70 was identified in 20% of scleroderma sera, but, with the use of a more stable antigen, other studies reported the frequency of this antibody to be 75% in this disease [citation 8].
+
+Top 3 Chunk Texts:
+- Nucleolar staining without any associated patterns was found in five cases, four of acrosclerosis and one of diffuse scleroderma, all negative for Scl 70. DISCUSSIONScl 70 antibody was found to be a specific serological marker of systemic scleroderma. In our series it was detected at a much higher frequency than reported in previous publications (Tan et al., 1980;Catoggio et al., 1983), but comparable results have been reported recently by Takehara,Moroi and Ishibashi (t985). The higher detection rates of Scl 70 in our study, 77",, in 13652133, 1986, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/j. 1365-2133.1986.tb06233.x by Hochschule Mannheim, Wiley Online Library on [05/03/2025].
+
+- Thus, it is conceivable that Scl 70 antibody occurs even more frequently than detected in our study.In contrast to ACA antibody, which is a marker of an abortive subset of acrosclerosis with almost no cutaneous indurations (Chorzelski et al., 1985), Scl 70 is a marker of systemic sclerosis as a whole, with prevalence in diffuse scleroderma, but present also in a high proportion of cases of acrosclerosis. Thus, it does not discriminate between the subsets of systemic scleroderma. There were only slight clinical differences between cases positive and negative for Scl 70.
+
+- Conversely, patients with acrosclerosis negative for ACA were found to be positive for Scl 70 in 63"(, cases, whereas in acrosclerosis patients as a whole Scl 70 antibody was present in 44",, ofthe cases (Table 1).It should be emphasized that among 39 cases of diffuse scleroderma, 16 observed by us for more than 10 years were classified initially as severe acrosclerosis or transitional form, acrosclerosis-diffuse scleroderma. The frequency of Scl 70 antibody in this group was 12 of 16 C75"o), ie. essentially the same as in typical cases of diffuse scleroderma. Therefore, the transitional form was grouped with diffuse scleroderma.Immunofiuorescence studies on HEp-2 showed a characteristic pattern with all sera positive in the immunodiffusion test for Scl 70 antibody. The fiuorescence pattern was almost homogeneous due to diffuse fine, densely packed speckles associated, in most cases, with weak nucleolar staining (Fig.
+
+
+Model Explanation:
+The reference article reports that Scl 70 antibodies were found in 77% of diffuse scleroderma cases and 63% of acrosclerosis cases negative for ACA, which aligns with the statement's claim of a frequency of '75%' when using a more stable antigen.
+================================================================================
+
+
+
+
+Row ID: 90
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r086
+Statement: The relative topography of the origins of the renal aa. from the aorta was found to be variable, thus confirming earlier observations from angiographic studies in which the right a. arose more proximally in 65% of cases [citation 12].
+
+Top 3 Chunk Texts:
+- to be 55.7% [10]. Our findings were more compatible with the findings of Odman and Ranniger, since the incidence of lateral and anterolateral locations were 48.3% and 31.6%, respectively. According to Odman and Ranniger, the ostium of the right renal a. was located more on the anterior wall and that of the left renal a. on the lateral wall of the abdominal aorta. These authors also reported that renal aa. originating from the anterior wall had a more cranial position near the ostium of the superior mesenteric a. [ 10].We found that renal ostia on the lateral wall of the abdominal aorta had a cranial, but ostia on the anterolateral wall a caudal position. This result accounted for the more cranial position of the right renal ostium in relation to the left renal ostium. Extreme (anterior or posterior wall) locations of renal ostia on the aortic wall have been reported to be related to developmental variations of the mesonephric aa.
+
+- Following this, the locations of the ostia of the renal aa. on the internal wall of the abdominal aorta were examined relative to the ostia of the arteries mentioned earlier. The ostium of the superior mesenteric a. was usually localized on the inferior-fight side of the ostium of the celiac trunk. The mean value of the distance between the ostia was 17.9 mm. The ostium of the right renal a. was more cranial than the ostium of the left renal a. (53.3%). However, the ostia of both right and left renal aa. were at the same level in three cases (10%). Locations of the ostia of the renal aa. were usually on the lateral and anterolateral regions of the aortic wall. This study was carried out in order to contribute to selective angiography and surgical interventions for the removal and transplantation of organs, particularly of the kidney. Our results are compared with previous similar studies in man.
+
+- measured from the critical pointsOstiaLeft renal a.Right renal a.CeliacVCLRoVCRRoostium33.2 mm30.0 mmSuperiorVMLRoVMp, aoostium17.4 ram13.9    ReceivedNovember 5, 1996  / Accepted in final formJuly 22, 1997               Acknowledgement. We are very gratefull to Necati Oguz, Head of the English Department of our academy, for the language editing of this text.                    Common variations in renal anatomy, affecting blood supply, form and topography       BJAnson          EHDaseler          Surg Gynecol Obstet       112        1961             The aortic origin of renal arteries       FWBauer          Arch Pathol       86        1968             A postmortem study comparing renal angiograms and renal a. casts in 58 patients       FWBauer          SLRobbins          Arch Pathol       83        1967
+
+
+Model Explanation:
+The reference article supports the statement that the right renal artery arose more proximally in a significant percentage of cases. Specifically, Excerpt 2 states that 'The ostium of the right renal a. was more cranial than the ostium of the left renal a. (53.3%)', which is similar to the cited figure of 65%.
+================================================================================
+
+
+
+
+Row ID: 97
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r089
+Statement: For example, a recent study exploring the mechanisms of liver regeneration showed that IL-4 receptor signaling in hepatocytes is required for proliferation after injury, with eosinophils delivering the IL-4 [citation 49].
+
+Top 3 Chunk Texts:
+- 4M). Although the initial extent of liver damage was similar in both groups of mice (Fig. S10A), hepatocyte proliferation, as fied by nuclear staining for K i 67 (Fig. S10B), was increased by ∼22% in IL-4-treated animals (Fig. 4N). Furthermore, this increase in hepatocyte proliferation was associated with a ∼43% decrease in necrotic cell area (Fig. 4O and Fig. S10C), suggesting a potential therapeutic benefit of IL-4 in acute liver injury. DiscussionThe regenerative capacity of the liver in part reflects its susceptibility to damage by ingested toxins and pathogenic infections. As such, multiple homeostatic mechanisms are activated on injury to initiate liver regeneration, each contributing only partially to the restoration of liver function (1,2). Here, we have demonstrated a role for eosinophils in orchestrating the regrowth of liver after injury. Moreover, our work has elucidated a direct mechanism by which eosinophil-derived IL-4 signals via the hepatocyte IL-4Rα to stimulate liver regeneration.
+
+- Interestingly, signaling via the IL-4Rα in myeloid cells is not required for mediating the regenerative actions of type 2 cytokines in injured liver. Rather, type 2 cytokines stimulate liver regeneration, in part, via activation of the IL-4Rα on hepatocytes. ResultsEosinophils Are Recruited to the Liver After Hepatic Injury. To identify potential immune cells that participate in liver regeneration, we examined the immune cell repertoire of regenerating livers. Injury induced by partial hepatectomy or carbon tetrachloride (CCl 4 ) led to a dramatic increase in the recruitment of innate immune cells, including eosinophils, neutrophils, macrophages, and dendritic cells (Figs. S1 A and B, and S2), which coincided with the onset of hepatocyte proliferation. In contrast, the content of adaptive immune cells did not change significantly in these models of liver injury (Figs. S1 C and D and S2).
+
+- S4 A and B). These results highlight a previously unappreciated role for eosinophils in inducing hepatocyte proliferation after injury and implicate eosinophil-derived factors in the orchestration of liver regeneration.Eosinophils Recruited to Injured Liver Secrete IL-4. Among the factors secreted by eosinophils, IL-4 has been implicated in both wound repair and liver regeneration (8,12,(19)(20)(21). We thus evaluated the competence of eosinophils for IL-4 secretion in injured liver. After CCl 4 -induced liver injury, eosinophils, which can be distinguished by their expression of sialic acid-binding Ig receptor (Siglec-F) (15), were the predominant cell type competent for IL-4 secretion (Fig. 2A and Fig. S5B) in IL-4 reporter mice (4get mice), a knock-in strain expressing the green fluorescent protein (GFP) from the IL-4 locus (22). Similarly, partial hepatectomy in 4get mice demonstrated that ∼81-84% of GFP + cells were eosinophils (Fig. 2B and Fig.
+
+
+Model Explanation:
+The reference article supports the statement by demonstrating that eosinophils secrete IL-4 to facilitate liver regeneration, and that IL-4 signaling via the IL-4Rα in hepatocytes is required for proliferation after injury.
+================================================================================
+
+
+
+
+Row ID: 101
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r092
+Statement: We reconstituted FUS compartments in vitro at physiological concentration using low salt (70 mM) buffer conditions and tested the effect of ATP around its physiological concentration range of 2 to 8 mM, complexed with Mg2+ ions (ATP-Mg) [citation 10].
+
+Top 3 Chunk Texts:
+- Within the physiological range of free [Mg 2ϩ ] from 0.25 to 1.5 mM, the h ␤/␣ varies over 2-fold (b, experimental; d, theoretical) making this measurement sensitive to changes in free cytosolic [Mg 2ϩ ] within living cells. h␤/␣ Max term is the maximum ␤/␣ peak height ratio of the two phosphorus nuclei within the same ATP molecule observed at 0 and saturating free [Mg 2ϩ ]. Within the range of [Mg 2ϩ ] tested, the number of total ATP, ATP Tot , may be represented by: ATP Tot ϭ P ␣ Ϫ ϩ HP ␣ ϭ P ␤ Ϫ ϩ HP ␤ ϩ MgP ␤ (Eq. 10) FIG. 6 .6FIG. 6.
+
+- FIG. 1 .1FIG. 1. Structure of MgATP. At pH between 7.0 and 7.3, raising the free [Mg 2ϩ ] from 0.25 to about 1.0 mM free [Mg 2ϩ ] increased the chemical shift of the ␣ resonance of ATP by 0.06 ppm, ␤ by 0.40 ppm and ␥ by 0.39 ppm. Such observations have led to the inference that Mg 2ϩ forms ionic bonds with the ␤ and ␥ phosphate of ATP, but not to the ␣. FIG. 2 .2FIG. 2. Plot of the 31 P NMR spectral experimental (a) chemical shift difference of P i from phosphocreatine, ␦ P i , and the theoretical (b) surface relating ␦ P i to both pH and free [Mg 2؉ ].
+
+- In tissues containing mitochondria, where there is significant compartmentation of ADP (3), use of the metabolite ratio of the myokinase reaction is unsuitable, but changes induced by alteration of free [Mg 2ϩ ] in the equilibrium ratio of [citrate]/[isocitrate] agreed well with the estimation of free [Mg 2ϩ ] by other means (9). Supporting the role of intracellular citrate as a natural indicator of free [Mg 2ϩ ] was the observation that the chemical shift of the citrate resonance in 13 C NMR spectra of rat liver perfused with acetate, gave a free [Mg 2ϩ ] of 0.46 mM (14). However, citrate levels in most normal tissues are below the sensitivity of 13  31 P (15) and combined 1 H, 31 P NMR (16,17) studies of the effects of Mg 2ϩ on ATP have shown that Mg 2ϩ induces the greatest chemical shift of the ␤ and the least on the ␣ resonance at physiological pH.
+
+
+Model Explanation:
+The reference article does not provide any information on the physiological concentration range of ATP (2-8 mM) or its complexation with Mg2+ ions. The article focuses on the effects of free [Mg2+] on ATP and the estimation of free [Mg2+] using 31P NMR, but it does not substantiate the specific claim made in the statement.
+================================================================================
+
+
+
+
+Row ID: 104
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r095
+Statement: Pitt-Hopkins syndrome (PHS) is characterized by abnormal craniofacial and neural development, severe mental retardation, and motor dysfunction and is caused by haplo-insufficiency of 7CF4,which encodes the E2-2 transcription factor—a central regulator of pDC development [citation 36].
+
+Top 3 Chunk Texts:
+- Some of the players are known, including pDCenriched transcription factors Irf8 and SpiB. Both genes represent direct targets of E2-2 (32), although their own binding targets and precise role in pDC development and/or function remain to be established. Others, such as the highly pDC-enriched transcription factor Runx2 (25) and other candidates, must be characterized from scratch. Finally, it should be of interest to elucidate the epigenetic events (e.g., chromatin modifications) that accompany pDC commitment, maintenance, and activation. A Novel pDC-Related Dendritic Cell SubsetA simple linear view of E2-2-driven pDC development recently became more complicated, as a novel pDC-related cDC subset in mice was identified using Cx3cr1 as a marker (60). Unlike the classical CD8 + cDCs, the alternative CD8-expressing Cx3cr1 + cDCs develop independently of transcription factor Batf3, do not cross-present antigen, and cannot be expanded by Flt3L.
+
+- Importantly, pDCs show particularly low expression of the E protein inhibitor Id2, in contrast to abundant Id2 expression in T,NK, and myeloid cells (25,32). The absence of Id2 expression likely serves as an important counterpart of E2-2 upregulation, increasing the effective E2-2 concentration in pDCs (Figure 1).Every lineage commitment step involves the establishment of a lineage-specific gene expression program, as well as the suppression of alternative lineage programs. Our recent genome-wide analysis of E2-2 binding to promoters in the human pDC cell line (57) suggests that E2-2 is directly involved in both activities. We found that E2-2 binds to a large fraction of pDC-enriched genes, including highly pDC-specific genes such as LILRA4 (ILT7) (58) and PACSIN1 (59). In addition, E2-2 appears to bind directly to and repress several hallmark genes of the alternative cDC fate, such as ITGAX (CD11C) and ID2 itself.
+
+- Furthermore, the isolation of human pDCs based on their specific marker BDCA-2 (an inhibitory receptor) impairs their IFN production capacity. To boost the frustratingly low pDC numbers in mice, many studies inject a Flt3 ligand (Flt3L)-expressing melanoma cell line (40). This approach should be discouraged because the resulting gross tumor and supraphysiological Flt3L levels likely affect pDC ground state and functionality. Another practical consideration involves gene targeting in mice: Some Crerecombinase-expressing deleter strains such as the T cell-specific CD4-Cre strain mediate efficient off-target recombination in pDCs (41). Thus, a careful analysis of recombination in pDCs is required to exclude its potential contribution to the phenotype in conditional targeting experiments. THE DEVELOPMENT OF pDCsWe have recently reviewed the developmental origin and transcriptional control of the pDC lineage (6). Here we provide a brief update and highlight several issues that await resolution in future studies. Some of the points discussed below are incorporated into the proposed scheme of pDC development (Figure 1).
+
+
+Model Explanation:
+The reference article does not mention Pitt-Hopkins syndrome, its characteristics, or the relationship between haplo-insufficiency of TCF4 and E2-2 transcription factor. The article only discusses pDC biology and the role of E2-2 in pDC development.
+================================================================================
+
+
+
+
+Row ID: 105
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r096
+Statement: This collection included 84% of the high-confidence TFs described by Vaquerizas et al. [citation 23]
+
+Top 3 Chunk Texts:
+- Finally, we also included 27 curated probable TFs from other sources, such as GO or TRANSFAC 33 ; these TFs contain undefined DNAbinding domains, and were therefore missed using the above procedure.This resulted in a highconfidence data set of 1,391 genomic loci (~6% of the total number of protein coding genes) that encode TFs, which we will focus on for the remainder of this Analysis article, and a further 216 loci representing possible TFs (see Supplementary information S3 (.txt file) for the data set). estimates of the coverage of our approach range from 85% to 94% (Supplementary information S1 (PDF)) suggesting an upper bound of ~1,700-1,900 TFcoding genes in the human genome.Despite the care that we have taken in compiling this data set, there are a few possible sources of inaccura cies. Our method depends heavily on the content of the InterPro database, and the ability of the search algo rithms to detect these domains in protein sequences. The repertoire should be updated when new InterPro entries for newly discovered DNAbinding domains, or refinements of existing ones, and more sensitive search methods become available.
+
+- This type of information will be revealed through further experiments and advances in the methods used to determine the transcriptional regulatory networks. ConclusionsThis Analysis article has presented a census of sequence specific DNAbinding TFs in the human genome. Transcriptional regulation in higher organisms is of great current research interest; however, much of the work so far has focused on identifying binding sites through a combination of experimental methods, such as chroma tin immunoprecipitation and computational predictions using motif searches. A major limitation to studying the regulators themselves has been the lack of a reliable data set of TFs in the human genome, a difficulty that is com pounded by the large number of false predictions that can accompany the automated identification of genes encod ing DNAbinding domains. By manually inspecting every entry in the data set, we have minimized such errors. As a result the repertoire here is of high quality, and can be used as a basis to design further computational and experimental studies.Most of these TFs remain uncharacterized: this is highlighted by the observation that just three regulators (p53, eR and FOS) have more publications than all the other TFs put together.
+
+- This group of proteins mapped to 1,960 human genomic loci in the ensembl Genome Browser database (release 51) 32 .Next, we manually inspected each locus and grouped them according to our confidence in their TF func tionality (Supplementary information S1 (PDF); the full data set is found in Supplementary information S3 (.txt file)): at the highest level, probable TFs have experi mental evidence for regulatory function in any mam malian organism or have an equivalent protein domain arrangement; possible TFs contain nonpromiscuous InterPro DNAbinding domains that are never found in nonTFs, but for which we do not have further func tional evidence; and unlikely TFs comprise predicted genes, genes containing promiscuous InterPro DNA binding domains or genes with an established molecular function other than transcription (such as nucleoporins, threonine phosphatases or splicing factors).
+
+
+Model Explanation:
+The reference article does not mention the percentage of high-confidence TFs that were included in another collection, nor does it provide a specific number of high-confidence TFs that can be used to calculate such a percentage.
+================================================================================
+
+
+
+
+Row ID: 135
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r119
+Statement: Li columns with a small average diameter (0.3 ~ 0.4 μm) were obtained in the nanodiamond-containing electrolyte, leading to a dendrite-free morphology [citation 40].
+
+Top 3 Chunk Texts:
+- [ 25 ] However, a large quantity of micro-sized Li dendrites is observed in case of plate Li metal anode while the nanostructured metallic Li anode is dendritefree when applying a huge current density of 10 mA cm -2 based on the surface of fl at electrode (Figure 3 e,f). For plate Li metal electrode, the huge uptake of current results in strong local electrical fi eld and extremely high concentration gradient of Li ions as driven force for high throughput transportation of electrons from electrode and ions from electrolyte, which is benefi cial for the dendrite growth. While for the nanostructured metallic Li anode, its 3D nanostructure with abundant electrode/electrolyte interfaces lower the absolute local current density even though applying the same current as Li anode. Thus both the gradients of electrical fi eld and Li ion concentration at local regions are reduced to orders of magnitude towards increased Sand's time and dendritefree morphology. [ 9,30 ] Also, due to the nanosized matrix, the growth of Li crystal is also self-restricted in principles shown in Figure 1 .
+
+- Note that the electrolyte is lithium nitrate-free.Figure 22Figure 1. (a) Schematic illustrations of Li dendrite growth on the plate Li metal and Li deposits on nanostructured anode with metallic Li contained in fi brous Li 7 B 6 matrix.(b) The relationship between the current density ( J )/relative electric fi eld strength ( Q dendrite / Q supporter ) to dendrite-Li and matrix size.(c) The size-time dependence of Li deposits on the nanostructured and plate Li anode, t 1 , t 2 , R 1 , R 2 were the cut-off time of dendrite-Li growth and max size of Li dendrites on the nanostructured and plate Li metal anode, respectively (t 1 < t 2 , R 1 < R 2 ). Figure 2 .2Figure 2. (a) Typical galvanostatic charge/discharge behavior of nanostructured anode with metallic Li contained in fi brous Li 7 B 6 matrix at a current density of 0.3 mA cm -2 with plate Li metal as counter electrode.
+
+- However, once the Li deposit initiates, it would grow continuously because Li deposit in the initial time is with a small size that holds a strong electric fi eld strength, thus favoring the adsorption and deposition of lithium ions (Figure 1 b). When the Li deposit size is beyond that of the matrix, Li + adsorption and deposition ability of the deposits will be below the matrix and then Li + deposits on the matrix rather than on the dendrites continually. Thus, the nanostructured LiB alloy anode not only reduces the current density, which decreases the growth velocity of Li deposits, but also limits the fi nal size of deposited Li on the nanostructured matrix, which leads to the dendrite-free morphology at macroscale (Figure 1 c). Consequently, the Li deposits on the nanostructured anode with metallic Li embeded in fi brous Li 7 B 6 matrix are always with smaller size than that on the plate Li metal anode.
+
+
+Model Explanation:
+The reference article does not mention nanodiamonds or their effect on lithium dendrite growth, nor does it report a specific average diameter of Li columns (0.3 ~ 0.4 μm) in the context of suppressing dendrite growth.
+================================================================================
+
+
+
+
+Row ID: 228
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r218
+Statement: Traditional approaches that rely on an integer linear program (ILP) formulation, such as ref. [citation 19], also provide anytime guarantees for the multivehicle-routing problem.
+
+Top 3 Chunk Texts:
+- 1} ∀i ∈ N, j ∈ N, k ∈ K. (14)The objective function (1) minimizes the total routing cost. Constraints (2) and (3) ensure that each request is served exactly once and that the origin and destination nodes are visited by the same vehicle. Constraints (4)-( 6) guarantee that the route of each vehicle k starts at the origin depot and ends at the destination depot. Consistence of the time and load variables is ensured by constraints ( 7) and (8). Equalities (9) define the ride time of each user which is bounded by constraints (12). It is worth mentioning that the latter also act as precedence constraints because the non-negativity of the L k i variables ensures that node i will be visited before node n + i for every user i. Finally, inequalities (10) bound the duration of each route while ( 11) and ( 13) impose time windows and capacity constraints, respectively. This formulation is non-linear because of constraints ( 7) and ( 8).
+
+- Although no polyhedral analysis was carried out, the usefulness of these inequalities has been demonstrated through computational experiments. A comparison with version 8.1 of CPLEX shows that the branch-and-cut algorithm proposed here reduces both the CPU time and the number of nodes explored in the branch-and-bound tree. The methodology proposed in this paper obviously cannot be used to solve large-scale instances containing hundreds or thousands of users as it is sometimes the case in large cities. It is, however, fast enough to be used as a post-processor to optimize individual routes or small subsets of routes produced by a meta-heuristic. In the presence of ride time constraints, using dynamic programming would be difficult since the states of the dynamic programming algorithm would have to take into account the individual ride time of each user. Future work will concentrate on the development of more refined separation procedures for the various types of inequalities introduced in this paper.for U 1 must visit node n + i 2 before visiting node i 1 . In addition, this path must appear immediately before the arc (i 1 , n + i l ) in the solution. Now, for k = 2, . . .
+
+- A Heuristic Algorithm for the Multi-Vehicle Advance-Request Dial-a-Ride Problem with Time Windows       JJaw          AROdoni          HNPsaraftis          NH MWilson          Transportation Research B       20        1986             Approximation Algorithms for Combinatorial Optimization Problems       DSJohnson          Journal of Computer and System Sciences       9        1974             A Heuristic Algorithm for a Dial-a-Ride Problem with Time Windows, Multiple Capacities, and Multiple Objectives       OB GMadsen          HFRavn          JMRygaard          Annals of Operations Research       60        1995             Integer Programming Formulations and Traveling Salesman Problems       CEMiller          AWTucker          RAZemlin          Journal of the Association for Computing Machinery       7        1960
+
+
+Model Explanation:
+The reference article does not mention 'anytime guarantees' or 'multivehicle-routing problem'. It presents a mixed-integer programming formulation and a branch-and-cut algorithm for the dial-a-ride problem, but does not discuss anytime guarantees or multivehicle routing.
+================================================================================
+
+
+
+

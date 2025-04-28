@@ -1,4 +1,5 @@
 from tabulate import tabulate
+import pandas as pd
 
 def eval_predictions_all_labels(df, include_not_originally_downloaded=True, only_accuracy=False):
     total = 0
@@ -221,3 +222,29 @@ def print_table_label_accuracies(label_accuracies, string_given=False, two_label
 
     # Display the table
     print(tabulate(table_data, headers=headers, tablefmt='pretty'))
+
+def calc_preds_per_error_type(df):
+    """
+    Calculates the number total, correct and false class predictions for the unsubstantiated rows per error type in the DataFrame.
+    """
+    error_types = list(df['Error Type'][df['Error Type'].notna()].unique())
+    error_types.sort()
+
+    preds_per_error_type = {
+        error_type: {
+            "total": 0,
+            "correct_class": 0,
+            "false_class": 0
+        } for error_type in error_types
+    }
+
+    for _, row in df[df['Label'] == 'unsubstantiate'].iterrows():
+        assert pd.notna(row['Error Type']), f"Error Type is NaN for row: {row}"
+        error_type = row['Error Type']
+        preds_per_error_type[error_type]['total'] += 1
+        if row['Model Classification Label'] == row['Label']:
+            preds_per_error_type[error_type]['correct_class'] += 1
+        else:
+            preds_per_error_type[error_type]['false_class'] += 1
+
+    return preds_per_error_type

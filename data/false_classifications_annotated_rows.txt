@@ -1,0 +1,286 @@
+Row ID: 52
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r050
+Statement: Randomly amplified polymorphic DNA (RAPD), amplified fragment length polymorphism (AFLP), simple sequence repeat (SSR), inter simple sequence repeat (ISSR), and inter-retrotransposon amplified polymorphism (IRAP) have all been used to measure genetic variation and relationships in cultivars and landraces in recent years [citation].
+
+Top 3 Chunk Texts:
+- But it is considered to be anodyne, astringent and vulnerary. It has minerals, vitamins, antioxidants and fibre.Molecular markers are useful in identifying the maximally diverse parental genotypes through an evaluation of genetic diversity which is useful in cultivar identification and breeding. Among the various molecular markers, Random Amplified Polymorphic DNA (RAPD) and Inter-Simple Sequence Repeat (ISSR) are simple and quick techniques and have become popular as their application does not need any prior information about the target sequences in the genome, high-efficiency and sharp sensibility, and these techniques have now been widely used for line identification and genetic diversity. These markers have been used in DNA fingerprinting, conservation biology, identification and determination of species relationships in many plants [16,17]. G. molle grows in different regions of Iran and comprises many local geographical populations. Therefore, the present study was performed for the first time in the country to investigate the genetic structure and diversity of these local populations. The results of present study may have positive effect on conservation strategy and future breeding of this medicinally important plant.
+
+- The quality of extracted DNA was examined by running on 0.8% agarose gel. 10 ISSR primers; (AGC) 5 GT, (CA) 7 GT, (AGC) 5 GG, UBC810, (CA) 7 AT, (GA) 9 C, UBC807, UBC811, (GA) 9 T and (GT) 7 CA commercialized by UBC (the University of British Columbia) were used. PCR reactions were carried in a 25 μl volume containing 10 mM Tris-HCl buffer at pH 8; 50 mM KCl; 1.5 mM MgCl 2 ; 0.2 mM of each dNTP (Bioron, Germany); 0.2 μM of a single primer; 20 ng genomic DNA and 3 U of Taq DNA polymerase (Bioron, Germany).
+
+- We used ISSR molecular markers in the present study as these markers were shown to be informative for genetic diversity and population structure studies [18][19][20]. MATERIALS AND METHODS Plant MaterialsFor morphometric studies we used 132 plant specimens (5-12 samples from each populations), and for ISSR analysis, we used 109. Different references were used for the correct identification of species (G. molle), [4,8,10,21,22]. Details of sampling sites are mentioned (Table 1, Fig. 1). Voucher specimens are deposited in Herbarium of Shahid Beheshti University (HSBU). Morphological StudiesIn total 80 morphological (42 qualitative, 38 quantitative) characters were studied. 5-12 plants from each populations were randomly studied for morphological analyses (Table 2).  DNA Extraction and ISSR AnalysesFresh leaves were used randomly from 5-10 plants in each of the studied populations. These were dried by silica gel powder. CTAB activated charcoal protocol was used to extract genomic DNA [20]. The quality of extracted DNA was examined by running on 0.8% agarose gel.
+
+
+Model Explanation:
+The reference article supports the use of ISSR markers, but does not mention RAPD, AFLP, SSR, or IRAP markers being used to measure genetic variation and relationships in cultivars and landraces.
+================================================================================
+
+
+
+
+Row ID: 82
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r079
+Statement: Other investigations of Peptide5 in preclinical models have included elucidation of its salutary effects on retinal pigment epithelial cell barrier function [citation 107], diabetic retinopathy, and chronic kidney disease.
+
+Top 3 Chunk Texts:
+- Co-incubation of both HK2 and hPTECS with TGF-β1 and Peptide 5 significantly reduced dye uptake and restored ATP release to near basal, whilst Peptide 5 successfully prevented TGF-β1-evoked changes in expression of E-cadherin, Ncadherin, Claudin-2 and ZO-1 in human primary renal proximal tubule cells.Confirmation for Cx43 mediated ATP release in initiating these changes of early tubular injury, was confirmed in a Cx43 +/-heterogeneous knockout mouse model having undergone unilateral ureteral obstruction (UUO). The UUO model recapitulates the fundamental pathogenic mechanisms that typify all forms of CKD including diabetic nephropathy and is widely used for the study of renal fibrosis and inflammation [36]. Staining renal cortex slices from wildtype UUO mice confirmed a decrease in N-cadherin and ZO-1 expression, whilst immunoblotting of isolated renal cortex protein demonstrated reduced E-cadherin expression, with increased expression of β-catenin.
+
+- Human renal proximal tubule epithelial cells were incubated with TGF-β1 (10 ng/mL) ± Peptide 5 (25 μM) for 48 h. Co-incubation of hPTECs with TGF-β1 and Peptide 5 restored ECAD expression (Fig. 7a) from 31.5 ± 9.2% to 108.9 ± 17.1%; NCAD expression (Fig. 7b) from 280.5 ± 16.7% to 154.7 ± 10.6%; Claudin-2 expression (Fig. 7c) 65.3 ± 5.4% to 100.9 ± 10% and finally ZO-1 expression (Fig. 7c) from 59.63 ± 3.1% to 91.6 ± 12.8% as compared to low-glucose control. Incubation of cells with either Peptide 5 alone or a scrambled version of Peptide 5, failed to change expression of our candidate proteins.
+
+- For all experiments, inhibitors alone failed to induce any significant change in expression. Peptide 5 inhibits TGF-β1-induced Cx43 hemichannel activity and ATP releaseTo study the efficacy of Peptide 5 in blocking Cx43 mediated hemichannel activity in renal tubule epithelial cells, HK2 and hPTECs were incubated in TGF-β1 (10 ng/mL) ± Peptide 5 (25 μM) for 48 h. Dye uptake increased in TGF-β1-treated HK2 cells to 609.4 ± 46% compared to unstimulated control (Fig. 6a &b), whilst co-incubation with Peptide 5 reduced uptake to 163 ± 10.2%. Co-incubation with scrambled peptide failed to blunt the TGF-β1 response (671.5 ± 29.5%, Fig. 6a &b). The effects were matched in primary hPTECS, where Peptide 5 significantly reduced uptake to 141.7 ± 16.3% from 311.2 ± 39.6% in TGF-β1 treated cells (Fig. 6c &d).
+
+
+Model Explanation:
+The reference article provides evidence that Peptide 5 has salutary effects on tubular injury in experimental chronic kidney disease, which supports the statement. Excerpts 1-3 demonstrate that Peptide 5 inhibits Cx43 hemichannel activity and ATP release, reduces TGF-β1-evoked changes in expression of tight junction proteins, and restores epithelial integrity.
+================================================================================
+
+
+
+
+Row ID: 87
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r083
+Statement: T-cell subpopulations in granuloma annulare were predominantly identified as helper/inducer cells, and the number of S100 positive dendritic cells within the epidermis and dermis was increased in granuloma annulare [citation 13].
+
+Top 3 Chunk Texts:
+- '*^''' Vascular changes are few."* A cell-mediated immune reaction has been implicated with the demonstration of increased numbers of T helper/inducer lymphocytes within the granulomatous infiltrate, an increased number of 0KT6 positive Langerhans cells within epidermis and dermis, and increased HLA-DR antigen and interleukin 2 receptor expression.' ^ The increased numbers of S100 positive cells in granuloma annulare lends some support to these findings, but the numbers are higher in necrobiosis Hpoidica and other known type IV delayed hypersensitivity reactions."^ In conclusion, an increase in the number of epidermal dendritic Sioo positive cells above the basal layer, as well as implicating a cell mediated immune-reaction, may provide an adjunct to histological means of distinguishing between necrobiosis lipoidica and granuloma annulare.FIGURE !. Dendritic S ioo protein positive cells seen within the epidermis in a case of necrobiosis lipoidica ( X 204).
+
+- Using this method, S100 positive, basal melanocytes were excluded. Counts were expressed as the number of epidermal dendritic Sioo positive cells per 200 basal cells.Student's unpaired r-test was used to assess statistical differences between necrobiosis lipoidica, granuloma annulare, and the control group. RESULTSAll the biopsies were of predominantly lesional skin. There was no disparity between the histological and clinical diagnoses in any of the cases. All showed the recognized features of collagen degeneration, some having palisaded granulomas. In the majority, the full thickness of the biopsy that included the tower reticular dermis was involved by the lesions.Dendritic cells were seen positively stained, lying between keratinocytes, within the epidermis (Fig. i). There was an increase in numbers of epidermal dendritic Sioo positive cells in both granuloma annulare (mean 80) and necrobiosis lipoidica (mean 24 5), compared with normal skin controls (mean 37) (see Table i}.
+
+- Histologic, ultrastructural, and hisiochemical studies of granuloma annulare       PIi Umbert          RKWinkelmann          Arch Dermaiol       113    12    1977             Immunopathologic demonstration of T lymphocyte subpopulations and interleukin 2 in granuloma annulare       Modlinrl          DAHorwitz          RRJordan          Paediainc Dermaiol       2        1984
+
+
+Model Explanation:
+The reference article supports the statement that T-cell subpopulations in granuloma annulare were predominantly identified as helper/inducer cells, but it does not support the claim that the number of S100 positive dendritic cells within the epidermis and dermis was increased in granuloma annulare compared to normal skin. In fact, the reference article states that while there is an increase in numbers of epidermal dendritic Sioo positive cells in both granuloma annulare and necrobiosis lipoidica compared with normal skin controls, the numbers are actually higher in necrobiosis lipoidica.
+================================================================================
+
+
+
+
+Row ID: 88
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r084
+Statement: In early studies, anti-Scl-70 was identified in 20% of scleroderma sera, but, with the use of a more stable antigen, other studies reported the frequency of this antibody to be 75% in this disease [citation 8].
+
+Top 3 Chunk Texts:
+- Nucleolar staining without any associated patterns was found in five cases, four of acrosclerosis and one of diffuse scleroderma, all negative for Scl 70. DISCUSSIONScl 70 antibody was found to be a specific serological marker of systemic scleroderma. In our series it was detected at a much higher frequency than reported in previous publications (Tan et al., 1980;Catoggio et al., 1983), but comparable results have been reported recently by Takehara,Moroi and Ishibashi (t985). The higher detection rates of Scl 70 in our study, 77",, in 13652133, 1986, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/j. 1365-2133.1986.tb06233.x by Hochschule Mannheim, Wiley Online Library on [05/03/2025].
+
+- Thus, it is conceivable that Scl 70 antibody occurs even more frequently than detected in our study.In contrast to ACA antibody, which is a marker of an abortive subset of acrosclerosis with almost no cutaneous indurations (Chorzelski et al., 1985), Scl 70 is a marker of systemic sclerosis as a whole, with prevalence in diffuse scleroderma, but present also in a high proportion of cases of acrosclerosis. Thus, it does not discriminate between the subsets of systemic scleroderma. There were only slight clinical differences between cases positive and negative for Scl 70.
+
+- Conversely, patients with acrosclerosis negative for ACA were found to be positive for Scl 70 in 63"(, cases, whereas in acrosclerosis patients as a whole Scl 70 antibody was present in 44",, ofthe cases (Table 1).It should be emphasized that among 39 cases of diffuse scleroderma, 16 observed by us for more than 10 years were classified initially as severe acrosclerosis or transitional form, acrosclerosis-diffuse scleroderma. The frequency of Scl 70 antibody in this group was 12 of 16 C75"o), ie. essentially the same as in typical cases of diffuse scleroderma. Therefore, the transitional form was grouped with diffuse scleroderma.Immunofiuorescence studies on HEp-2 showed a characteristic pattern with all sera positive in the immunodiffusion test for Scl 70 antibody. The fiuorescence pattern was almost homogeneous due to diffuse fine, densely packed speckles associated, in most cases, with weak nucleolar staining (Fig.
+
+
+Model Explanation:
+The reference article supports the statement that the frequency of anti-Scl-70 antibody is higher than 20%, but it does not provide evidence for a specific frequency of 75% in scleroderma sera. The article reports frequencies of Scl 70 antibodies ranging from 44% to 77% depending on the subset of systemic sclerosis.
+================================================================================
+
+
+
+
+Row ID: 89
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r085
+Statement: Indeed, numerous growth factors and cytokines have been reported to be synthesized by epidermal cells. These include TGF-α, a-FGF, b-FGF, PDGF, TGF-ß, amphiregulin, HB-EGF, NGF, TNF-ct, ILla, IL-lß, IL-6, IL-8, GM-CSF, G-CSF, and MCSF.[citation 24]
+
+Top 3 Chunk Texts:
+- "6 Other authors8,19 have noted this so-called edge effect, and some have also ex¬ pressed the idea that the epithelial cells elaborate growth factors responsible for the rapid reepithelial¬ ization of the wounds.20,21 If, as it appears, growth fac¬ tors are in some way responsible for the rapid healing of chronic ulcers after cultured epithelial allografting, then perhaps "dosing" of these growth factors with re- peated grafts may be important. Toward that end, Beele and coworkers22 were recently successful in treating chronic leg ulcers with repeated cultured epi¬ dermal allografts, suggesting that repeated "doses" are needed in some patients to aid in wound healing. They noted healing from the edge with each successive graft.It is possible that traditional skin grafting using the patient's own skin without in vitro expansion may work, in part, due to growth factors supplied by the patient's own healthy donor skin. The donor skin transplanted to a nonhealing chronic wound may bring with it factors or the capacity to elaborate factors ab¬ sent or deficient in the recipient area.
+
+- Survival of cultured allogenic keratinocytes transplanted to deep dermal bed assessed with probe specific for Y chromosome       ABrain          PPurkis          PCoates          MHackett          HNavsaria          ILeigh          BMJ       298        1989             Production and auto-induction of transforming growth factor-\g=a\ in human keratinocytes       Coffey RjJr          RDerynck          JNWilcox          Nature       328    817    1987             Cultured epithelial allografting of leg ulcers       SShehade          JClancy          ABlight          KYoung          PLevick          J Dermatol Treat       1        1989
+
+- Possibly, the stratum corneum, which is known to act as a reser¬ voir,23 or other cells in the grafted tissue, may act as a transport for needed endogenous "growth factors." It is well known that acute wounds produce growth fac¬ tors that stimulate healing.24 These factors supplied by the newly grafted skin may significantly contribute to the eventual healing of the wound. In addition, the newly grafted skin may serve to stimulate matrix for¬ mation or the release of inflammatory mediators. Most grafting techniques (pinch grafting or mesh grafting)do not cover all of the ulcer to conserve donor tissue.A continued stimulus for reepithelialization is required to resurface the remainder of the ulcer and is likely provided by the newly transplanted skin. This is con¬ sistent with previous observations made with regard to skin grafting. O'Donoghue and Zarem25 showed that free skin grafts become vascularized, suggesting that the grafted tissue causes host blood vessels to grow into the graft. They also noted that fresh grafts are more efficient at attracting blood vessels than frozen- thawed grafts, suggesting a donor-dependent process.
+
+
+Model Explanation:
+The reference article mentions growth factors and their role in wound healing, but does not provide a comprehensive list of specific growth factors synthesized by epidermal cells as stated in the citing article. The excerpts mention some growth factors such as TGF-α (in Excerpt 2) and others, but not all the ones listed in the statement.
+================================================================================
+
+
+
+
+Row ID: 90
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r086
+Statement: The relative topography of the origins of the renal aa. from the aorta was found to be variable, thus confirming earlier observations from angiographic studies in which the right a. arose more proximally in 65% of cases [citation 12].
+
+Top 3 Chunk Texts:
+- to be 55.7% [10]. Our findings were more compatible with the findings of Odman and Ranniger, since the incidence of lateral and anterolateral locations were 48.3% and 31.6%, respectively. According to Odman and Ranniger, the ostium of the right renal a. was located more on the anterior wall and that of the left renal a. on the lateral wall of the abdominal aorta. These authors also reported that renal aa. originating from the anterior wall had a more cranial position near the ostium of the superior mesenteric a. [ 10].We found that renal ostia on the lateral wall of the abdominal aorta had a cranial, but ostia on the anterolateral wall a caudal position. This result accounted for the more cranial position of the right renal ostium in relation to the left renal ostium. Extreme (anterior or posterior wall) locations of renal ostia on the aortic wall have been reported to be related to developmental variations of the mesonephric aa.
+
+- Following this, the locations of the ostia of the renal aa. on the internal wall of the abdominal aorta were examined relative to the ostia of the arteries mentioned earlier. The ostium of the superior mesenteric a. was usually localized on the inferior-fight side of the ostium of the celiac trunk. The mean value of the distance between the ostia was 17.9 mm. The ostium of the right renal a. was more cranial than the ostium of the left renal a. (53.3%). However, the ostia of both right and left renal aa. were at the same level in three cases (10%). Locations of the ostia of the renal aa. were usually on the lateral and anterolateral regions of the aortic wall. This study was carried out in order to contribute to selective angiography and surgical interventions for the removal and transplantation of organs, particularly of the kidney. Our results are compared with previous similar studies in man.
+
+- measured from the critical pointsOstiaLeft renal a.Right renal a.CeliacVCLRoVCRRoostium33.2 mm30.0 mmSuperiorVMLRoVMp, aoostium17.4 ram13.9    ReceivedNovember 5, 1996  / Accepted in final formJuly 22, 1997               Acknowledgement. We are very gratefull to Necati Oguz, Head of the English Department of our academy, for the language editing of this text.                    Common variations in renal anatomy, affecting blood supply, form and topography       BJAnson          EHDaseler          Surg Gynecol Obstet       112        1961             The aortic origin of renal arteries       FWBauer          Arch Pathol       86        1968             A postmortem study comparing renal angiograms and renal a. casts in 58 patients       FWBauer          SLRobbins          Arch Pathol       83        1967
+
+
+Model Explanation:
+The reference article states that the ostium of the right renal a. was more cranial than the ostium of the left renal a. in 53.3% of cases, not 65% as mentioned in the citing article.
+================================================================================
+
+
+
+
+Row ID: 97
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: fully substantiate
+Reference Article ID: r089
+Statement: For example, a recent study exploring the mechanisms of liver regeneration showed that IL-4 receptor signaling in hepatocytes is required for proliferation after injury, with eosinophils delivering the IL-4 [citation 49].
+
+Top 3 Chunk Texts:
+- 4M). Although the initial extent of liver damage was similar in both groups of mice (Fig. S10A), hepatocyte proliferation, as fied by nuclear staining for K i 67 (Fig. S10B), was increased by ∼22% in IL-4-treated animals (Fig. 4N). Furthermore, this increase in hepatocyte proliferation was associated with a ∼43% decrease in necrotic cell area (Fig. 4O and Fig. S10C), suggesting a potential therapeutic benefit of IL-4 in acute liver injury. DiscussionThe regenerative capacity of the liver in part reflects its susceptibility to damage by ingested toxins and pathogenic infections. As such, multiple homeostatic mechanisms are activated on injury to initiate liver regeneration, each contributing only partially to the restoration of liver function (1,2). Here, we have demonstrated a role for eosinophils in orchestrating the regrowth of liver after injury. Moreover, our work has elucidated a direct mechanism by which eosinophil-derived IL-4 signals via the hepatocyte IL-4Rα to stimulate liver regeneration.
+
+- Interestingly, signaling via the IL-4Rα in myeloid cells is not required for mediating the regenerative actions of type 2 cytokines in injured liver. Rather, type 2 cytokines stimulate liver regeneration, in part, via activation of the IL-4Rα on hepatocytes. ResultsEosinophils Are Recruited to the Liver After Hepatic Injury. To identify potential immune cells that participate in liver regeneration, we examined the immune cell repertoire of regenerating livers. Injury induced by partial hepatectomy or carbon tetrachloride (CCl 4 ) led to a dramatic increase in the recruitment of innate immune cells, including eosinophils, neutrophils, macrophages, and dendritic cells (Figs. S1 A and B, and S2), which coincided with the onset of hepatocyte proliferation. In contrast, the content of adaptive immune cells did not change significantly in these models of liver injury (Figs. S1 C and D and S2).
+
+- S4 A and B). These results highlight a previously unappreciated role for eosinophils in inducing hepatocyte proliferation after injury and implicate eosinophil-derived factors in the orchestration of liver regeneration.Eosinophils Recruited to Injured Liver Secrete IL-4. Among the factors secreted by eosinophils, IL-4 has been implicated in both wound repair and liver regeneration (8,12,(19)(20)(21). We thus evaluated the competence of eosinophils for IL-4 secretion in injured liver. After CCl 4 -induced liver injury, eosinophils, which can be distinguished by their expression of sialic acid-binding Ig receptor (Siglec-F) (15), were the predominant cell type competent for IL-4 secretion (Fig. 2A and Fig. S5B) in IL-4 reporter mice (4get mice), a knock-in strain expressing the green fluorescent protein (GFP) from the IL-4 locus (22). Similarly, partial hepatectomy in 4get mice demonstrated that ∼81-84% of GFP + cells were eosinophils (Fig. 2B and Fig.
+
+
+Model Explanation:
+The reference article supports the statement by showing that eosinophils secrete IL-4 to promote hepatocyte proliferation after liver injury, and that signaling via the IL-4Rα in hepatocytes is required for this process.
+================================================================================
+
+
+
+
+Row ID: 101
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r092
+Statement: We reconstituted FUS compartments in vitro at physiological concentration using low salt (70 mM) buffer conditions and tested the effect of ATP around its physiological concentration range of 2 to 8 mM, complexed with Mg2+ ions (ATP-Mg) [citation 10].
+
+Top 3 Chunk Texts:
+- Within the physiological range of free [Mg 2ϩ ] from 0.25 to 1.5 mM, the h ␤/␣ varies over 2-fold (b, experimental; d, theoretical) making this measurement sensitive to changes in free cytosolic [Mg 2ϩ ] within living cells. h␤/␣ Max term is the maximum ␤/␣ peak height ratio of the two phosphorus nuclei within the same ATP molecule observed at 0 and saturating free [Mg 2ϩ ]. Within the range of [Mg 2ϩ ] tested, the number of total ATP, ATP Tot , may be represented by: ATP Tot ϭ P ␣ Ϫ ϩ HP ␣ ϭ P ␤ Ϫ ϩ HP ␤ ϩ MgP ␤ (Eq. 10) FIG. 6 .6FIG. 6.
+
+- FIG. 1 .1FIG. 1. Structure of MgATP. At pH between 7.0 and 7.3, raising the free [Mg 2ϩ ] from 0.25 to about 1.0 mM free [Mg 2ϩ ] increased the chemical shift of the ␣ resonance of ATP by 0.06 ppm, ␤ by 0.40 ppm and ␥ by 0.39 ppm. Such observations have led to the inference that Mg 2ϩ forms ionic bonds with the ␤ and ␥ phosphate of ATP, but not to the ␣. FIG. 2 .2FIG. 2. Plot of the 31 P NMR spectral experimental (a) chemical shift difference of P i from phosphocreatine, ␦ P i , and the theoretical (b) surface relating ␦ P i to both pH and free [Mg 2؉ ].
+
+- In tissues containing mitochondria, where there is significant compartmentation of ADP (3), use of the metabolite ratio of the myokinase reaction is unsuitable, but changes induced by alteration of free [Mg 2ϩ ] in the equilibrium ratio of [citrate]/[isocitrate] agreed well with the estimation of free [Mg 2ϩ ] by other means (9). Supporting the role of intracellular citrate as a natural indicator of free [Mg 2ϩ ] was the observation that the chemical shift of the citrate resonance in 13 C NMR spectra of rat liver perfused with acetate, gave a free [Mg 2ϩ ] of 0.46 mM (14). However, citrate levels in most normal tissues are below the sensitivity of 13  31 P (15) and combined 1 H, 31 P NMR (16,17) studies of the effects of Mg 2ϩ on ATP have shown that Mg 2ϩ induces the greatest chemical shift of the ␤ and the least on the ␣ resonance at physiological pH.
+
+
+Model Explanation:
+The reference article does not mention reconstituting FUS compartments in vitro, testing the effect of ATP-Mg around its physiological concentration range of 2 to 8 mM, or using low salt (70 mM) buffer conditions. The article focuses on measuring free [Mg2+] using 31P NMR and the beta/alpha peak height ratio of ATP.
+================================================================================
+
+
+
+
+Row ID: 105
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r096
+Statement: This collection included 84% of the high-confidence TFs described by Vaquerizas et al. [citation 23]
+
+Top 3 Chunk Texts:
+- Finally, we also included 27 curated probable TFs from other sources, such as GO or TRANSFAC 33 ; these TFs contain undefined DNAbinding domains, and were therefore missed using the above procedure.This resulted in a highconfidence data set of 1,391 genomic loci (~6% of the total number of protein coding genes) that encode TFs, which we will focus on for the remainder of this Analysis article, and a further 216 loci representing possible TFs (see Supplementary information S3 (.txt file) for the data set). estimates of the coverage of our approach range from 85% to 94% (Supplementary information S1 (PDF)) suggesting an upper bound of ~1,700-1,900 TFcoding genes in the human genome.Despite the care that we have taken in compiling this data set, there are a few possible sources of inaccura cies. Our method depends heavily on the content of the InterPro database, and the ability of the search algo rithms to detect these domains in protein sequences. The repertoire should be updated when new InterPro entries for newly discovered DNAbinding domains, or refinements of existing ones, and more sensitive search methods become available.
+
+- This type of information will be revealed through further experiments and advances in the methods used to determine the transcriptional regulatory networks. ConclusionsThis Analysis article has presented a census of sequence specific DNAbinding TFs in the human genome. Transcriptional regulation in higher organisms is of great current research interest; however, much of the work so far has focused on identifying binding sites through a combination of experimental methods, such as chroma tin immunoprecipitation and computational predictions using motif searches. A major limitation to studying the regulators themselves has been the lack of a reliable data set of TFs in the human genome, a difficulty that is com pounded by the large number of false predictions that can accompany the automated identification of genes encod ing DNAbinding domains. By manually inspecting every entry in the data set, we have minimized such errors. As a result the repertoire here is of high quality, and can be used as a basis to design further computational and experimental studies.Most of these TFs remain uncharacterized: this is highlighted by the observation that just three regulators (p53, eR and FOS) have more publications than all the other TFs put together.
+
+- This group of proteins mapped to 1,960 human genomic loci in the ensembl Genome Browser database (release 51) 32 .Next, we manually inspected each locus and grouped them according to our confidence in their TF func tionality (Supplementary information S1 (PDF); the full data set is found in Supplementary information S3 (.txt file)): at the highest level, probable TFs have experi mental evidence for regulatory function in any mam malian organism or have an equivalent protein domain arrangement; possible TFs contain nonpromiscuous InterPro DNAbinding domains that are never found in nonTFs, but for which we do not have further func tional evidence; and unlikely TFs comprise predicted genes, genes containing promiscuous InterPro DNA binding domains or genes with an established molecular function other than transcription (such as nucleoporins, threonine phosphatases or splicing factors).
+
+
+Model Explanation:
+The reference article does not provide a specific number of high-confidence TFs that can be used to calculate the percentage (84%) mentioned in the statement.
+================================================================================
+
+
+
+
+Row ID: 130
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r115
+Statement: To check whether other tetragonal MAPbX3 compounds are also pyroelectric, we measured tetragonal MAPbBr3 (well below its Tc, which equals 235 K) [citation 55] and found no pyroelectric response.
+
+Top 3 Chunk Texts:
+- Thus, the triple points were found in all of the three MAPbX, (X = Cl, Br, I) crystals below 100 MPa.The experimental DTA curves of MAPbBr, and MAPbI, in the high temperature region are shown in Figs 4 and5, respectively. The heating rates were 0.7-1.0 and 0.7-0.8 K min-' for MAPbBr, and MAPbI,, respectively. An endothermic peak due to the I4/mcm -Pm3m transition was observed in both samples. As indicated by the scales (and by the increased noise level in the base line of the curves) in Figs 4 and5, the peak heights of these transitions are much smaller than those of the other transitions shown before. This is because the I4/mcm -Pm3m transitions of both crystals are of a gradual type and the first-order component of the transition entropy is only 46% of the total [5]. The peak temperature decreased monotonically and the peak shape became broader with increasing pressure for MAPbBr,.
+
+- In a recent paper [5], we reported calorimetric and spectroscopic studies of the phase transitions of MAPbX, (X = Cl, Br, I), where MA represents the methylammonium ion, CH,NH: . All the phase transitions were of the first order. The large transition entropies indicated that the phase transitions are of the order-disorder type. The entropy values were interpreted with structural models in which each MA ion is disordered with respect to the orientations of the C-N axis itself and around the C-N axis.In the present paper, we investigate the pressure dependence of the phase transitions of MAPbX, (X = Cl, Br, I) by using a high pressure DTA. Our purpose is to determine the p-T phase diagrams of the three halides and thereby to obtain  EXPERIMENTALThe sample preparation of MAPbX, is the same as described in the previous paper [5]. The DTA experiments were performed with a home-made apparatus described elsewhere [8]. It was essentially a metal block made of copper-beryllium alloy.
+
+- For MAPbI,, however, the transition line had a maximum around 110 MPa, below which the slope dT,,/dp was positive and above which negative. The peak shape and area did not change significantly in the whole pressure range. Table 2 summarizes the transition temperature T,, its pressure dependence dT,/dp, the transition entropy AuaS, and the transition volume AtR V. Here, AtnS is the value determined from calorimetry at atmospheric pressure [5]   All the values of the transition volume are quite small; less than 2% of the molar volume of MAPbX, (Cl: 110cm3 mol-I, Br: 124cm3 mol-', I: 153 cm3 mol-I). This indicates that the structural disorder discussed previously in relation to the transition entropies [5] is such that the methylammonium ions are packed as efficiently in the disordered phases as in the ordered phases. phase may have the same structure as the tetragonal P4/mmm phase of MAPbBr, and MAPbCl,.
+
+
+Model Explanation:
+The reference article mentions a transition temperature (Tc) for MAPbBr3 at atmospheric pressure, but the value of Tc is not explicitly stated. However, it can be inferred from Fig. 4 that the I4/mcm -Pm3m transition occurs around 152.9 K at atmospheric pressure, which could be considered as the Tc. The statement mentions a Tc of 235 K, which appears to be an error.
+================================================================================
+
+
+
+
+Row ID: 133
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r117
+Statement: other parameters including Gruneisen parameter of 1.7 and Poisson ratio of 0.243 [citation 54] are taken from the literature.
+
+Top 3 Chunk Texts:
+- The scattering parameter G includes inuence from mass difference, bonding force difference and strain eld induced by point defects for binary (A 1Àx B x type) or pseudo-binary (AB 1Àx C x type) systems: 13,60G ¼ xð1 À xÞ " DM M 2 þ 3 a À a pure xa pure 2 #(2)DM and Da are the differences in mass and lattice constants between the two binary compounds; M and a are the molar mass and lattice constant of the virtual crystal. The parameter 3 is related to the elastic properties and is generally treated as a tting parameter. 13,61 Nonetheless the value of 3 could be estimated using: 13,58,623 ¼ 2 9 À G þ 6:4g Á 1 þ r 1 À r ! 2(3)where g is the Grüneisen parameter and r is the Poisson ratio. G is a ratio between the relative change of bulk modulus DK/K and the bonding length DR/R.
+
+- À 2a3ð1 þ 3aÞ ð1 þ 23aÞ 2 Â 1 À 2d þ 2d 2 ln 1 þ 1 d ! ) À1 (5) dð3Þ ¼ e 2 m d *1=2 N 2=3 V 2 1=2 3ðk B TÞ 1=2 ph -3 N ð1 þ 3aÞ À10 L 1=2 1 (6)where m * d is the total DOS effective mass. C l is the average longitudinal elastic constant. 70 N v is the degeneracy of the conduction band. X is the deformation potential coefficient. 3 0 and 3 N are the static and high frequency dielectric constants, respectively. 3 is the reduced carrier energy E/k B T and a ¼ k B T/E g , where E g is the gap between two interacting bands at the L point of the Brillouin zone. These properties of alloys are also taken as the linear average of two binary compounds.
+
+- The ratio G is relatively constant within similar material systems, 63,64 for example for covalent IV and III-V structures G ¼ 4, for more ionic II-VI and I-VII structures G ¼ 3 and for complex oxide structures G ¼ 9.For lead chalcogenides G ¼ 3 and 3 calculated for PbSe and PbS is 110 and 150, respectively. All properties of the virtual crystal are taken as the linear average of two binary compounds, which are listed in ref. 53. There are no tting parameters involved in the calculation of k L for the alloys between PbSe and PbS.As shown in Fig.
+
+
+Model Explanation:
+The reference article provides an equation (3) that includes the Grüneisen parameter, but does not provide a specific value of 1.7 as mentioned in the statement. However, it discusses how to estimate the value of 3 using the Grüneisen parameter and Poisson ratio. Additionally, the article mentions taking properties as the linear average of two binary compounds, which might imply that parameters like Poisson ratio could be estimated or taken from literature.
+================================================================================
+
+
+
+
+Row ID: 135
+--------------------------------------------------------------------------------
+Target Label: fully substantiate
+Model Label: unsubstantiate
+Reference Article ID: r119
+Statement: Li columns with a small average diameter (0.3 ~ 0.4 μm) were obtained in the nanodiamond-containing electrolyte, leading to a dendrite-free morphology [citation 40].
+
+Top 3 Chunk Texts:
+- [ 25 ] However, a large quantity of micro-sized Li dendrites is observed in case of plate Li metal anode while the nanostructured metallic Li anode is dendritefree when applying a huge current density of 10 mA cm -2 based on the surface of fl at electrode (Figure 3 e,f). For plate Li metal electrode, the huge uptake of current results in strong local electrical fi eld and extremely high concentration gradient of Li ions as driven force for high throughput transportation of electrons from electrode and ions from electrolyte, which is benefi cial for the dendrite growth. While for the nanostructured metallic Li anode, its 3D nanostructure with abundant electrode/electrolyte interfaces lower the absolute local current density even though applying the same current as Li anode. Thus both the gradients of electrical fi eld and Li ion concentration at local regions are reduced to orders of magnitude towards increased Sand's time and dendritefree morphology. [ 9,30 ] Also, due to the nanosized matrix, the growth of Li crystal is also self-restricted in principles shown in Figure 1 .
+
+- Note that the electrolyte is lithium nitrate-free.Figure 22Figure 1. (a) Schematic illustrations of Li dendrite growth on the plate Li metal and Li deposits on nanostructured anode with metallic Li contained in fi brous Li 7 B 6 matrix.(b) The relationship between the current density ( J )/relative electric fi eld strength ( Q dendrite / Q supporter ) to dendrite-Li and matrix size.(c) The size-time dependence of Li deposits on the nanostructured and plate Li anode, t 1 , t 2 , R 1 , R 2 were the cut-off time of dendrite-Li growth and max size of Li dendrites on the nanostructured and plate Li metal anode, respectively (t 1 < t 2 , R 1 < R 2 ). Figure 2 .2Figure 2. (a) Typical galvanostatic charge/discharge behavior of nanostructured anode with metallic Li contained in fi brous Li 7 B 6 matrix at a current density of 0.3 mA cm -2 with plate Li metal as counter electrode.
+
+- However, once the Li deposit initiates, it would grow continuously because Li deposit in the initial time is with a small size that holds a strong electric fi eld strength, thus favoring the adsorption and deposition of lithium ions (Figure 1 b). When the Li deposit size is beyond that of the matrix, Li + adsorption and deposition ability of the deposits will be below the matrix and then Li + deposits on the matrix rather than on the dendrites continually. Thus, the nanostructured LiB alloy anode not only reduces the current density, which decreases the growth velocity of Li deposits, but also limits the fi nal size of deposited Li on the nanostructured matrix, which leads to the dendrite-free morphology at macroscale (Figure 1 c). Consequently, the Li deposits on the nanostructured anode with metallic Li embeded in fi brous Li 7 B 6 matrix are always with smaller size than that on the plate Li metal anode.
+
+
+Model Explanation:
+The reference article does not mention nanodiamonds, electrolytes containing nanodiamonds, or Li columns with a specific average diameter. The article discusses the use of a 3D fibrous matrix to prevent lithium dendrite growth, but this is unrelated to the statement in the citing article.
+================================================================================
+
+
+
+
+Row ID: 138
+--------------------------------------------------------------------------------
+Target Label: unsubstantiate
+Model Label: partially substantiate
+Reference Article ID: r121
+Statement: Different from other hydrogen-storage metals such as palladium (Pd) and yttrium [citation 17], which are associated with poor optical response, Mg exhibits excellent plasmonic properties at high frequencies.
+
+Top 3 Chunk Texts:
+- 51 Furthermore, the system can be used as a hydrogen detector through monitoring the slope of YH 2 to YH 3 phase transition or to locally control chemical processes that require a certain activation energy. This energy can be provided by the enhanced local electric field generated by the plasmonic resonance, depending on the surrounding hydrogen concentration. Due to its high refractive index, YH 3 could even act as high-index nanophotonic material (n ≈ 2.8 at 600 nm 31,52 ) which supports electric and magnetic Mie resonances 53,54 that can be switched on and off using hydrogen. Other transition metals such as vanadium 55 or scandium, or transition metal alloys like Mg-Y, Mg-La, Mg-Sc, and Mg-Gd may provide even faster response. [56][57][58][59] Complete blackness and thus highest switching contrast could be expected using nickel metal hydrides (such as Mg 2 MeH x , with Me = Ni, Co, Fe).
+
+- The transition between metallic and dielectric yttrium hydride antennas is induced by simple hydrogen exposure from the gas phase or from electrolysis under ambient atmospheric conditions and shows a drastic change of the spectral response.Compared to other promising phase change materials used in plasmonic devices, yttrium dihydride has the advantage of comparatively low intrinsic damping and can therefore support plasmonic resonances itself, whereas the metallic phases of VO 2 , GST, or GLS are known to exhibit only a weak plasmonic response, if any. Despite the advantage of much faster switching times, they can often be used only in hybrid plasmonic systems, that is, in combination with gold or other good plasmonic metals. However, the use of hybrid systems drastically lowers the switching contrast, since only the dielectric environment of the resonant material changes and not the antenna itself. Therefore, yttrium dihydride is a highly relevant and very promising alternative for plasmonic applications that require a high switching contrast and are less dependent on ultrashort switching times.
+
+- Whereas the yttrium dihydride nanostructures exhibit a pronounced particle plasmon resonance, the transition to yttrium trihydride leads to a complete vanishing of the resonant behavior. The plasmonic resonance in the dihydride state can be tuned over a wide wavelength range by simply varying the size of the nanostructures. Furthermore, we develop an analytical diffusion model to explain the temporal behavior of the hydrogen loading and unloading trajectories observed in our experiments and gain information about the thermodynamics of our device. Thus, our nanorod system serves as a versatile basic building block for active plasmonic devices ranging from switchable perfect absorbers to active local heating control elements.               P lasmonics has evolved into a broad and important field of nanooptics that enables a variety of new applications. [1][2][3] By creating local hotspots of the electric field on the nanometer scale, it is possible to develop very sensitive chemical and biological sensor devices and locally initiate and control chemical processes.
+
+
+Model Explanation:
+The reference article shows that yttrium can exhibit excellent plasmonic properties, specifically in its dihydride state. However, the statement claims that yttrium has poor optical response, which is incorrect according to the reference article. Instead, the reference highlights the advantages of yttrium dihydride for plasmonic applications.
+================================================================================
+
+
+
+
