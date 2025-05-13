@@ -1,0 +1,19 @@
+r01:
+	12: book
+r07:
+	14: paper seems to not exist but is cited often?
+	16: Website (+ not found)
+	17: Website (+ not found)
+r32:
+	3: book chapter that is not freely available
+r23:
+	1: book
+	3: book
+	5: book
+	8: book
+	11: book
+	15: book
+	17: book
+	18: book
+r35:
+	PRE92: book
