@@ -1527,6 +1527,106 @@
                     }
                 }
             },
+            "llama4:scout": {
+                "all_labels": {
+                    "accuracy": 0.559,
+                    "total": 247,
+                    "correct": 138,
+                    "false_predictions": 109,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 109,
+                            "unsubstantiate": 94,
+                            "partially substantiate": 12,
+                            "fully substantiate": 2,
+                            "invalid label": 1
+                        },
+                        "partially substantiate": {
+                            "total": 14,
+                            "unsubstantiate": 5,
+                            "partially substantiate": 8,
+                            "fully substantiate": 1,
+                            "invalid label": 0
+                        },
+                        "fully substantiate": {
+                            "total": 124,
+                            "unsubstantiate": 29,
+                            "partially substantiate": 59,
+                            "fully substantiate": 36,
+                            "invalid label": 0
+                        }
+                    }
+                },
+                "all_labels_exclude_not_available": {
+                    "accuracy": 0.557,
+                    "total": 244,
+                    "correct": 136,
+                    "false_predictions": 108,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 108,
+                            "unsubstantiate": 93,
+                            "partially substantiate": 12,
+                            "fully substantiate": 2,
+                            "invalid label": 1
+                        },
+                        "partially substantiate": {
+                            "total": 14,
+                            "unsubstantiate": 5,
+                            "partially substantiate": 8,
+                            "fully substantiate": 1,
+                            "invalid label": 0
+                        },
+                        "fully substantiate": {
+                            "total": 122,
+                            "unsubstantiate": 28,
+                            "partially substantiate": 59,
+                            "fully substantiate": 35,
+                            "invalid label": 0
+                        }
+                    }
+                },
+                "two_labels": {
+                    "accuracy": 0.802,
+                    "total": 247,
+                    "correct": 198,
+                    "false_predictions": 49,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 109,
+                            "unsubstantiate": 94,
+                            "fully substantiate": 14,
+                            "invalid label": 1
+                        },
+                        "fully substantiate": {
+                            "total": 138,
+                            "unsubstantiate": 34,
+                            "fully substantiate": 104,
+                            "invalid label": 0
+                        }
+                    }
+                },
+                "two_labels_exclude_not_available": {
+                    "accuracy": 0.803,
+                    "total": 244,
+                    "correct": 196,
+                    "false_predictions": 48,
+                    "type_predictions": {
+                        "unsubstantiate": {
+                            "total": 108,
+                            "unsubstantiate": 93,
+                            "fully substantiate": 14,
+                            "invalid label": 1
+                        },
+                        "fully substantiate": {
+                            "total": 136,
+                            "unsubstantiate": 33,
+                            "fully substantiate": 103,
+                            "invalid label": 0
+                        }
+                    }
+                }
+            },
             "llama3.1:70b_annotated": {
                 "all_labels": {
                     "accuracy": 0.53,

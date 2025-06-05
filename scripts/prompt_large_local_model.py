@@ -6,9 +6,9 @@ embedding = "te3l" # / "te3s"
 grobid_model = "full_model"
 no_prev_chunking = True
 
-annotated = True
+annotated = False
 corrected_statements = False
-two_labels = True
+two_labels = False
 
 def format_excerpts(excerpt_list):
     excerpts_text = ""
@@ -144,8 +144,8 @@ print(path)
 # read the dataframe from a pickle file
 df = pd.read_pickle(path)
 
-models = ["llama3.1:70b", "llama3.1:405b", "llama3.3"]
-model = models[0]
+models = ["llama3.1:70b", "llama3.1:405b", "llama3.3", "llama4:scout"]
+model = models[3]
 
 # df2_old = pd.read_pickle(f"../data/dfs/{embedding}{'_no_prev_chunking' if no_prev_chunking else ''}/{grobid_model}/ReferenceErrorDetection_data_with_prompt_results_{model}_intermed.pkl")
 # ids_not_to_prompt = df2_old[df2_old['Model Classification'].notna()]['Reference Article ID'].tolist()

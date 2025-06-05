@@ -25,7 +25,7 @@ def reshape_model_classification(df):
                 row['Model Classification'] = remove_json_colons(row['Model Classification'])
                 model_classification = json.loads(row['Model Classification'])
                 label = model_classification['label'].lower()
-                df.at[row.name, 'Model Classification Label'] = label if not label.endswith('d') else label[:-1]
+                df.at[row.name, 'Model Classification Label'] = label if not (label.endswith('d') or label.endswith('s')) else label[:-1]
                 df.at[row.name, 'Model Classification Explanation'] = model_classification['explanation']
             except json.JSONDecodeError as e:
                 print(f"Row {index} Model Classification could not be decoded: {e}")
