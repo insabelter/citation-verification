@@ -359,6 +359,96 @@
         },
         "error": null
     },
+    "8": {
+        "id": "batch_req_686fa0ccc78c8190925ff551a93298d8",
+        "custom_id": "request-8",
+        "response": {
+            "status_code": 200,
+            "request_id": "96a10872444ac4cb4ae991e89eb3ab5d",
+            "body": {
+                "id": "chatcmpl-BrjUlvzqxZiCjDTgv0FloAL8CvZVw",
+                "object": "chat.completion",
+                "created": 1752145967,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article [18] focuses on codon usage bias and protein expression in Pichia pastoris, with no discussion or data on students\u2019 behavioral, cognitive, or emotional participation or their correlation with translation performance in high school classrooms. Therefore, it does not support the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3308,
+                    "completion_tokens": 79,
+                    "total_tokens": 3387,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "9": {
+        "id": "batch_req_686fa10e92cc81909a502c1711d38b04",
+        "custom_id": "request-9",
+        "response": {
+            "status_code": 200,
+            "request_id": "beb8bc649d6ed2706e676c755a4d0560",
+            "body": {
+                "id": "chatcmpl-BrjXjaElJlH6hWbWxQT4MIb5Y3Rqx",
+                "object": "chat.completion",
+                "created": 1752146151,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article [19] focuses on ECMO circuit changes and their correlation with patient outcomes such as mortality and complications, and does not address behavioral participation or translation performance or any correlation between these variables.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 1773,
+                    "completion_tokens": 61,
+                    "total_tokens": 1834,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "10": {
         "id": "batch_req_6867e91765348190a9d4cc461dfb3a36",
         "custom_id": "request-10",
@@ -670,6 +760,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "18": {
+        "id": "batch_req_686fa0cd51888190bcb6c1b7c74cb53e",
+        "custom_id": "request-18",
+        "response": {
+            "status_code": 200,
+            "request_id": "4458c7ca7a465e5cee194e657fc9b761",
+            "body": {
+                "id": "chatcmpl-BrjWnxMDqh7gTnXylVlmTeyi5XvGl",
+                "object": "chat.completion",
+                "created": 1752146093,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on intelligent security analysis methods using big data for cyber-attack prevention and does not mention or introduce any identifiable technology device with advanced technology as stated in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3082,
+                    "completion_tokens": 57,
+                    "total_tokens": 3139,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "19": {
+        "id": "batch_req_686fa10eab9c8190ab0be06f3cc4696b",
+        "custom_id": "request-19",
+        "response": {
+            "status_code": 200,
+            "request_id": "d047beb7d5730fe011fe04807f060a68",
+            "body": {
+                "id": "chatcmpl-BrjXrAKzWGZmcqjLhyqW9lYWzV6HQ",
+                "object": "chat.completion",
+                "created": 1752146159,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on a bi-level energy optimization model using fuzzy relational inequalities and mathematical programming techniques, without discussing the involvement of multiple parties exchanging opinions or gaining further experience and understanding of evaluation objectives during scheme discussions, nor does it mention improving daily work according to original objectives.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3450,
+                    "completion_tokens": 75,
+                    "total_tokens": 3525,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -1034,6 +1214,96 @@
         },
         "error": null
     },
+    "28": {
+        "id": "batch_req_686fa0cdef4c8190a43daa7779f02b8d",
+        "custom_id": "request-28",
+        "response": {
+            "status_code": 200,
+            "request_id": "07bd804cc374bc3e1dc0fe87867adbc6",
+            "body": {
+                "id": "chatcmpl-BrjWyiEZKkb3Hr7eZcApw71TaVR0t",
+                "object": "chat.completion",
+                "created": 1752146104,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on secure image transmission and compressive sensing techniques, without any mention of text preprocessing steps such as converting text to lowercase or removing URLs using RegEx in Python. Therefore, it does not support the citation statement about text preprocessing.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3539,
+                    "completion_tokens": 70,
+                    "total_tokens": 3609,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "29": {
+        "id": "batch_req_686fa10ecc008190b20c6f525198def1",
+        "custom_id": "request-29",
+        "response": {
+            "status_code": 200,
+            "request_id": "43d52a35f6bd17b7e1f2327957f3b4d5",
+            "body": {
+                "id": "chatcmpl-BrjXo0M6F0trkVTHdXDCn2GXk16zc",
+                "object": "chat.completion",
+                "created": 1752146156,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article [4] focuses on two-way image transmission using the Corvus Corone module over wireless sensor networks, addressing energy efficiency, security, and compressed sensing for images. It does not discuss any hybrid fake news detection model, user or article temporal pattern modeling with RNN, credibility weighting of users, or news classification modules as described in the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3417,
+                    "completion_tokens": 94,
+                    "total_tokens": 3511,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "30": {
         "id": "batch_req_6867e91960a88190a1901f09298ad87a",
         "custom_id": "request-30",
@@ -1390,6 +1660,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "38": {
+        "id": "batch_req_686fa0ce9284819081552242056af90f",
+        "custom_id": "request-38",
+        "response": {
+            "status_code": 200,
+            "request_id": "eaab692167adcd53e3fe2a7432f89c03",
+            "body": {
+                "id": "chatcmpl-BrjX5CEQ78pySIjBmG5rW8uM6AlPe",
+                "object": "chat.completion",
+                "created": 1752146111,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on quadratic transformation inequalities for Gaussian hypergeometric functions and related mathematical properties. It does not discuss or support the broad claim that recent developments in various scientific fields have significant impact on human health and life.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3291,
+                    "completion_tokens": 65,
+                    "total_tokens": 3356,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "39": {
+        "id": "batch_req_686fa10ee658819085a09331956e3afb",
+        "custom_id": "request-39",
+        "response": {
+            "status_code": 200,
+            "request_id": "bae04cd06794d92bcca597ac59936190",
+            "body": {
+                "id": "chatcmpl-BrjXtZjBigAFkgScKWWth0rq5fyZ0",
+                "object": "chat.completion",
+                "created": 1752146161,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on mathematical properties and inequalities related to the psi function and does not discuss or support claims about recent developments in science, technology, engineering, epidemiology, mathematics, geometry, or their impact on human health and life.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3475,
+                    "completion_tokens": 68,
+                    "total_tokens": 3543,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -1754,6 +2114,96 @@
         },
         "error": null
     },
+    "48": {
+        "id": "batch_req_686fa0cf26a8819095580d6e1da77ddb",
+        "custom_id": "request-48",
+        "response": {
+            "status_code": 200,
+            "request_id": "95b61a2eb7d9ba687eff2f9448340a33",
+            "body": {
+                "id": "chatcmpl-BrjXAcbhT040Tkdj35SUplCpZTi6w",
+                "object": "chat.completion",
+                "created": 1752146116,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on sorafenib resistance in hepatocellular carcinoma cells, mitochondrial biogenesis, and ROS homeostasis, but does not discuss environmental changes leading to variation in genetic diversity or the adaptation of populations with low variability. Therefore, it does not support the citation statement about environmental changes affecting genetic diversity and adaptation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3724,
+                    "completion_tokens": 85,
+                    "total_tokens": 3809,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "49": {
+        "id": "batch_req_686fa10f03788190a3dfc4de6fb702b6",
+        "custom_id": "request-49",
+        "response": {
+            "status_code": 200,
+            "request_id": "b831ca09ecfba7eb8a081f932cded64b",
+            "body": {
+                "id": "chatcmpl-BrjXvFXPHi6iGtVPX4CcIxbLPH2wc",
+                "object": "chat.completion",
+                "created": 1752146163,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on battery cathode materials and electrochemical properties, with no discussion of population genetics, allelic richness, genetic drift, or inbreeding depression relevant to fragmented populations.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3545,
+                    "completion_tokens": 59,
+                    "total_tokens": 3604,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "50": {
         "id": "batch_req_6867e91b318c8190838bd55392902817",
         "custom_id": "request-50",
@@ -2065,6 +2515,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "58": {
+        "id": "batch_req_686fa0d033388190afe925f345293dc0",
+        "custom_id": "request-58",
+        "response": {
+            "status_code": 200,
+            "request_id": "934aa3425a6799f1de7ae4ff78701d9d",
+            "body": {
+                "id": "chatcmpl-BrjXC2Unj8OtSJCy67fYgmQtuKQJS",
+                "object": "chat.completion",
+                "created": 1752146118,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on metal-organic frameworks (MOFs) synthesized from metal ions or clusters and organic ligands, but it does not explicitly define or describe coordination polymers (CPs) as periodic crystalline solid-state materials constructed from metal ions or polynuclear metal\u2013oxygen clusters and multidentate organic ligands. The statement about CPs is not directly supported or discussed in the reference.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3612,
+                    "completion_tokens": 100,
+                    "total_tokens": 3712,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "59": {
+        "id": "batch_req_686fa10f1d3081909f853bd1e533428b",
+        "custom_id": "request-59",
+        "response": {
+            "status_code": 200,
+            "request_id": "03fb7e557b082326c9cbc2545d56e669",
+            "body": {
+                "id": "chatcmpl-BrjXwv9waLjUdxKE59ZUCa5wX54BG",
+                "object": "chat.completion",
+                "created": 1752146164,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on acoustic emission signal processing technology related to material damage assessment and does not discuss coordination polymers, their structure, or their construction from metal ions and organic ligands as stated in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3587,
+                    "completion_tokens": 62,
+                    "total_tokens": 3649,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -2429,6 +2969,96 @@
         },
         "error": null
     },
+    "68": {
+        "id": "batch_req_686fa0d0b29c8190b8fb98f91f4f5146",
+        "custom_id": "request-68",
+        "response": {
+            "status_code": 200,
+            "request_id": "53cd4768f42b0b55004174cf382a80f2",
+            "body": {
+                "id": "chatcmpl-BrjVc04NUhG3wfuMtzNEzBtWdVrxE",
+                "object": "chat.completion",
+                "created": 1752146020,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on cell formation problem methodologies and their evaluation, without any discussion or mention of individual finance scores, investigation cost, or credit score management advantages as stated in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3244,
+                    "completion_tokens": 58,
+                    "total_tokens": 3302,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "69": {
+        "id": "batch_req_686fa10f3ff08190bd82a396d727dc8b",
+        "custom_id": "request-69",
+        "response": {
+            "status_code": 200,
+            "request_id": "216dee9a89ef9dd617554e4b20d9bc6c",
+            "body": {
+                "id": "chatcmpl-BrjXyosFwYZJGmcguAnAXbhGx04aV",
+                "object": "chat.completion",
+                "created": 1752146166,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on a kernel classification method for image representation and does not mention genetic algorithms (GA) or their use for feature subset or model parameter optimization as stated in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2448,
+                    "completion_tokens": 58,
+                    "total_tokens": 2506,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "70": {
         "id": "batch_req_6867e91cfb948190adaa787cf2152d02",
         "custom_id": "request-70",
@@ -2740,6 +3370,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "78": {
+        "id": "batch_req_686fa0d14308819090739aed7d3d19e3",
+        "custom_id": "request-78",
+        "response": {
+            "status_code": 200,
+            "request_id": "1f72c184f0383f76f7a28cd27a227305",
+            "body": {
+                "id": "chatcmpl-BrjUnofS8ehNMbc63TlIxnmBSYLXH",
+                "object": "chat.completion",
+                "created": 1752145969,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article discusses nanoliquids (nanofluids) as mixtures of base fluids with nanoparticles (MWCNT) and demonstrates their significant enhancement of heat transfer properties, supporting the statement that nanoliquids illustrate a great range of heat transfer.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3652,
+                    "completion_tokens": 72,
+                    "total_tokens": 3724,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "79": {
+        "id": "batch_req_686fa10f5dd881909ee565bac0019949",
+        "custom_id": "request-79",
+        "response": {
+            "status_code": 200,
+            "request_id": "6451489bdbc34243b93cad2562cca560",
+            "body": {
+                "id": "chatcmpl-BrjY0qmqHMvLO9ae9AaKiQJX5mIuR",
+                "object": "chat.completion",
+                "created": 1752146168,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article reports that choir singing actually reduced salivary oxytocin levels, and solo singing caused only a mild increase. It does not support the claim that oxytocin is increased during group singing or improvisation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2965,
+                    "completion_tokens": 66,
+                    "total_tokens": 3031,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -3104,6 +3824,96 @@
         },
         "error": null
     },
+    "88": {
+        "id": "batch_req_686fa0d1e10881909d6dc69e400b3b4c",
+        "custom_id": "request-88",
+        "response": {
+            "status_code": 200,
+            "request_id": "e536b43dca328b64a6639f1ff34f3311",
+            "body": {
+                "id": "chatcmpl-BrjUrUsRqRlHW9JojIYPM358sORML",
+                "object": "chat.completion",
+                "created": 1752145973,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article discusses the role of skin grafts and cultured epithelial allografts in wound healing and suggests that growth factors may be involved in stimulating healing. However, it does not specifically list or confirm the synthesis of the detailed set of growth factors and cytokines (TGF-\u03b1, a-FGF, b-FGF, PDGF, TGF-\u00df, amphiregulin, HB-EGF, NGF, TNF-ct, IL1a, IL-1\u00df, IL-6, IL-8, GM-CSF, G-CSF, and MCSF) by epidermal cells as stated in the citation. Therefore, the article does not fully substantiate the specific claim made in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2796,
+                    "completion_tokens": 169,
+                    "total_tokens": 2965,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "89": {
+        "id": "batch_req_686fa10f7b448190b69ba4fd9e5017e4",
+        "custom_id": "request-89",
+        "response": {
+            "status_code": 200,
+            "request_id": "52e92dad69fbd3e83b6d260f19babe3b",
+            "body": {
+                "id": "chatcmpl-BrjYGTamRwVq5uQPytUDAq8bKnquy",
+                "object": "chat.completion",
+                "created": 1752146184,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article reports that the right renal artery ostium was more cranial than the left in 53.3% of cases, confirming variability in the relative topography of renal artery origins and supporting the statement that the right artery arises more proximally in a majority of cases.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3006,
+                    "completion_tokens": 77,
+                    "total_tokens": 3083,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "90": {
         "id": "batch_req_6867e91eda4c8190afed24c0de140be4",
         "custom_id": "request-90",
@@ -3460,6 +4270,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "98": {
+        "id": "batch_req_686fa0d26cf481909ef142e8326bcb7c",
+        "custom_id": "request-98",
+        "response": {
+            "status_code": 200,
+            "request_id": "51fb47b0e05f340e0040d962638a2539",
+            "body": {
+                "id": "chatcmpl-BrjV0ewQMdXW3ktupgrEyIusik2ni",
+                "object": "chat.completion",
+                "created": 1752145982,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article provides genetic and functional evidence that lineage-determining transcription factors (LDTFs) collaboratively select and prime enhancers, enabling binding of signal-dependent transcription factors (SDTFs) such as NF-\u03baB. This supports the statement that microglial enhancers are primed by relatively simple combinations of LDTFs to become sites of SDTF activity.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3535,
+                    "completion_tokens": 96,
+                    "total_tokens": 3631,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "99": {
+        "id": "batch_req_686fa10f98c08190a4cba5f2b1e84d77",
+        "custom_id": "request-99",
+        "response": {
+            "status_code": 200,
+            "request_id": "6e62ef0b10fbbf75f040e2ffc8021a9a",
+            "body": {
+                "id": "chatcmpl-BrjYIESf6d0PdcIrDDcVghSoo8FGr",
+                "object": "chat.completion",
+                "created": 1752146186,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article [36] presents detailed tensile properties of nanobainitic steels, showing yield strengths above 1.2 GPa, ultimate tensile strengths up to 2.2 GPa, and ductility (total elongation) up to ~30%, which supports the citation of nanobainite steel tensile properties in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3250,
+                    "completion_tokens": 90,
+                    "total_tokens": 3340,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -3824,6 +4724,96 @@
         },
         "error": null
     },
+    "108": {
+        "id": "batch_req_686fa0d2f1d4819080bf7a8d32d829ca",
+        "custom_id": "request-108",
+        "response": {
+            "status_code": 200,
+            "request_id": "395560359fbbdbdf46cd8fbbfc8fd988",
+            "body": {
+                "id": "chatcmpl-BrjUjstAj1grHIbyBOylUS0Lyk31i",
+                "object": "chat.completion",
+                "created": 1752145965,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article documents the worldwide distribution of late Precambrian (Neoproterozoic) glacial deposits becoming evident by the 1930s, including a major symposium in 1937 that highlighted these findings globally, fully supporting the statement about the recognition of these deposits by that time.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3780,
+                    "completion_tokens": 80,
+                    "total_tokens": 3860,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "109": {
+        "id": "batch_req_686fa10fb9308190a2f9f93c8a158ddd",
+        "custom_id": "request-109",
+        "response": {
+            "status_code": 200,
+            "request_id": "061144e421a25cde2ee43d07d7e31aef",
+            "body": {
+                "id": "chatcmpl-BrjYKKZ21P6L0IzkY2jes01Qid9TI",
+                "object": "chat.completion",
+                "created": 1752146188,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article discusses Snowball Earth ocean circulation modeling, emphasizing vigorous equatorial overturning circulation and jets near the equator, with most turbulent dynamics concentrated at low paleolatitudes. It also notes uncertainty about open ocean near the equator but supports the relevance of ocean circulation modeling to understanding Cryogenian deposits. Thus, it directly supports the statement that recent Snowball ocean circulation modeling is relevant to the search for Cryogenian cryoconite deposits at low paleolatitudes.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3649,
+                    "completion_tokens": 116,
+                    "total_tokens": 3765,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "110": {
         "id": "batch_req_6867e920e04c8190990786692923ed99",
         "custom_id": "request-110",
@@ -4180,6 +5170,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "118": {
+        "id": "batch_req_686fa0d372688190a12ad1f8b174d707",
+        "custom_id": "request-118",
+        "response": {
+            "status_code": 200,
+            "request_id": "2d2087d1ac348fc9fede343cdd908e56",
+            "body": {
+                "id": "chatcmpl-BrjV6izHuel7OxcEQ99tzQ7BwirCc",
+                "object": "chat.completion",
+                "created": 1752145988,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article clearly states that climate change is expected to reduce land and ocean carbon uptake by mid-century, thereby weakening terrestrial carbon sinks and enhancing atmospheric CO2 growth, which supports the claim that unchecked climate change could reverse terrestrial carbon sinks and erode the long-term climate benefits of natural climate solutions.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3609,
+                    "completion_tokens": 80,
+                    "total_tokens": 3689,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "119": {
+        "id": "batch_req_686fa10fd6e48190bf6aa54fa7da724d",
+        "custom_id": "request-119",
+        "response": {
+            "status_code": 200,
+            "request_id": "63bf87b86fd30d918a5fdb012a3a7e47",
+            "body": {
+                "id": "chatcmpl-BrjXjweSxw5gM35vscfs4HSuFD6Sz",
+                "object": "chat.completion",
+                "created": 1752146151,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article supports the statement by describing scenarios where no reduction in cropland area is assumed, while allowing reforestation of grazing lands in forested ecoregions through agricultural intensification and demand-side measures. It explicitly discusses making grazing land available for afforestation consistent with intensification scenarios.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3745,
+                    "completion_tokens": 80,
+                    "total_tokens": 3825,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -4544,6 +5624,96 @@
         },
         "error": null
     },
+    "128": {
+        "id": "batch_req_686fa0d48d488190a0bca181452a66f3",
+        "custom_id": "request-128",
+        "response": {
+            "status_code": 200,
+            "request_id": "5f80e75a971d46686183040303cdf1f7",
+            "body": {
+                "id": "chatcmpl-BrjVThxMlCLO4pDzXYx2wzS92REZS",
+                "object": "chat.completion",
+                "created": 1752146011,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article demonstrates that Mdm1 is an ER-anchored protein that tethers the ER to vacuoles/lysosomes (endolysosomal compartments) via membrane contact sites, directly supporting the statement that ER appositions occur with lysosomes and multivesicular bodies.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2957,
+                    "completion_tokens": 79,
+                    "total_tokens": 3036,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "129": {
+        "id": "batch_req_686fa10ffbd481909087c740e50e31ef",
+        "custom_id": "request-129",
+        "response": {
+            "status_code": 200,
+            "request_id": "1a873350c2248412a401d6a147a1c8dc",
+            "body": {
+                "id": "chatcmpl-BrjXldmOx6dd1QBKrD5PGq5pl4hrT",
+                "object": "chat.completion",
+                "created": 1752146153,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article [55] focuses on pressure-temperature phase relations and phase transitions of MAPbX3 crystals, including MAPbBr3, but does not report any measurements or observations related to pyroelectric response or the absence thereof in tetragonal MAPbBr3 below its Tc. Therefore, it does not substantiate the claim about pyroelectric measurements.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3258,
+                    "completion_tokens": 93,
+                    "total_tokens": 3351,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "130": {
         "id": "batch_req_6867e9229ad08190b96aa7b47cc7962e",
         "custom_id": "request-130",
@@ -4900,6 +6070,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "138": {
+        "id": "batch_req_686fa0d5b6308190b0db86e5e0073010",
+        "custom_id": "request-138",
+        "response": {
+            "status_code": 200,
+            "request_id": "999d22981aa8f7c1ca85f1a5c08d6e9c",
+            "body": {
+                "id": "chatcmpl-BrjW4EDf6LQWC4JikaykGCsDQqsTb",
+                "object": "chat.completion",
+                "created": 1752146048,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article describes a spin-coating process where a solvent that does not dissolve perovskite (e.g., toluene) is dripped during spinning, followed by annealing at 100 \u00b0C for 10 min, which aligns with the cited statement's use of chlorobenzene as an antisolvent shortly before the end of spin-coating and subsequent annealing at 100 \u00b0C. Although the exact antisolvent differs (toluene vs. chlorobenzene), the method and conditions are consistent with the antisolvent technique described in the reference.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3279,
+                    "completion_tokens": 140,
+                    "total_tokens": 3419,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "139": {
+        "id": "batch_req_686fa113dcc0819095af5fdbe64c3a14",
+        "custom_id": "request-139",
+        "response": {
+            "status_code": 200,
+            "request_id": "ad74f05bc5482393a5a3785c841b4fb5",
+            "body": {
+                "id": "chatcmpl-BrjXmSOMGFMzqMGcfy6xKtfpUjXZ3",
+                "object": "chat.completion",
+                "created": 1752146154,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article describes Coot as a molecular-graphics application used for model building and real-space refinement of biological macromolecules, which directly supports the statement that rebuilding was performed with COOT.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3587,
+                    "completion_tokens": 60,
+                    "total_tokens": 3647,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -5264,6 +6524,96 @@
         },
         "error": null
     },
+    "148": {
+        "id": "batch_req_686fa0d63de48190bec3deb29bb96001",
+        "custom_id": "request-148",
+        "response": {
+            "status_code": 200,
+            "request_id": "8062353227dcfefbd4b52ae26c4640cb",
+            "body": {
+                "id": "chatcmpl-BrjWEgPF2dGW3SspWjJ790xxOMpow",
+                "object": "chat.completion",
+                "created": 1752146058,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article describes a sol-gel synthesis method involving solvent evaporation (solvent vaporization) and subsequent calcination in air, followed by reduction with H2 for catalyst preparation, consistent with the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3439,
+                    "completion_tokens": 63,
+                    "total_tokens": 3502,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "149": {
+        "id": "batch_req_686fa113f6708190ae0d53a049ae5e29",
+        "custom_id": "request-149",
+        "response": {
+            "status_code": 200,
+            "request_id": "3794aeb451a4d5ccbd410a61dd73e295",
+            "body": {
+                "id": "chatcmpl-BrjXtHRXwqknwmGdqXiqt7PVIiMK6",
+                "object": "chat.completion",
+                "created": 1752146161,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article details the revised WHO classification criteria for AML diagnosis, including blast count thresholds, genetic abnormalities, and clinical features, supporting the statement that AML diagnosis was established according to the revised WHO criteria.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3429,
+                    "completion_tokens": 61,
+                    "total_tokens": 3490,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "150": {
         "id": "batch_req_6867e92464ec8190b793aeafd1a48942",
         "custom_id": "request-150",
@@ -5620,6 +6970,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "158": {
+        "id": "batch_req_686fa0d6cf6c81908ee205b16a5a3d24",
+        "custom_id": "request-158",
+        "response": {
+            "status_code": 200,
+            "request_id": "2abe0021bec7766ccf42153fdb0cdbe8",
+            "body": {
+                "id": "chatcmpl-BrjWzoJTCjXyv6pSQWgumtKwE1Sh0",
+                "object": "chat.completion",
+                "created": 1752146105,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article demonstrates that CHD4 and MBD3 are components of the NuRD complex and discusses their distribution and interaction dynamics, supporting the claim that CHD4 (chromatin remodeling component) and MBD3 (part of the deacetylase core) are widely distributed. Although the reference does not show ChIP-seq data directly, it provides strong biochemical and cell biological evidence consistent with the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3597,
+                    "completion_tokens": 105,
+                    "total_tokens": 3702,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "159": {
+        "id": "batch_req_686fa11411c881909a30a4e961b2a574",
+        "custom_id": "request-159",
+        "response": {
+            "status_code": 200,
+            "request_id": "b4fe32089bb583cdf4064cc705ba0227",
+            "body": {
+                "id": "chatcmpl-BrjXuX4W89MEC1IDUADr7IsDfUENU",
+                "object": "chat.completion",
+                "created": 1752146162,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article introduces and defines the NODF metric specifically for quantifying nestedness in sample-by-taxa matrices, describing its calculation and advantages, thus fully supporting the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3725,
+                    "completion_tokens": 58,
+                    "total_tokens": 3783,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -5984,6 +7424,96 @@
         },
         "error": null
     },
+    "168": {
+        "id": "batch_req_686fa0d761ac819097ad9fda3b0bbb5b",
+        "custom_id": "request-168",
+        "response": {
+            "status_code": 200,
+            "request_id": "58918ab4a07fb8fc9709f32b7452cd7f",
+            "body": {
+                "id": "chatcmpl-BrjUo6DZFKrpS4HS9T3iavSqhkiTH",
+                "object": "chat.completion",
+                "created": 1752145970,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article reports the observation of a zero-bias peak in local conductance at vortex cores in a Bi2Te3/NbSe2 heterostructure, interpreted as evidence for a Majorana zero mode. It discusses the zero-energy bound state nature of the Majorana mode and its spectroscopic signature as zero-bias conductance anomalies modulated by magnetic fields, consistent with the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3053,
+                    "completion_tokens": 102,
+                    "total_tokens": 3155,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "169": {
+        "id": "batch_req_686fa11430cc81908654c6d0a6c1d9ff",
+        "custom_id": "request-169",
+        "response": {
+            "status_code": 200,
+            "request_id": "2b586d9164bda5a99e392891ce821245",
+            "body": {
+                "id": "chatcmpl-BrjXuAUHjkOLhfnBXJkAbCCMohKXm",
+                "object": "chat.completion",
+                "created": 1752146162,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article [51] discusses ejecta mass and velocity parameters relevant for kilonova light curve modeling, including typical values around M_ej ~ 0.05 M_\u2609 and v_ej ~ 0.1c, consistent with the cited model parameters in the statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3741,
+                    "completion_tokens": 80,
+                    "total_tokens": 3821,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "170": {
         "id": "batch_req_6867e92920a08190bcf9c24c75a6f976",
         "custom_id": "request-170",
@@ -6340,6 +7870,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "178": {
+        "id": "batch_req_686fa0d7e900819093bb5dcda6a840e5",
+        "custom_id": "request-178",
+        "response": {
+            "status_code": 200,
+            "request_id": "2c8882118afcc51c365a7935e7d641d6",
+            "body": {
+                "id": "chatcmpl-BrjUoQwAvsYPdV8XjvnpO32LLgq7C",
+                "object": "chat.completion",
+                "created": 1752145970,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article clearly establishes that RhoC is a Rho GTPase involved in regulating cell shape and motility, supporting the statement that RHOC encodes RhoC guanosine triphosphatase, a well-known regulator of cell shape and motility.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3531,
+                    "completion_tokens": 77,
+                    "total_tokens": 3608,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "179": {
+        "id": "batch_req_686fa114503c8190bbbfed589126b46c",
+        "custom_id": "request-179",
+        "response": {
+            "status_code": 200,
+            "request_id": "e1b8753a6083056def5566d9672cd63f",
+            "body": {
+                "id": "chatcmpl-BrjXmHm4JUFrdxxSRz6JfuSEAsj2B",
+                "object": "chat.completion",
+                "created": 1752146154,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article (28) focuses on the role of local aggregation and charge transport in conjugated polymers, specifically P(NDI2OD-T2) blends, and does not discuss fabrication techniques such as photolithographic-patterning, nanostructure-templating, or phase separation, nor does it claim that phase separation is the only method that can simultaneously introduce all desirable features in one step or that it is more scalable and low cost.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3411,
+                    "completion_tokens": 110,
+                    "total_tokens": 3521,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -6704,6 +8324,96 @@
         },
         "error": null
     },
+    "188": {
+        "id": "batch_req_686fa0d86ff48190920e9950b0d63c5c",
+        "custom_id": "request-188",
+        "response": {
+            "status_code": 200,
+            "request_id": "034ce3680636203a812a045492c158a6",
+            "body": {
+                "id": "chatcmpl-BrjUmLY9jtUeTYbvyprg7sWwczXsr",
+                "object": "chat.completion",
+                "created": 1752145968,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article demonstrates strong local-scale genetic differentiation in the brooding coral Seriatopora hystrix, with most larvae recruiting within 20-100 m of their natal colony, consistent with localized dispersal of sperm and larvae. It also reports significant genetic differences between sites separated by 2-60 km, supporting the pattern of local-scale genetic differentiation commonly observed among brooding species.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3518,
+                    "completion_tokens": 98,
+                    "total_tokens": 3616,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "189": {
+        "id": "batch_req_686fa1146a908190b079bd959090b10a",
+        "custom_id": "request-189",
+        "response": {
+            "status_code": 200,
+            "request_id": "601d29e6806dd685a3b9443eb7408b56",
+            "body": {
+                "id": "chatcmpl-BrjXmPeZLrvhjPN9UbGzKTgXXPtsV",
+                "object": "chat.completion",
+                "created": 1752146154,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article discusses Ni and NiO species and their catalytic properties but does not provide specific XPS peak positions or explicitly identify three distinct Ni peaks at 852.1 eV (Ni0), 853.5 eV (Ni2+), and 855.3 eV (Ni3+). Therefore, it does not substantiate the detailed spectral peak assignments stated in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3571,
+                    "completion_tokens": 101,
+                    "total_tokens": 3672,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "190": {
         "id": "batch_req_6867e92b038c8190a1a1878f78eabb7c",
         "custom_id": "request-190",
@@ -7060,6 +8770,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "198": {
+        "id": "batch_req_686fa0d9219081908198e77f06ed94d6",
+        "custom_id": "request-198",
+        "response": {
+            "status_code": 200,
+            "request_id": "6b977cfa30d82d43ed28527881d31135",
+            "body": {
+                "id": "chatcmpl-BrjUmaB3dIgElRSWIgi4F6H3DT13V",
+                "object": "chat.completion",
+                "created": 1752145968,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article explicitly discusses the question of whether demand for light is nearing saturation, noting that it may be approaching saturation in some respects but also that plausible arguments exist for continued growth. It directly addresses the critical question of whether outdoor light use will continue to grow exponentially or saturate, supporting the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2996,
+                    "completion_tokens": 82,
+                    "total_tokens": 3078,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "199": {
+        "id": "batch_req_686fa11487f88190a9e772058712e624",
+        "custom_id": "request-199",
+        "response": {
+            "status_code": 200,
+            "request_id": "b6e42ed7669764ea44df552bed523194",
+            "body": {
+                "id": "chatcmpl-BrjXyy9Yt9nFk72jri4LvNXfLBPr0",
+                "object": "chat.completion",
+                "created": 1752146166,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article thoroughly discusses the understanding and correction of long-term changes in the radiometric calibration of the VIIRS DNB, including the use of solar diffuser (SD) and lunar calibration methods to monitor and validate calibration stability.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3746,
+                    "completion_tokens": 66,
+                    "total_tokens": 3812,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -7424,6 +9224,96 @@
         },
         "error": null
     },
+    "208": {
+        "id": "batch_req_686fa0d9aa8c8190bb8c57e1a95b9d5b",
+        "custom_id": "request-208",
+        "response": {
+            "status_code": 200,
+            "request_id": "d12fea379078aef31c8293b0ab0c86f0",
+            "body": {
+                "id": "chatcmpl-BrjUoAZloSXwbqL1OX480Snc3ecqt",
+                "object": "chat.completion",
+                "created": 1752145970,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article reports dielectric loss spectra with distinct low-frequency and high-frequency components attributed to ionic relaxation and electronic conduction, respectively, consistent with the cited statement's description of relaxation frequencies in MAPbI3 around <10^4 Hz and ~10^5 to 10^6 Hz.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3274,
+                    "completion_tokens": 79,
+                    "total_tokens": 3353,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "209": {
+        "id": "batch_req_686fa114a92081909bdfb7a3d72f8a17",
+        "custom_id": "request-209",
+        "response": {
+            "status_code": 200,
+            "request_id": "055b059d732fdf505f198cd2480e5d51",
+            "body": {
+                "id": "chatcmpl-BrjXqOKqHwdKhLRz3JoJkWTfUgKMj",
+                "object": "chat.completion",
+                "created": 1752146158,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article's PMIP2 coupled simulations show an enhanced African monsoon with a northward ITCZ shift at the Mid-Holocene, but also indicate regional variations including drying in some tropical areas. This supports the statement that some mid-Holocene model simulations show drier conditions below ca. 10\u00b0N in response to a northward monsoon shift.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3524,
+                    "completion_tokens": 93,
+                    "total_tokens": 3617,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "210": {
         "id": "batch_req_6867e92cc5cc819098264f70f9009302",
         "custom_id": "request-210",
@@ -7780,6 +9670,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "218": {
+        "id": "batch_req_686fa0da264c81908d96fd4f15252ff8",
+        "custom_id": "request-218",
+        "response": {
+            "status_code": 200,
+            "request_id": "3dd8a0aa38417bfdd1bc404270ce0421",
+            "body": {
+                "id": "chatcmpl-BrjUzyfGLTZvxTg43dHtjjSMbxmLU",
+                "object": "chat.completion",
+                "created": 1752145981,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article reports that Proteobacteria, which includes Pseudomonas, made up the largest fraction of the maize rhizosphere bacterial community, but Pseudomonas sequences were infrequently recovered and represented only a small portion of the clones. This supports the statement that P. putida is the most abundant strain in the root microbiome, which is inconsistent with previous findings of Pseudomonas dominance in maize rhizosphere communities.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3303,
+                    "completion_tokens": 110,
+                    "total_tokens": 3413,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "219": {
+        "id": "batch_req_686fa114cb6c8190a8c776b1078303ef",
+        "custom_id": "request-219",
+        "response": {
+            "status_code": 200,
+            "request_id": "1d134322cc1d0dd39ccd0a2287f198b0",
+            "body": {
+                "id": "chatcmpl-BrjXopRz7bjIZ7wKGwQtANg3Ov1nY",
+                "object": "chat.completion",
+                "created": 1752146156,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article demonstrates that artificial selection can be applied at the ecosystem level to select for desired traits in complex microbial communities, supporting the concept of host-mediated microbiota selection to obtain simplified, representative synthetic communities as described in the citation.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3181,
+                    "completion_tokens": 67,
+                    "total_tokens": 3248,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
@@ -8144,6 +10124,96 @@
         },
         "error": null
     },
+    "228": {
+        "id": "batch_req_686fa0dab6dc81908ea5684c252498e0",
+        "custom_id": "request-228",
+        "response": {
+            "status_code": 200,
+            "request_id": "a01156f3cc241b815dd639074ee52ded",
+            "body": {
+                "id": "chatcmpl-BrjV6BaNpiOAIrw99dh60y3xbA3ZG",
+                "object": "chat.completion",
+                "created": 1752145988,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article [19] presents a mixed-integer programming formulation and a branch-and-cut algorithm for the dial-a-ride problem but does not mention or provide anytime guarantees for the multivehicle-routing problem. Thus, it does not substantiate the claim that the ILP formulation in [19] provides anytime guarantees.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3573,
+                    "completion_tokens": 86,
+                    "total_tokens": 3659,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "229": {
+        "id": "batch_req_686fa114e5708190940805b123a6eddc",
+        "custom_id": "request-229",
+        "response": {
+            "status_code": 200,
+            "request_id": "141f64b9d7a0283429ef7e84c1aec882",
+            "body": {
+                "id": "chatcmpl-BrjXuJZI9BrAZICiQsWjOr245M0oa",
+                "object": "chat.completion",
+                "created": 1752146162,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article explicitly states that dinosteranes are present in Archean bitumens and that ancestral dinoflagellates could not have existed at that time, supporting the claim that traces of dinosteranes occur in Archean bitumens where dinoflagellates were absent.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3848,
+                    "completion_tokens": 79,
+                    "total_tokens": 3927,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
     "230": {
         "id": "batch_req_6867e92e7d1481908711bef018078063",
         "custom_id": "request-230",
@@ -8487,6 +10557,96 @@
                     "prompt_tokens": 3639,
                     "completion_tokens": 107,
                     "total_tokens": 3746,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "238": {
+        "id": "batch_req_686fa0db3370819090eb2cd8d5b9d036",
+        "custom_id": "request-238",
+        "response": {
+            "status_code": 200,
+            "request_id": "20c64ecad30c126ff36390ce925ae497",
+            "body": {
+                "id": "chatcmpl-BrjUpzWE5Ybk6cit6PP7qHhmTr15k",
+                "object": "chat.completion",
+                "created": 1752145971,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article demonstrates that necrostatin-1 (Nec-1) reduces myocardial ischemia-reperfusion injury and infarct size, supporting the claim that necroptosis or related pathways are implicated in ischemia-reperfusion injury of the heart.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3457,
+                    "completion_tokens": 74,
+                    "total_tokens": 3531,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "239": {
+        "id": "batch_req_686fa114ff408190bb75df35bd1f3848",
+        "custom_id": "request-239",
+        "response": {
+            "status_code": 200,
+            "request_id": "0d695ecd8f871d4089fc0a592c93c437",
+            "body": {
+                "id": "chatcmpl-BrjXyARpKCtvooeL1tD4UZBPIQ5if",
+                "object": "chat.completion",
+                "created": 1752146166,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Unsubstantiated\",\n  \"explanation\": \"The reference article focuses on mapping antibody binding sites on influenza haemagglutinin using electron microscopy and identifying amino acid changes in antigenic variants. It does not discuss or provide evidence that the addition of glycans on HA dramatically affects antibody binding.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 2322,
+                    "completion_tokens": 70,
+                    "total_tokens": 2392,
                     "prompt_tokens_details": {
                         "cached_tokens": 0,
                         "audio_tokens": 0
@@ -8860,6 +11020,96 @@
                 },
                 "service_tier": "default",
                 "system_fingerprint": "fp_658b958c37"
+            }
+        },
+        "error": null
+    },
+    "248": {
+        "id": "batch_req_686fa0dbbfa88190b228b49c90df6b56",
+        "custom_id": "request-248",
+        "response": {
+            "status_code": 200,
+            "request_id": "e50ca236f7120ae531757c9516a59e71",
+            "body": {
+                "id": "chatcmpl-BrjUrndtJidVy6S0vkfrIUTvPa1EB",
+                "object": "chat.completion",
+                "created": 1752145973,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article explicitly discusses the translational and clinical applications of single-cell sequencing in cancer, including its potential utility in diagnostics, targeted therapy, early detection, and noninvasive monitoring, supporting the statement that single-cell genome analysis is expected to have clinical utility in cancer treatment.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3497,
+                    "completion_tokens": 76,
+                    "total_tokens": 3573,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
+            }
+        },
+        "error": null
+    },
+    "249": {
+        "id": "batch_req_686fa1151f608190974ebe4a83b3a0a8",
+        "custom_id": "request-249",
+        "response": {
+            "status_code": 200,
+            "request_id": "e98d5db4a1e4aa7c4758693c2dc9ab9c",
+            "body": {
+                "id": "chatcmpl-BrjXmctU6gbu5eAWmmqPUH5e9h4Qa",
+                "object": "chat.completion",
+                "created": 1752146154,
+                "model": "gpt-4.1-mini-2025-04-14",
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {
+                            "role": "assistant",
+                            "content": "```json\n{\n  \"label\": \"Substantiated\",\n  \"explanation\": \"The reference article clearly explains that the phase discontinuity (geometric phase or Berry phase) arises from the spatial rotation of the optical axis of anisotropic aperture antennas under circularly polarized incidence, establishing a direct linear relationship between the rotation angle and the phase shift, thus supporting the citation statement.\"\n}\n```",
+                            "refusal": null,
+                            "annotations": []
+                        },
+                        "logprobs": null,
+                        "finish_reason": "stop"
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": 3243,
+                    "completion_tokens": 79,
+                    "total_tokens": 3322,
+                    "prompt_tokens_details": {
+                        "cached_tokens": 0,
+                        "audio_tokens": 0
+                    },
+                    "completion_tokens_details": {
+                        "reasoning_tokens": 0,
+                        "audio_tokens": 0,
+                        "accepted_prediction_tokens": 0,
+                        "rejected_prediction_tokens": 0
+                    }
+                },
+                "service_tier": "default",
+                "system_fingerprint": "fp_6f2eabb9a5"
             }
         },
         "error": null
