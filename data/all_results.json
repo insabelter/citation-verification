@@ -555,6 +555,44 @@
                     "Substantiated": []
                 }
             }
+        },
+        "1024_20": {
+            "all": {
+                "G (Total)": 247,
+                "P (Substantiated)": 132,
+                "N (Unsubstantiated)": 115,
+                "TP": 116,
+                "FP": 25,
+                "TN": 90,
+                "FN": 16,
+                "accuracy": 0.834,
+                "precision": 0.823,
+                "recall": 0.879,
+                "specificity": 0.783,
+                "f1_score": 0.85,
+                "invalid_labels": {
+                    "Unsubstantiated": [],
+                    "Substantiated": []
+                }
+            },
+            "without_relabelled": {
+                "G (Total)": 233,
+                "P (Substantiated)": 126,
+                "N (Unsubstantiated)": 107,
+                "TP": 112,
+                "FP": 21,
+                "TN": 86,
+                "FN": 14,
+                "accuracy": 0.85,
+                "precision": 0.842,
+                "recall": 0.889,
+                "specificity": 0.804,
+                "f1_score": 0.865,
+                "invalid_labels": {
+                    "Unsubstantiated": [],
+                    "Substantiated": []
+                }
+            }
         }
     },
     "llama3.1.70b": {
