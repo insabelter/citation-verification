@@ -1,5 +1,6 @@
 from tabulate import tabulate
 import pandas as pd
+from IPython.display import display
 
 def eval_predictions(df, include_relabelled_partially=False, include_not_originally_downloaded=True, only_accuracy=False):
     G = 0
@@ -51,6 +52,7 @@ def eval_predictions(df, include_relabelled_partially=False, include_not_origina
     assert G == P + N, f"Total G ({G}) does not equal P ({P}) + N ({N})"
     assert TP + FN == P, f"TP ({TP}) + FN ({FN}) does not equal P ({P})"
     assert TN + FP == N, f"TN ({TN}) + FP ({FP}) does not equal N ({N})"
+    assert G == 0, f"Total G ({G}) should not be 0"
 
     accuracy = (TP + TN) / G
     precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
@@ -227,3 +229,109 @@ def get_preds_results(results):
             "correct_total": results['P (Substantiated)'],
         },
     }
+
+def eval_predictions_per_attribute_value(df, attribute, include_relabelled_partially):
+    results = {}
+    results['Total'] = eval_predictions(df, include_relabelled_partially=include_relabelled_partially)
+    for value in df[attribute].unique():
+        df_value = df[df[attribute] == value]
+        results_value = eval_predictions(df_value, include_relabelled_partially=include_relabelled_partially)
+        results[value] = results_value
+    return results
+
+def display_attribute_results_table(results_dict, attribute, use_pandas=True):
+    """
+    Display a table of model results by attribute values showing only accuracy.
+    
+    Parameters:
+    results_dict: Dictionary with structure {model_name: {attribute_value: {results...}}}
+    use_pandas: If True, use pandas DataFrame display; if False, use tabulate
+    
+    Returns:
+    pandas.DataFrame: The results table
+    """
+    
+    # Get all unique attribute values from the first model
+    first_model = list(results_dict.keys())[0]
+    attribute_values = list(results_dict[first_model].keys())
+    
+    # Create data for the table
+    table_data = []
+    for model_name, model_results in results_dict.items():
+        row = [model_name]
+        accuracies = []
+        for attr_value in attribute_values:
+            if attr_value in model_results and 'accuracy' in model_results[attr_value]:
+                accuracy = model_results[attr_value]['accuracy']
+                row.append(f"{accuracy * 100:.1f}%")
+                accuracies.append(accuracy)
+            else:
+                row.append("N/A")
+                accuracies.append(None)
+        
+        table_data.append(row)
+    
+    # Create DataFrame
+    columns = ['Model', 'Total'] + [f'"{value_name}"' for value_name in attribute_values if value_name != 'Total']
+    df = pd.DataFrame(table_data, columns=columns)
+    df.set_index('Model', inplace=True)
+    
+    print(f"Results for attribute '{attribute}':")
+    # Display based on preference
+    if use_pandas:
+        display(df)
+    else:
+        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
+
+def display_attribute_differences_to_total_table(results_dict, attribute, use_pandas=True):
+    """
+    Display a table showing the difference between each attribute value accuracy and the total accuracy.
+    
+    Parameters:
+    results_dict: Dictionary with structure {model_name: {attribute_value: {results...}}}
+    attribute: The attribute name being analyzed
+    use_pandas: If True, use pandas DataFrame display; if False, use tabulate
+    
+    Returns:
+    pandas.DataFrame: The results table with differences to total
+    """
+    
+    # Get all unique attribute values from the first model (excluding 'Total')
+    first_model = list(results_dict.keys())[0]
+    attribute_values = [val for val in results_dict[first_model].keys() if val != 'Total']
+    
+    # Create data for the table
+    table_data = []
+    for model_name, model_results in results_dict.items():
+        row = [model_name]
+        
+        # Get total accuracy for this model
+        total_accuracy = None
+        if 'Total' in model_results and 'accuracy' in model_results['Total']:
+            total_accuracy = model_results['Total']['accuracy']
+        
+        # Calculate differences for each attribute value
+        for attr_value in attribute_values:
+            if (attr_value in model_results and 
+                'accuracy' in model_results[attr_value] and 
+                total_accuracy is not None):
+                
+                attr_accuracy = model_results[attr_value]['accuracy']
+                difference = attr_accuracy - total_accuracy
+                row.append(f"{difference * 100:+.1f}%")
+            else:
+                row.append("N/A")
+        
+        table_data.append(row)
+    
+    # Create DataFrame
+    columns = ['Model'] + [f'"{value_name}"' for value_name in attribute_values]
+    df = pd.DataFrame(table_data, columns=columns)
+    df.set_index('Model', inplace=True)
+    
+    print(f"Differences to Total for attribute '{attribute}' (positive = better than total):")
+    # Display based on preference
+    if use_pandas:
+        display(df)
+    else:
+        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))

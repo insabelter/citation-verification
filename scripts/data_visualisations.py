@@ -324,6 +324,11 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
         correct_preds = [data[label]['correct_preds'] for label in labels]
         correct_totals = [data[label]['correct_total'] for label in labels]
 
+        # Calculate total accuracy for this dataset
+        total_correct_preds = sum(correct_preds)
+        total_correct_totals = sum(correct_totals)
+        total_accuracy = total_correct_preds / total_correct_totals if total_correct_totals > 0 else 0
+
         # Plot total predictions
         bars_total = ax.bar(labels, total_preds, color=[colors[label] for label in labels], alpha=0.4, width=bar_width, label='Total Predictions')
 
@@ -335,7 +340,7 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
             ax.plot([i - bar_width / 2, i + bar_width / 2], [correct_total, correct_total], linestyle='dotted', color='black', label='Correct Total' if i == 0 else "")
             ax.text(i, correct_total, f'{correct_total}', ha='center', va='bottom', fontsize=10, color='black')  # Add number to the dotted line
 
-        ax.set_title(title)
+        ax.set_title(f"{title}\nTotal Accuracy: {total_accuracy:.1%}")
         ax.set_ylabel("Count")
         ax.set_xticks(range(len(labels)))
         ax.set_xticklabels(labels, rotation=45, ha="right")
