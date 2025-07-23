@@ -419,7 +419,7 @@ def calc_significance_of_accuracy_difference(attribute_subset_rest_results):
 
     return results
 
-def display_significance_test_results(significance_results, use_pandas=True):
+def display_significance_test_results(significance_results, required_p=0.1):
     # Create table data
     table_data = []
     
@@ -443,11 +443,24 @@ def display_significance_test_results(significance_results, use_pandas=True):
     df = pd.DataFrame(table_data, columns=columns)
     df.set_index('Attribute Value', inplace=True)
     
-    # Display based on preference
-    if use_pandas:
-        display(df)
-    else:
-        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
+    print("Statistical Significance Tests:")
+    print("=" * 50)
+    
+    # Apply color styling to the DataFrame
+    def color_p_values(val):
+        """Color p-values based on significance level"""
+        try:
+            p_val = float(val)
+            if p_val < required_p:
+                return 'background-color: darkgreen; color: white'
+            else:
+                return 'background-color: darkred; color: white'
+        except (ValueError, TypeError):
+            return ''
+    
+    # Apply styling only to p-value columns
+    styled_df = df.style.applymap(color_p_values, subset=['Z-test P-value', 'Fisher P-value'])
+    display(styled_df)
     
     return df
 

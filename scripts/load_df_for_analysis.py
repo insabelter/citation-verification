@@ -67,8 +67,8 @@ def add_claims_to_substantiate_min_max(df):
     df['Amount Claims to Substantiate: Maximum'] = min_max.apply(lambda x: x[1])
     return df
 
-def load_df_for_analysis(chunking, only_text, model):
-    df = load_df(chunking, only_text, model)
+def load_df_for_analysis(chunking, only_text, model, ai_prompt=False):
+    df = load_df(chunking, only_text, model, ai_prompt=ai_prompt)
     df = add_claims_to_substantiate_min_max(df)
     df = sort_df(df)
     df = reshape_model_classification(df)
