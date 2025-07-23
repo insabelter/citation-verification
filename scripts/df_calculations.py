@@ -1,6 +1,8 @@
 from tabulate import tabulate
 import pandas as pd
 from IPython.display import display
+from statsmodels.stats.proportion import proportions_ztest
+from scipy.stats import fisher_exact
 
 def eval_predictions(df, include_relabelled_partially=False, include_not_originally_downloaded=True, only_accuracy=False):
     G = 0
@@ -230,7 +232,7 @@ def get_preds_results(results):
         },
     }
 
-def eval_predictions_per_attribute_value(df, attribute, include_relabelled_partially):
+def eval_predictions_per_attribute_value(df, attribute, include_relabelled_partially, group_numbers_from=False):
     results = {}
     results['Total'] = eval_predictions(df, include_relabelled_partially=include_relabelled_partially)
     
@@ -241,14 +243,39 @@ def eval_predictions_per_attribute_value(df, attribute, include_relabelled_parti
     try:
         # Attempt to convert to numbers and sort numerically
         sorted_values = sorted(attribute_values, key=lambda x: float(x))
+        values_are_numeric = True
     except (ValueError, TypeError):
         # If conversion fails, sort alphabetically
         sorted_values = sorted(attribute_values, key=lambda x: str(x))
+        values_are_numeric = False
     
-    for value in sorted_values:
-        df_value = df[df[attribute] == value]
-        results_value = eval_predictions(df_value, include_relabelled_partially=include_relabelled_partially)
-        results[value] = results_value
+    # If group_numbers_from is specified and values are numeric, group values
+    if group_numbers_from is not False and values_are_numeric:
+        # Convert sorted_values to numbers for comparison
+        numeric_values = [float(x) for x in sorted_values]
+        
+        # Process values below the threshold individually
+        for value in sorted_values:
+            numeric_value = float(value)
+            if numeric_value < group_numbers_from:
+                df_value = df[df[attribute] == value]
+                results_value = eval_predictions(df_value, include_relabelled_partially=include_relabelled_partially)
+                results[value] = results_value
+        
+        # Group values >= threshold together
+        values_to_group = [v for v in sorted_values if float(v) >= group_numbers_from]
+        if values_to_group:
+            # Create a combined dataframe for all values >= threshold
+            df_grouped = df[df[attribute].apply(lambda x: float(x) >= group_numbers_from)]
+            results_grouped = eval_predictions(df_grouped, include_relabelled_partially=include_relabelled_partially)
+            results[f">= {group_numbers_from}"] = results_grouped
+    else:
+        # Process all values individually (original behavior)
+        for value in sorted_values:
+            df_value = df[df[attribute] == value]
+            results_value = eval_predictions(df_value, include_relabelled_partially=include_relabelled_partially)
+            results[value] = results_value
+    
     return results
 
 def display_attribute_results_table(results_dict, attribute, use_pandas=True):
@@ -347,3 +374,113 @@ def display_attribute_differences_to_total_table(results_dict, attribute, use_pa
         display(df)
     else:
         print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
+
+def eval_attribute_subset_vs_rest(df, attribute, attribute_values):
+    # Create subset and rest DataFrames
+    subset_df = df[df[attribute].isin(attribute_values)]
+    rest_df = df[~df[attribute].isin(attribute_values)]
+    
+    subset_results = eval_predictions(subset_df, include_relabelled_partially=True)
+    rest_results = eval_predictions(rest_df, include_relabelled_partially=True)
+    
+    return {
+        'Subset': {
+            'Total': subset_results['G (Total)'],
+            'Correct': subset_results['TP'] + subset_results['TN'],
+        },
+        'Rest': {
+            'Total': rest_results['G (Total)'],
+            'Correct': rest_results['TP'] + rest_results['TN'],
+        },
+    }
+
+
+def calc_significance_of_accuracy_difference(attribute_subset_rest_results):
+    results = {}
+
+    x1 = attribute_subset_rest_results['Subset']['Correct']
+    x2 = attribute_subset_rest_results['Rest']['Correct']
+    n1 = attribute_subset_rest_results['Subset']['Total']
+    n2 = attribute_subset_rest_results['Rest']['Total']
+
+    z_stat, p_value = proportions_ztest([x1, x2], [n1, n2])
+    results['z_test'] = {
+        'z_statistic': z_stat,
+        'p_value': p_value
+    }
+
+    table = [[x1, n1 - x1],
+         [x2, n2 - x2]]
+    odds_ratio, p_value = fisher_exact(table)
+    results['fisher_exact'] = {
+        'odds_ratio': odds_ratio,
+        'p_value': p_value
+    }
+
+    return results
+
+def display_significance_test_results(significance_results, use_pandas=True):
+    # Create table data
+    table_data = []
+    
+    for attribute_value, test_results in significance_results.items():
+        # Check if this is the expected structure with statistical test results
+        if 'z_test' in test_results and 'fisher_exact' in test_results:
+            z_test = test_results['z_test']
+            fisher_test = test_results['fisher_exact']
+            
+            row = [
+                attribute_value,
+                f"{z_test['z_statistic']:.4f}",
+                f"{z_test['p_value']:.4f}",
+                f"{fisher_test['odds_ratio']:.4f}",
+                f"{fisher_test['p_value']:.4f}"
+            ]
+            table_data.append(row)
+
+    # Create DataFrame
+    columns = ['Attribute Value', 'Z-statistic', 'Z-test P-value', 'Odds Ratio', 'Fisher P-value']
+    df = pd.DataFrame(table_data, columns=columns)
+    df.set_index('Attribute Value', inplace=True)
+    
+    # Display based on preference
+    if use_pandas:
+        display(df)
+    else:
+        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
+    
+    return df
+
+def get_attribute_value_groups(df, attribute, group_numbers_from=False):
+    attribute_values = df[attribute].unique()
+    
+    # Try to sort numerically first, fall back to alphabetical sorting
+    try:
+        # Attempt to convert to numbers and sort numerically
+        sorted_values = sorted(attribute_values, key=lambda x: float(x))
+        values_are_numeric = True
+    except (ValueError, TypeError):
+        # If conversion fails, sort alphabetically
+        sorted_values = sorted(attribute_values, key=lambda x: str(x))
+        values_are_numeric = False
+    
+    groups = []
+    
+    # If group_numbers_from is specified and values are numeric, group values
+    if group_numbers_from is not False and values_are_numeric:
+        # Process values below threshold individually
+        for value in sorted_values:
+            if float(value) < group_numbers_from:
+                groups.append((str(value), [value]))
+        
+        # Group values >= threshold together
+        values_to_group = [value for value in sorted_values if float(value) >= group_numbers_from]
+        if values_to_group:
+            group_name = f">= {group_numbers_from}"
+            groups.append((group_name, values_to_group))
+    else:
+        # Process all values individually (original behavior)
+        for attribute_value in attribute_values:
+            groups.append((str(attribute_value), [attribute_value]))
+    
+    return groups
