@@ -2,1120 +2,1400 @@
     "gpt-3.5-turbo-0125": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 119,
-                "FP": 50,
-                "TN": 65,
-                "FN": 13,
-                "accuracy": 0.745,
-                "precision": 0.704,
-                "recall": 0.902,
-                "specificity": 0.565,
-                "f1_score": 0.791,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 119,
+                    "False Classifications": 13,
+                    "Accuracy": 0.902,
+                    "Precision": 0.704,
+                    "Recall": 0.902,
+                    "F1 Score": 0.791,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 65,
+                    "False Classifications": 50,
+                    "Accuracy": 0.565,
+                    "Precision": 0.833,
+                    "Recall": 0.565,
+                    "F1 Score": 0.673,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.745,
+                "Balanced Accuracy": 0.734
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 113,
-                "FP": 44,
-                "TN": 63,
-                "FN": 13,
-                "accuracy": 0.755,
-                "precision": 0.72,
-                "recall": 0.897,
-                "specificity": 0.589,
-                "f1_score": 0.799,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 113,
+                    "False Classifications": 13,
+                    "Accuracy": 0.897,
+                    "Precision": 0.72,
+                    "Recall": 0.897,
+                    "F1 Score": 0.799,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 63,
+                    "False Classifications": 44,
+                    "Accuracy": 0.589,
+                    "Precision": 0.829,
+                    "Recall": 0.589,
+                    "F1 Score": 0.689,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.755,
+                "Balanced Accuracy": 0.743
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 118,
-                "FP": 42,
-                "TN": 73,
-                "FN": 14,
-                "accuracy": 0.773,
-                "precision": 0.738,
-                "recall": 0.894,
-                "specificity": 0.635,
-                "f1_score": 0.808,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 118,
+                    "False Classifications": 14,
+                    "Accuracy": 0.894,
+                    "Precision": 0.738,
+                    "Recall": 0.894,
+                    "F1 Score": 0.809,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 73,
+                    "False Classifications": 42,
+                    "Accuracy": 0.635,
+                    "Precision": 0.839,
+                    "Recall": 0.635,
+                    "F1 Score": 0.723,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.773,
+                "Balanced Accuracy": 0.764
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 112,
-                "FP": 39,
-                "TN": 68,
-                "FN": 14,
-                "accuracy": 0.773,
-                "precision": 0.742,
-                "recall": 0.889,
-                "specificity": 0.636,
-                "f1_score": 0.809,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 112,
+                    "False Classifications": 14,
+                    "Accuracy": 0.889,
+                    "Precision": 0.742,
+                    "Recall": 0.889,
+                    "F1 Score": 0.809,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 68,
+                    "False Classifications": 39,
+                    "Accuracy": 0.636,
+                    "Precision": 0.829,
+                    "Recall": 0.636,
+                    "F1 Score": 0.72,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.773,
+                "Balanced Accuracy": 0.762
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 126,
-                "FP": 68,
-                "TN": 47,
-                "FN": 6,
-                "accuracy": 0.7,
-                "precision": 0.649,
-                "recall": 0.955,
-                "specificity": 0.409,
-                "f1_score": 0.773,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 126,
+                    "False Classifications": 6,
+                    "Accuracy": 0.955,
+                    "Precision": 0.649,
+                    "Recall": 0.955,
+                    "F1 Score": 0.773,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 47,
+                    "False Classifications": 68,
+                    "Accuracy": 0.409,
+                    "Precision": 0.887,
+                    "Recall": 0.409,
+                    "F1 Score": 0.56,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.7,
+                "Balanced Accuracy": 0.682
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 120,
-                "FP": 62,
-                "TN": 45,
-                "FN": 6,
-                "accuracy": 0.708,
-                "precision": 0.659,
-                "recall": 0.952,
-                "specificity": 0.421,
-                "f1_score": 0.779,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 120,
+                    "False Classifications": 6,
+                    "Accuracy": 0.952,
+                    "Precision": 0.659,
+                    "Recall": 0.952,
+                    "F1 Score": 0.779,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 45,
+                    "False Classifications": 62,
+                    "Accuracy": 0.421,
+                    "Precision": 0.882,
+                    "Recall": 0.421,
+                    "F1 Score": 0.57,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.708,
+                "Balanced Accuracy": 0.686
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 126,
-                "FP": 72,
-                "TN": 43,
-                "FN": 6,
-                "accuracy": 0.684,
-                "precision": 0.636,
-                "recall": 0.955,
-                "specificity": 0.374,
-                "f1_score": 0.764,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 126,
+                    "False Classifications": 6,
+                    "Accuracy": 0.955,
+                    "Precision": 0.636,
+                    "Recall": 0.955,
+                    "F1 Score": 0.764,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 43,
+                    "False Classifications": 72,
+                    "Accuracy": 0.374,
+                    "Precision": 0.878,
+                    "Recall": 0.374,
+                    "F1 Score": 0.525,
+                    "Invalid_Labels": [
                         null,
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.684,
+                "Balanced Accuracy": 0.664
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 120,
-                "FP": 66,
-                "TN": 41,
-                "FN": 6,
-                "accuracy": 0.691,
-                "precision": 0.645,
-                "recall": 0.952,
-                "specificity": 0.383,
-                "f1_score": 0.769,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 120,
+                    "False Classifications": 6,
+                    "Accuracy": 0.952,
+                    "Precision": 0.645,
+                    "Recall": 0.952,
+                    "F1 Score": 0.769,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 41,
+                    "False Classifications": 66,
+                    "Accuracy": 0.383,
+                    "Precision": 0.872,
+                    "Recall": 0.383,
+                    "F1 Score": 0.532,
+                    "Invalid_Labels": [
                         null,
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.691,
+                "Balanced Accuracy": 0.667
             }
         }
     },
     "gpt-4.1-nano-2025-04-14": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 108,
-                "FP": 31,
-                "TN": 84,
-                "FN": 24,
-                "accuracy": 0.777,
-                "precision": 0.777,
-                "recall": 0.818,
-                "specificity": 0.73,
-                "f1_score": 0.797,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 108,
+                    "False Classifications": 24,
+                    "Accuracy": 0.818,
+                    "Precision": 0.777,
+                    "Recall": 0.818,
+                    "F1 Score": 0.797,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 84,
+                    "False Classifications": 31,
+                    "Accuracy": 0.73,
+                    "Precision": 0.778,
+                    "Recall": 0.73,
+                    "F1 Score": 0.753,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.777,
+                "Balanced Accuracy": 0.774
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 103,
-                "FP": 26,
-                "TN": 81,
-                "FN": 23,
-                "accuracy": 0.79,
-                "precision": 0.798,
-                "recall": 0.817,
-                "specificity": 0.757,
-                "f1_score": 0.808,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 103,
+                    "False Classifications": 23,
+                    "Accuracy": 0.817,
+                    "Precision": 0.798,
+                    "Recall": 0.817,
+                    "F1 Score": 0.807,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 81,
+                    "False Classifications": 26,
+                    "Accuracy": 0.757,
+                    "Precision": 0.779,
+                    "Recall": 0.757,
+                    "F1 Score": 0.768,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.79,
+                "Balanced Accuracy": 0.787
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 105,
-                "FP": 30,
-                "TN": 85,
-                "FN": 27,
-                "accuracy": 0.769,
-                "precision": 0.778,
-                "recall": 0.795,
-                "specificity": 0.739,
-                "f1_score": 0.787,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 105,
+                    "False Classifications": 27,
+                    "Accuracy": 0.795,
+                    "Precision": 0.778,
+                    "Recall": 0.795,
+                    "F1 Score": 0.786,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 85,
+                    "False Classifications": 30,
+                    "Accuracy": 0.739,
+                    "Precision": 0.759,
+                    "Recall": 0.739,
+                    "F1 Score": 0.749,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.769,
+                "Balanced Accuracy": 0.767
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 100,
-                "FP": 25,
-                "TN": 82,
-                "FN": 26,
-                "accuracy": 0.781,
-                "precision": 0.8,
-                "recall": 0.794,
-                "specificity": 0.766,
-                "f1_score": 0.797,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 100,
+                    "False Classifications": 26,
+                    "Accuracy": 0.794,
+                    "Precision": 0.8,
+                    "Recall": 0.794,
+                    "F1 Score": 0.797,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 82,
+                    "False Classifications": 25,
+                    "Accuracy": 0.766,
+                    "Precision": 0.759,
+                    "Recall": 0.766,
+                    "F1 Score": 0.762,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.781,
+                "Balanced Accuracy": 0.78
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 110,
-                "FP": 38,
-                "TN": 77,
-                "FN": 22,
-                "accuracy": 0.757,
-                "precision": 0.743,
-                "recall": 0.833,
-                "specificity": 0.67,
-                "f1_score": 0.786,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 110,
+                    "False Classifications": 22,
+                    "Accuracy": 0.833,
+                    "Precision": 0.743,
+                    "Recall": 0.833,
+                    "F1 Score": 0.785,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 77,
+                    "False Classifications": 38,
+                    "Accuracy": 0.67,
+                    "Precision": 0.778,
+                    "Recall": 0.67,
+                    "F1 Score": 0.72,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.757,
+                "Balanced Accuracy": 0.752
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 105,
-                "FP": 32,
-                "TN": 75,
-                "FN": 21,
-                "accuracy": 0.773,
-                "precision": 0.766,
-                "recall": 0.833,
-                "specificity": 0.701,
-                "f1_score": 0.798,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 105,
+                    "False Classifications": 21,
+                    "Accuracy": 0.833,
+                    "Precision": 0.766,
+                    "Recall": 0.833,
+                    "F1 Score": 0.798,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 75,
+                    "False Classifications": 32,
+                    "Accuracy": 0.701,
+                    "Precision": 0.781,
+                    "Recall": 0.701,
+                    "F1 Score": 0.739,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.773,
+                "Balanced Accuracy": 0.767
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 112,
-                "FP": 38,
-                "TN": 77,
-                "FN": 20,
-                "accuracy": 0.765,
-                "precision": 0.747,
-                "recall": 0.848,
-                "specificity": 0.67,
-                "f1_score": 0.794,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 112,
+                    "False Classifications": 20,
+                    "Accuracy": 0.848,
+                    "Precision": 0.747,
+                    "Recall": 0.848,
+                    "F1 Score": 0.794,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 77,
+                    "False Classifications": 38,
+                    "Accuracy": 0.67,
+                    "Precision": 0.794,
+                    "Recall": 0.67,
+                    "F1 Score": 0.727,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.765,
+                "Balanced Accuracy": 0.759
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 106,
-                "FP": 32,
-                "TN": 75,
-                "FN": 20,
-                "accuracy": 0.777,
-                "precision": 0.768,
-                "recall": 0.841,
-                "specificity": 0.701,
-                "f1_score": 0.803,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 106,
+                    "False Classifications": 20,
+                    "Accuracy": 0.841,
+                    "Precision": 0.768,
+                    "Recall": 0.841,
+                    "F1 Score": 0.803,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 75,
+                    "False Classifications": 32,
+                    "Accuracy": 0.701,
+                    "Precision": 0.789,
+                    "Recall": 0.701,
+                    "F1 Score": 0.742,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.777,
+                "Balanced Accuracy": 0.771
             }
         }
     },
     "gpt-4.1-mini-2025-04-14": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 102,
-                "FP": 16,
-                "TN": 99,
-                "FN": 30,
-                "accuracy": 0.814,
-                "precision": 0.864,
-                "recall": 0.773,
-                "specificity": 0.861,
-                "f1_score": 0.816,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 102,
+                    "False Classifications": 30,
+                    "Accuracy": 0.773,
+                    "Precision": 0.864,
+                    "Recall": 0.773,
+                    "F1 Score": 0.816,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 99,
+                    "False Classifications": 16,
+                    "Accuracy": 0.861,
+                    "Precision": 0.767,
+                    "Recall": 0.861,
+                    "F1 Score": 0.811,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.814,
+                "Balanced Accuracy": 0.817
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 99,
-                "FP": 12,
-                "TN": 95,
-                "FN": 27,
-                "accuracy": 0.833,
-                "precision": 0.892,
-                "recall": 0.786,
-                "specificity": 0.888,
-                "f1_score": 0.835,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 99,
+                    "False Classifications": 27,
+                    "Accuracy": 0.786,
+                    "Precision": 0.892,
+                    "Recall": 0.786,
+                    "F1 Score": 0.836,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 95,
+                    "False Classifications": 12,
+                    "Accuracy": 0.888,
+                    "Precision": 0.779,
+                    "Recall": 0.888,
+                    "F1 Score": 0.83,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.833,
+                "Balanced Accuracy": 0.837
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 103,
-                "FP": 20,
-                "TN": 95,
-                "FN": 29,
-                "accuracy": 0.802,
-                "precision": 0.837,
-                "recall": 0.78,
-                "specificity": 0.826,
-                "f1_score": 0.808,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 103,
+                    "False Classifications": 29,
+                    "Accuracy": 0.78,
+                    "Precision": 0.837,
+                    "Recall": 0.78,
+                    "F1 Score": 0.807,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 95,
+                    "False Classifications": 20,
+                    "Accuracy": 0.826,
+                    "Precision": 0.766,
+                    "Recall": 0.826,
+                    "F1 Score": 0.795,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.802,
+                "Balanced Accuracy": 0.803
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 99,
-                "FP": 16,
-                "TN": 91,
-                "FN": 27,
-                "accuracy": 0.815,
-                "precision": 0.861,
-                "recall": 0.786,
-                "specificity": 0.85,
-                "f1_score": 0.822,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 99,
+                    "False Classifications": 27,
+                    "Accuracy": 0.786,
+                    "Precision": 0.861,
+                    "Recall": 0.786,
+                    "F1 Score": 0.822,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 91,
+                    "False Classifications": 16,
+                    "Accuracy": 0.85,
+                    "Precision": 0.771,
+                    "Recall": 0.85,
+                    "F1 Score": 0.809,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.815,
+                "Balanced Accuracy": 0.818
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 105,
-                "FP": 18,
-                "TN": 97,
-                "FN": 27,
-                "accuracy": 0.818,
-                "precision": 0.854,
-                "recall": 0.795,
-                "specificity": 0.843,
-                "f1_score": 0.824,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 105,
+                    "False Classifications": 27,
+                    "Accuracy": 0.795,
+                    "Precision": 0.854,
+                    "Recall": 0.795,
+                    "F1 Score": 0.823,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 97,
+                    "False Classifications": 18,
+                    "Accuracy": 0.843,
+                    "Precision": 0.782,
+                    "Recall": 0.843,
+                    "F1 Score": 0.811,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.818,
+                "Balanced Accuracy": 0.819
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 101,
-                "FP": 13,
-                "TN": 94,
-                "FN": 25,
-                "accuracy": 0.837,
-                "precision": 0.886,
-                "recall": 0.802,
-                "specificity": 0.879,
-                "f1_score": 0.842,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 101,
+                    "False Classifications": 25,
+                    "Accuracy": 0.802,
+                    "Precision": 0.886,
+                    "Recall": 0.802,
+                    "F1 Score": 0.842,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 94,
+                    "False Classifications": 13,
+                    "Accuracy": 0.879,
+                    "Precision": 0.79,
+                    "Recall": 0.879,
+                    "F1 Score": 0.832,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.837,
+                "Balanced Accuracy": 0.841
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 112,
-                "FP": 21,
-                "TN": 94,
-                "FN": 20,
-                "accuracy": 0.834,
-                "precision": 0.842,
-                "recall": 0.848,
-                "specificity": 0.817,
-                "f1_score": 0.845,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 112,
+                    "False Classifications": 20,
+                    "Accuracy": 0.848,
+                    "Precision": 0.842,
+                    "Recall": 0.848,
+                    "F1 Score": 0.845,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 94,
+                    "False Classifications": 21,
+                    "Accuracy": 0.817,
+                    "Precision": 0.825,
+                    "Recall": 0.817,
+                    "F1 Score": 0.821,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.834,
+                "Balanced Accuracy": 0.833
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 107,
-                "FP": 16,
-                "TN": 91,
-                "FN": 19,
-                "accuracy": 0.85,
-                "precision": 0.87,
-                "recall": 0.849,
-                "specificity": 0.85,
-                "f1_score": 0.859,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 107,
+                    "False Classifications": 19,
+                    "Accuracy": 0.849,
+                    "Precision": 0.87,
+                    "Recall": 0.849,
+                    "F1 Score": 0.859,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 91,
+                    "False Classifications": 16,
+                    "Accuracy": 0.85,
+                    "Precision": 0.827,
+                    "Recall": 0.85,
+                    "F1 Score": 0.838,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.85,
+                "Balanced Accuracy": 0.849
             }
         }
     },
     "gpt-4.1-2025-04-14": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 116,
-                "FP": 22,
-                "TN": 93,
-                "FN": 16,
-                "accuracy": 0.846,
-                "precision": 0.841,
-                "recall": 0.879,
-                "specificity": 0.809,
-                "f1_score": 0.859,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 116,
+                    "False Classifications": 16,
+                    "Accuracy": 0.879,
+                    "Precision": 0.841,
+                    "Recall": 0.879,
+                    "F1 Score": 0.86,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 93,
+                    "False Classifications": 22,
+                    "Accuracy": 0.809,
+                    "Precision": 0.853,
+                    "Recall": 0.809,
+                    "F1 Score": 0.83,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.846,
+                "Balanced Accuracy": 0.844
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 112,
-                "FP": 17,
-                "TN": 90,
-                "FN": 14,
-                "accuracy": 0.867,
-                "precision": 0.868,
-                "recall": 0.889,
-                "specificity": 0.841,
-                "f1_score": 0.878,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 112,
+                    "False Classifications": 14,
+                    "Accuracy": 0.889,
+                    "Precision": 0.868,
+                    "Recall": 0.889,
+                    "F1 Score": 0.878,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 90,
+                    "False Classifications": 17,
+                    "Accuracy": 0.841,
+                    "Precision": 0.865,
+                    "Recall": 0.841,
+                    "F1 Score": 0.853,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.867,
+                "Balanced Accuracy": 0.865
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 116,
-                "FP": 22,
-                "TN": 93,
-                "FN": 16,
-                "accuracy": 0.846,
-                "precision": 0.841,
-                "recall": 0.879,
-                "specificity": 0.809,
-                "f1_score": 0.859,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 116,
+                    "False Classifications": 16,
+                    "Accuracy": 0.879,
+                    "Precision": 0.841,
+                    "Recall": 0.879,
+                    "F1 Score": 0.86,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 93,
+                    "False Classifications": 22,
+                    "Accuracy": 0.809,
+                    "Precision": 0.853,
+                    "Recall": 0.809,
+                    "F1 Score": 0.83,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.846,
+                "Balanced Accuracy": 0.844
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 111,
-                "FP": 17,
-                "TN": 90,
-                "FN": 15,
-                "accuracy": 0.863,
-                "precision": 0.867,
-                "recall": 0.881,
-                "specificity": 0.841,
-                "f1_score": 0.874,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 111,
+                    "False Classifications": 15,
+                    "Accuracy": 0.881,
+                    "Precision": 0.867,
+                    "Recall": 0.881,
+                    "F1 Score": 0.874,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 90,
+                    "False Classifications": 17,
+                    "Accuracy": 0.841,
+                    "Precision": 0.857,
+                    "Recall": 0.841,
+                    "F1 Score": 0.849,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.863,
+                "Balanced Accuracy": 0.861
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 116,
-                "FP": 25,
-                "TN": 90,
-                "FN": 16,
-                "accuracy": 0.834,
-                "precision": 0.823,
-                "recall": 0.879,
-                "specificity": 0.783,
-                "f1_score": 0.85,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 116,
+                    "False Classifications": 16,
+                    "Accuracy": 0.879,
+                    "Precision": 0.823,
+                    "Recall": 0.879,
+                    "F1 Score": 0.85,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 90,
+                    "False Classifications": 25,
+                    "Accuracy": 0.783,
+                    "Precision": 0.849,
+                    "Recall": 0.783,
+                    "F1 Score": 0.815,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.834,
+                "Balanced Accuracy": 0.831
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 112,
-                "FP": 21,
-                "TN": 86,
-                "FN": 14,
-                "accuracy": 0.85,
-                "precision": 0.842,
-                "recall": 0.889,
-                "specificity": 0.804,
-                "f1_score": 0.865,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 112,
+                    "False Classifications": 14,
+                    "Accuracy": 0.889,
+                    "Precision": 0.842,
+                    "Recall": 0.889,
+                    "F1 Score": 0.865,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 86,
+                    "False Classifications": 21,
+                    "Accuracy": 0.804,
+                    "Precision": 0.86,
+                    "Recall": 0.804,
+                    "F1 Score": 0.831,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.85,
+                "Balanced Accuracy": 0.847
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 119,
-                "FP": 22,
-                "TN": 93,
-                "FN": 13,
-                "accuracy": 0.858,
-                "precision": 0.844,
-                "recall": 0.902,
-                "specificity": 0.809,
-                "f1_score": 0.872,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 119,
+                    "False Classifications": 13,
+                    "Accuracy": 0.902,
+                    "Precision": 0.844,
+                    "Recall": 0.902,
+                    "F1 Score": 0.872,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 93,
+                    "False Classifications": 22,
+                    "Accuracy": 0.809,
+                    "Precision": 0.877,
+                    "Recall": 0.809,
+                    "F1 Score": 0.842,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.858,
+                "Balanced Accuracy": 0.856
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 115,
-                "FP": 18,
-                "TN": 89,
-                "FN": 11,
-                "accuracy": 0.876,
-                "precision": 0.865,
-                "recall": 0.913,
-                "specificity": 0.832,
-                "f1_score": 0.888,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 115,
+                    "False Classifications": 11,
+                    "Accuracy": 0.913,
+                    "Precision": 0.865,
+                    "Recall": 0.913,
+                    "F1 Score": 0.888,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 89,
+                    "False Classifications": 18,
+                    "Accuracy": 0.832,
+                    "Precision": 0.89,
+                    "Recall": 0.832,
+                    "F1 Score": 0.86,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.876,
+                "Balanced Accuracy": 0.873
             }
         },
         "only_text_256_20_AI_prompt": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 116,
-                "FP": 20,
-                "TN": 95,
-                "FN": 16,
-                "accuracy": 0.854,
-                "precision": 0.853,
-                "recall": 0.879,
-                "specificity": 0.826,
-                "f1_score": 0.866,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 116,
+                    "False Classifications": 16,
+                    "Accuracy": 0.879,
+                    "Precision": 0.853,
+                    "Recall": 0.879,
+                    "F1 Score": 0.866,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 95,
+                    "False Classifications": 20,
+                    "Accuracy": 0.826,
+                    "Precision": 0.856,
+                    "Recall": 0.826,
+                    "F1 Score": 0.841,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.854,
+                "Balanced Accuracy": 0.853
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 111,
-                "FP": 17,
-                "TN": 90,
-                "FN": 15,
-                "accuracy": 0.863,
-                "precision": 0.867,
-                "recall": 0.881,
-                "specificity": 0.841,
-                "f1_score": 0.874,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 111,
+                    "False Classifications": 15,
+                    "Accuracy": 0.881,
+                    "Precision": 0.867,
+                    "Recall": 0.881,
+                    "F1 Score": 0.874,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 90,
+                    "False Classifications": 17,
+                    "Accuracy": 0.841,
+                    "Precision": 0.857,
+                    "Recall": 0.841,
+                    "F1 Score": 0.849,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.863,
+                "Balanced Accuracy": 0.861
             }
         },
         "only_text_1024_20_AI_prompt": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 119,
-                "FP": 20,
-                "TN": 95,
-                "FN": 13,
-                "accuracy": 0.866,
-                "precision": 0.856,
-                "recall": 0.902,
-                "specificity": 0.826,
-                "f1_score": 0.878,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 119,
+                    "False Classifications": 13,
+                    "Accuracy": 0.902,
+                    "Precision": 0.856,
+                    "Recall": 0.902,
+                    "F1 Score": 0.878,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 95,
+                    "False Classifications": 20,
+                    "Accuracy": 0.826,
+                    "Precision": 0.88,
+                    "Recall": 0.826,
+                    "F1 Score": 0.852,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.866,
+                "Balanced Accuracy": 0.864
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 114,
-                "FP": 16,
-                "TN": 91,
-                "FN": 12,
-                "accuracy": 0.88,
-                "precision": 0.877,
-                "recall": 0.905,
-                "specificity": 0.85,
-                "f1_score": 0.891,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 114,
+                    "False Classifications": 12,
+                    "Accuracy": 0.905,
+                    "Precision": 0.877,
+                    "Recall": 0.905,
+                    "F1 Score": 0.891,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 91,
+                    "False Classifications": 16,
+                    "Accuracy": 0.85,
+                    "Precision": 0.883,
+                    "Recall": 0.85,
+                    "F1 Score": 0.866,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.88,
+                "Balanced Accuracy": 0.877
             }
         }
     },
     "llama3.1.70b": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 93,
-                "FP": 16,
-                "TN": 99,
-                "FN": 39,
-                "accuracy": 0.777,
-                "precision": 0.853,
-                "recall": 0.705,
-                "specificity": 0.861,
-                "f1_score": 0.772,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 93,
+                    "False Classifications": 39,
+                    "Accuracy": 0.705,
+                    "Precision": 0.853,
+                    "Recall": 0.705,
+                    "F1 Score": 0.772,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 99,
+                    "False Classifications": 16,
+                    "Accuracy": 0.861,
+                    "Precision": 0.717,
+                    "Recall": 0.861,
+                    "F1 Score": 0.782,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.777,
+                "Balanced Accuracy": 0.783
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 88,
-                "FP": 11,
-                "TN": 96,
-                "FN": 38,
-                "accuracy": 0.79,
-                "precision": 0.889,
-                "recall": 0.698,
-                "specificity": 0.897,
-                "f1_score": 0.782,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 88,
+                    "False Classifications": 38,
+                    "Accuracy": 0.698,
+                    "Precision": 0.889,
+                    "Recall": 0.698,
+                    "F1 Score": 0.782,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 96,
+                    "False Classifications": 11,
+                    "Accuracy": 0.897,
+                    "Precision": 0.716,
+                    "Recall": 0.897,
+                    "F1 Score": 0.796,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.79,
+                "Balanced Accuracy": 0.797
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 100,
-                "FP": 12,
-                "TN": 103,
-                "FN": 32,
-                "accuracy": 0.822,
-                "precision": 0.893,
-                "recall": 0.758,
-                "specificity": 0.896,
-                "f1_score": 0.82,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 100,
+                    "False Classifications": 32,
+                    "Accuracy": 0.758,
+                    "Precision": 0.893,
+                    "Recall": 0.758,
+                    "F1 Score": 0.82,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 103,
+                    "False Classifications": 12,
+                    "Accuracy": 0.896,
+                    "Precision": 0.763,
+                    "Recall": 0.896,
+                    "F1 Score": 0.824,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.822,
+                "Balanced Accuracy": 0.827
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 95,
-                "FP": 8,
-                "TN": 99,
-                "FN": 31,
-                "accuracy": 0.833,
-                "precision": 0.922,
-                "recall": 0.754,
-                "specificity": 0.925,
-                "f1_score": 0.83,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 95,
+                    "False Classifications": 31,
+                    "Accuracy": 0.754,
+                    "Precision": 0.922,
+                    "Recall": 0.754,
+                    "F1 Score": 0.83,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 99,
+                    "False Classifications": 8,
+                    "Accuracy": 0.925,
+                    "Precision": 0.762,
+                    "Recall": 0.925,
+                    "F1 Score": 0.836,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.833,
+                "Balanced Accuracy": 0.84
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 99,
-                "FP": 16,
-                "TN": 99,
-                "FN": 33,
-                "accuracy": 0.802,
-                "precision": 0.861,
-                "recall": 0.75,
-                "specificity": 0.861,
-                "f1_score": 0.802,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 99,
+                    "False Classifications": 33,
+                    "Accuracy": 0.75,
+                    "Precision": 0.861,
+                    "Recall": 0.75,
+                    "F1 Score": 0.802,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 99,
+                    "False Classifications": 16,
+                    "Accuracy": 0.861,
+                    "Precision": 0.75,
+                    "Recall": 0.861,
+                    "F1 Score": 0.802,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.802,
+                "Balanced Accuracy": 0.805
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 95,
-                "FP": 11,
-                "TN": 96,
-                "FN": 31,
-                "accuracy": 0.82,
-                "precision": 0.896,
-                "recall": 0.754,
-                "specificity": 0.897,
-                "f1_score": 0.819,
-                "invalid_labels": {
-                    "Unsubstantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 95,
+                    "False Classifications": 31,
+                    "Accuracy": 0.754,
+                    "Precision": 0.896,
+                    "Recall": 0.754,
+                    "F1 Score": 0.819,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 96,
+                    "False Classifications": 11,
+                    "Accuracy": 0.897,
+                    "Precision": 0.756,
+                    "Recall": 0.897,
+                    "F1 Score": 0.82,
+                    "Invalid_Labels": [
                         null
-                    ],
-                    "Substantiated": []
-                }
+                    ]
+                },
+                "Total Accuracy": 0.82,
+                "Balanced Accuracy": 0.826
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 99,
-                "FP": 15,
-                "TN": 100,
-                "FN": 33,
-                "accuracy": 0.806,
-                "precision": 0.868,
-                "recall": 0.75,
-                "specificity": 0.87,
-                "f1_score": 0.805,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 99,
+                    "False Classifications": 33,
+                    "Accuracy": 0.75,
+                    "Precision": 0.868,
+                    "Recall": 0.75,
+                    "F1 Score": 0.805,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 100,
+                    "False Classifications": 15,
+                    "Accuracy": 0.87,
+                    "Precision": 0.752,
+                    "Recall": 0.87,
+                    "F1 Score": 0.807,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.806,
+                "Balanced Accuracy": 0.81
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 95,
-                "FP": 9,
-                "TN": 98,
-                "FN": 31,
-                "accuracy": 0.828,
-                "precision": 0.913,
-                "recall": 0.754,
-                "specificity": 0.916,
-                "f1_score": 0.826,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 95,
+                    "False Classifications": 31,
+                    "Accuracy": 0.754,
+                    "Precision": 0.913,
+                    "Recall": 0.754,
+                    "F1 Score": 0.826,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 98,
+                    "False Classifications": 9,
+                    "Accuracy": 0.916,
+                    "Precision": 0.76,
+                    "Recall": 0.916,
+                    "F1 Score": 0.831,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.828,
+                "Balanced Accuracy": 0.835
             }
         },
         "only_text_256_20_AI_prompt": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 101,
-                "FP": 18,
-                "TN": 97,
-                "FN": 31,
-                "accuracy": 0.802,
-                "precision": 0.849,
-                "recall": 0.765,
-                "specificity": 0.843,
-                "f1_score": 0.805,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 101,
+                    "False Classifications": 31,
+                    "Accuracy": 0.765,
+                    "Precision": 0.849,
+                    "Recall": 0.765,
+                    "F1 Score": 0.805,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 97,
+                    "False Classifications": 18,
+                    "Accuracy": 0.843,
+                    "Precision": 0.758,
+                    "Recall": 0.843,
+                    "F1 Score": 0.798,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.802,
+                "Balanced Accuracy": 0.804
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 96,
-                "FP": 13,
-                "TN": 94,
-                "FN": 30,
-                "accuracy": 0.815,
-                "precision": 0.881,
-                "recall": 0.762,
-                "specificity": 0.879,
-                "f1_score": 0.817,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 96,
+                    "False Classifications": 30,
+                    "Accuracy": 0.762,
+                    "Precision": 0.881,
+                    "Recall": 0.762,
+                    "F1 Score": 0.817,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 94,
+                    "False Classifications": 13,
+                    "Accuracy": 0.879,
+                    "Precision": 0.758,
+                    "Recall": 0.879,
+                    "F1 Score": 0.814,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.815,
+                "Balanced Accuracy": 0.821
             }
         },
         "only_text_1024_20_AI_prompt": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 101,
-                "FP": 18,
-                "TN": 97,
-                "FN": 31,
-                "accuracy": 0.802,
-                "precision": 0.849,
-                "recall": 0.765,
-                "specificity": 0.843,
-                "f1_score": 0.805,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 101,
+                    "False Classifications": 31,
+                    "Accuracy": 0.765,
+                    "Precision": 0.849,
+                    "Recall": 0.765,
+                    "F1 Score": 0.805,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 97,
+                    "False Classifications": 18,
+                    "Accuracy": 0.843,
+                    "Precision": 0.758,
+                    "Recall": 0.843,
+                    "F1 Score": 0.798,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.802,
+                "Balanced Accuracy": 0.804
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 97,
-                "FP": 11,
-                "TN": 96,
-                "FN": 29,
-                "accuracy": 0.828,
-                "precision": 0.898,
-                "recall": 0.77,
-                "specificity": 0.897,
-                "f1_score": 0.829,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 97,
+                    "False Classifications": 29,
+                    "Accuracy": 0.77,
+                    "Precision": 0.898,
+                    "Recall": 0.77,
+                    "F1 Score": 0.829,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 96,
+                    "False Classifications": 11,
+                    "Accuracy": 0.897,
+                    "Precision": 0.768,
+                    "Recall": 0.897,
+                    "F1 Score": 0.828,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.828,
+                "Balanced Accuracy": 0.834
             }
         }
     },
     "llama4.scout": {
         "256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 94,
-                "FP": 14,
-                "TN": 101,
-                "FN": 38,
-                "accuracy": 0.789,
-                "precision": 0.87,
-                "recall": 0.712,
-                "specificity": 0.878,
-                "f1_score": 0.783,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 94,
+                    "False Classifications": 38,
+                    "Accuracy": 0.712,
+                    "Precision": 0.87,
+                    "Recall": 0.712,
+                    "F1 Score": 0.783,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 101,
+                    "False Classifications": 14,
+                    "Accuracy": 0.878,
+                    "Precision": 0.727,
+                    "Recall": 0.878,
+                    "F1 Score": 0.795,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.789,
+                "Balanced Accuracy": 0.795
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 91,
-                "FP": 11,
-                "TN": 96,
-                "FN": 35,
-                "accuracy": 0.803,
-                "precision": 0.892,
-                "recall": 0.722,
-                "specificity": 0.897,
-                "f1_score": 0.798,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 91,
+                    "False Classifications": 35,
+                    "Accuracy": 0.722,
+                    "Precision": 0.892,
+                    "Recall": 0.722,
+                    "F1 Score": 0.798,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 96,
+                    "False Classifications": 11,
+                    "Accuracy": 0.897,
+                    "Precision": 0.733,
+                    "Recall": 0.897,
+                    "F1 Score": 0.807,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.803,
+                "Balanced Accuracy": 0.809
             }
         },
         "only_text_256_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 91,
-                "FP": 20,
-                "TN": 95,
-                "FN": 41,
-                "accuracy": 0.753,
-                "precision": 0.82,
-                "recall": 0.689,
-                "specificity": 0.826,
-                "f1_score": 0.749,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 91,
+                    "False Classifications": 41,
+                    "Accuracy": 0.689,
+                    "Precision": 0.82,
+                    "Recall": 0.689,
+                    "F1 Score": 0.749,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 95,
+                    "False Classifications": 20,
+                    "Accuracy": 0.826,
+                    "Precision": 0.699,
+                    "Recall": 0.826,
+                    "F1 Score": 0.757,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.753,
+                "Balanced Accuracy": 0.757
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 87,
-                "FP": 18,
-                "TN": 89,
-                "FN": 39,
-                "accuracy": 0.755,
-                "precision": 0.829,
-                "recall": 0.69,
-                "specificity": 0.832,
-                "f1_score": 0.753,
-                "invalid_labels": {
-                    "Unsubstantiated": [],
-                    "Substantiated": []
-                }
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 87,
+                    "False Classifications": 39,
+                    "Accuracy": 0.69,
+                    "Precision": 0.829,
+                    "Recall": 0.69,
+                    "F1 Score": 0.753,
+                    "Invalid_Labels": []
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 89,
+                    "False Classifications": 18,
+                    "Accuracy": 0.832,
+                    "Precision": 0.695,
+                    "Recall": 0.832,
+                    "F1 Score": 0.757,
+                    "Invalid_Labels": []
+                },
+                "Total Accuracy": 0.755,
+                "Balanced Accuracy": 0.761
             }
         },
         "1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 39,
-                "FP": 90,
-                "TN": 25,
-                "FN": 93,
-                "accuracy": 0.259,
-                "precision": 0.302,
-                "recall": 0.295,
-                "specificity": 0.217,
-                "f1_score": 0.299,
-                "invalid_labels": {
-                    "Unsubstantiated": [
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
-                    "Substantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 39,
+                    "False Classifications": 93,
+                    "Accuracy": 0.295,
+                    "Precision": 0.302,
+                    "Recall": 0.295,
+                    "F1 Score": 0.298,
+                    "Invalid_Labels": [
                         null,
                         null,
                         null,
@@ -1208,97 +1488,110 @@
                         null,
                         null
                     ]
-                }
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 25,
+                    "False Classifications": 90,
+                    "Accuracy": 0.217,
+                    "Precision": 0.212,
+                    "Recall": 0.217,
+                    "F1 Score": 0.214,
+                    "Invalid_Labels": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                "Total Accuracy": 0.259,
+                "Balanced Accuracy": 0.256
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 37,
-                "FP": 83,
-                "TN": 24,
-                "FN": 89,
-                "accuracy": 0.262,
-                "precision": 0.308,
-                "recall": 0.294,
-                "specificity": 0.224,
-                "f1_score": 0.301,
-                "invalid_labels": {
-                    "Unsubstantiated": [
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
-                    "Substantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 37,
+                    "False Classifications": 89,
+                    "Accuracy": 0.294,
+                    "Precision": 0.308,
+                    "Recall": 0.294,
+                    "F1 Score": 0.301,
+                    "Invalid_Labels": [
                         null,
                         null,
                         null,
@@ -1387,116 +1680,106 @@
                         null,
                         null
                     ]
-                }
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 24,
+                    "False Classifications": 83,
+                    "Accuracy": 0.224,
+                    "Precision": 0.212,
+                    "Recall": 0.224,
+                    "F1 Score": 0.218,
+                    "Invalid_Labels": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                "Total Accuracy": 0.262,
+                "Balanced Accuracy": 0.259
             }
         },
         "only_text_1024_20": {
             "all": {
-                "G (Total)": 247,
-                "P (Substantiated)": 132,
-                "N (Unsubstantiated)": 115,
-                "TP": 24,
-                "FP": 105,
-                "TN": 10,
-                "FN": 108,
-                "accuracy": 0.138,
-                "precision": 0.186,
-                "recall": 0.182,
-                "specificity": 0.087,
-                "f1_score": 0.184,
-                "invalid_labels": {
-                    "Unsubstantiated": [
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
-                    "Substantiated": [
+                "Total": 247,
+                "Substantiated": {
+                    "Label Total": 132,
+                    "True Classifications": 24,
+                    "False Classifications": 108,
+                    "Accuracy": 0.182,
+                    "Precision": 0.186,
+                    "Recall": 0.182,
+                    "F1 Score": 0.184,
+                    "Invalid_Labels": [
                         null,
                         null,
                         null,
@@ -1602,108 +1885,121 @@
                         null,
                         null
                     ]
-                }
+                },
+                "Unsubstantiated": {
+                    "Label Total": 115,
+                    "True Classifications": 10,
+                    "False Classifications": 105,
+                    "Accuracy": 0.087,
+                    "Precision": 0.085,
+                    "Recall": 0.087,
+                    "F1 Score": 0.086,
+                    "Invalid_Labels": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                "Total Accuracy": 0.138,
+                "Balanced Accuracy": 0.135
             },
             "without_relabelled": {
-                "G (Total)": 233,
-                "P (Substantiated)": 126,
-                "N (Unsubstantiated)": 107,
-                "TP": 22,
-                "FP": 97,
-                "TN": 10,
-                "FN": 104,
-                "accuracy": 0.137,
-                "precision": 0.185,
-                "recall": 0.175,
-                "specificity": 0.093,
-                "f1_score": 0.18,
-                "invalid_labels": {
-                    "Unsubstantiated": [
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
-                    "Substantiated": [
+                "Total": 233,
+                "Substantiated": {
+                    "Label Total": 126,
+                    "True Classifications": 22,
+                    "False Classifications": 104,
+                    "Accuracy": 0.175,
+                    "Precision": 0.185,
+                    "Recall": 0.175,
+                    "F1 Score": 0.18,
+                    "Invalid_Labels": [
                         null,
                         null,
                         null,
@@ -1805,7 +2101,103 @@
                         null,
                         null
                     ]
-                }
+                },
+                "Unsubstantiated": {
+                    "Label Total": 107,
+                    "True Classifications": 10,
+                    "False Classifications": 97,
+                    "Accuracy": 0.093,
+                    "Precision": 0.088,
+                    "Recall": 0.093,
+                    "F1 Score": 0.09,
+                    "Invalid_Labels": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ]
+                },
+                "Total Accuracy": 0.137,
+                "Balanced Accuracy": 0.134
             }
         }
     }

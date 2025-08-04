@@ -4,14 +4,14 @@ from IPython.display import display
 from statsmodels.stats.proportion import proportions_ztest
 from scipy.stats import fisher_exact
 
-def eval_predictions(df, include_relabelled_partially=False, include_not_originally_downloaded=True, only_accuracy=False):
-    G = 0
-    P = 0
-    N = 0
-    TP = 0
-    FP = 0
-    TN = 0
-    FN = 0
+def eval_predictions(df, include_relabelled_partially=False, include_not_originally_downloaded=True):
+    G_Total = 0
+    Sub_Correct_Total = 0
+    Unsub_Correct_Total = 0
+    Sub_True = 0
+    Sub_False = 0
+    Unsub_True = 0
+    Unsub_False = 0
 
     invalid_labels = {
         'Unsubstantiated': [],
@@ -22,7 +22,7 @@ def eval_predictions(df, include_relabelled_partially=False, include_not_origina
         if row['Reference Article Downloaded'] == 'Yes':
             if include_not_originally_downloaded or row['Reference Article PDF Available'] == 'Yes':
                 if include_relabelled_partially or row['Previously Partially Substantiated'] != 'x':
-                    G += 1
+                    G_Total += 1
                     target_label = row['Label']
                     model_label = row['Model Classification Label']
 
@@ -35,53 +35,58 @@ def eval_predictions(df, include_relabelled_partially=False, include_not_origina
                         invalid_label = True
                 
                     if target_label == 'Substantiated':
-                        P += 1
+                        Sub_Correct_Total += 1
                         if model_label == 'Substantiated':
-                            TP += 1
+                            Sub_True += 1
                         elif model_label == 'Unsubstantiated':
-                            FN += 1
+                            Sub_False += 1
                         elif invalid_label:
-                            FN += 1
+                            Sub_False += 1
                     elif target_label == 'Unsubstantiated':
-                        N += 1
+                        Unsub_Correct_Total += 1
                         if model_label == 'Substantiated':
-                            FP += 1
+                            Unsub_False += 1
                         elif model_label == 'Unsubstantiated':
-                            TN += 1
+                            Unsub_True += 1
                         elif invalid_label:
-                            FP += 1   
+                            Unsub_False += 1
 
-    assert G == P + N, f"Total G ({G}) does not equal P ({P}) + N ({N})"
-    assert TP + FN == P, f"TP ({TP}) + FN ({FN}) does not equal P ({P})"
-    assert TN + FP == N, f"TN ({TN}) + FP ({FP}) does not equal N ({N})"
-    assert G != 0, f"Total G ({G}) is 0, cannot calculate metrics"
+    assert G_Total == Sub_Correct_Total + Unsub_Correct_Total, f"Total G ({G_Total}) does not equal Sub_Correct_Total ({Sub_Correct_Total}) + Unsub_Correct_Total ({Unsub_Correct_Total})"
+    assert Sub_True + Sub_False == Sub_Correct_Total, f"Sub_True ({Sub_True}) + Unsub_False ({Unsub_False}) does not equal Sub_Correct_Total ({Sub_Correct_Total})"
+    assert Unsub_True + Unsub_False == Unsub_Correct_Total, f"Unsub_True ({Unsub_True}) + Sub_False ({Sub_False}) does not equal Unsub_Correct_Total ({Unsub_Correct_Total})"
+    assert G_Total != 0, f"Total G ({G_Total}) is 0, cannot calculate metrics"
 
-    accuracy = (TP + TN) / G
-    precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
-    recall = TP / P if P > 0 else 0.0
-    specificity = TN / N if N > 0 else 0.0
-    f1_score = 2 * ((precision * recall) / (precision + recall)) if (precision + recall) > 0 else 0.0
-    
-    if only_accuracy:
-        return {
-            'accuracy': round(accuracy, 3)
-        }
-    else:
-        return {
-            'G (Total)': G,
-            'P (Substantiated)': P,
-            'N (Unsubstantiated)': N,
-            'TP': TP,
-            'FP': FP,
-            'TN': TN,
-            'FN': FN,
-            'accuracy': round(accuracy, 3),
-            'precision': round(precision, 3),
-            'recall': round(recall, 3),
-            'specificity': round(specificity, 3),
-            'f1_score': round(f1_score, 3),
-            'invalid_labels': invalid_labels
-        }
+    results = {
+        'Total': G_Total,
+        'Substantiated': {
+            'Label Total': Sub_Correct_Total,
+            'True Classifications': Sub_True,
+            'False Classifications': Sub_False,
+            'Accuracy': round(Sub_True / Sub_Correct_Total, 3),
+            'Precision': round(Sub_True / (Sub_True + Unsub_False) if (Sub_True + Unsub_False) > 0 else 0.0, 3),
+            'Recall': round(Sub_True / Sub_Correct_Total if Sub_Correct_Total > 0 else 0.0, 3),
+            'F1 Score': 0,
+            'Invalid_Labels': invalid_labels['Substantiated']
+        },
+        'Unsubstantiated': {
+            'Label Total': Unsub_Correct_Total,
+            'True Classifications': Unsub_True,
+            'False Classifications': Unsub_False,
+            'Accuracy': round(Unsub_True / Unsub_Correct_Total, 3),
+            'Precision': round(Unsub_True / (Unsub_True + Sub_False) if (Unsub_True + Sub_False) > 0 else 0.0, 3),
+            'Recall': round(Unsub_True / Unsub_Correct_Total if Unsub_Correct_Total > 0 else 0.0, 3),
+            'F1 Score': 0,
+            'Invalid_Labels': invalid_labels['Unsubstantiated']
+        },
+        'Total Accuracy': round((Sub_True + Unsub_True) / G_Total, 3),
+        'Balanced Accuracy': 0
+    }
+    results['Substantiated']['F1 Score'] = round(2 * ((results['Substantiated']['Precision'] * results['Substantiated']['Recall']) / (results['Substantiated']['Precision'] + results['Substantiated']['Recall'])) if (results['Substantiated']['Precision'] + results['Substantiated']['Recall']) > 0 else 0.0, 3)
+    results['Unsubstantiated']['F1 Score'] = round(2 * ((results['Unsubstantiated']['Precision'] * results['Unsubstantiated']['Recall']) / (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall'])) if (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall']) > 0 else 0.0, 3)
+
+    results['Balanced Accuracy'] = round((results['Substantiated']['Recall'] + results['Unsubstantiated']['Recall']) / 2, 3)
+
+    return results
     
 # def count_preds_for_label(type_predictions_dict, label):
 #     """
@@ -393,7 +398,6 @@ def eval_attribute_subset_vs_rest(df, attribute, attribute_values):
             'Correct': rest_results['TP'] + rest_results['TN'],
         },
     }
-
 
 def calc_significance_of_accuracy_difference(attribute_subset_rest_results):
     results = {}
