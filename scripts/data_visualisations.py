@@ -370,7 +370,7 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
     plt.show()
 
-def show_metrics_per_label(model_results, title="Model Performance Metrics by Label"):
+def show_metrics_per_label(model_results, title="Model Performance Metrics by Label", save_title=None):
     # Define colors for each metric
     colors = {
         'Accuracy': '#2ca02c',        # Green
@@ -382,13 +382,13 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
     
     # Create subplots - one for each model
     num_models = len(model_results)
-    fig, axes = plt.subplots(1, num_models, figsize=(6 * num_models, 6), sharey=True)
+    fig, axes = plt.subplots(1, num_models, figsize=(8 * num_models, 8), sharey=True)
     
     # Handle case where there's only one model
     if num_models == 1:
         axes = [axes]
     
-    fig.suptitle(title, fontsize=16)
+    fig.suptitle(title, fontsize=18)
     
     # Define bar positions and width
     labels = ['Total', 'Substantiated', 'Unsubstantiated']
@@ -423,7 +423,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
             # Add value labels on top of bars
             if total_values[i] > 0:
                 ax.text(bars[0].get_x() + bars[0].get_width()/2, bars[0].get_height() + 1,
-                       f'{total_values[i]:.1f}%', ha='center', va='bottom', fontsize=10)
+                       f'{total_values[i]:.1f}%', ha='center', va='bottom', fontsize=12)
         
         # Extract metrics for both label types
         substantiated_metrics = []
@@ -457,25 +457,30 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
             # Add value labels on top of bars
             if substantiated_metrics[i] > 0:
                 ax.text(bars_sub[0].get_x() + bars_sub[0].get_width()/2, bars_sub[0].get_height() + 1,
-                       f'{substantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=10)
+                       f'{substantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=12)
             
             if unsubstantiated_metrics[i] > 0:
                 ax.text(bars_unsub[0].get_x() + bars_unsub[0].get_width()/2, bars_unsub[0].get_height() + 1,
-                       f'{unsubstantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=10)
+                       f'{unsubstantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=12)
         
         # Customize subplot
-        ax.set_title(f'{model_name}', fontsize=14)
-        ax.set_ylabel('Percentage (%)', fontsize=12)
+        ax.set_title(f'{model_name}', fontsize=16)
+        ax.set_ylabel('Percentage (%)', fontsize=16)
         ax.set_ylim(0, 100)
         ax.set_xticks(x)
-        ax.set_xticklabels(labels)
+        ax.set_xticklabels(labels, fontsize=14)
         ax.grid(axis='y', alpha=0.3)
+        
+        # Increase tick label font sizes
+        ax.tick_params(axis='both', which='major', labelsize=14)
         
         # Add legend only to the first subplot
         if idx == 0:
-            ax.legend(title='Metrics', loc='lower right')
+            ax.legend(title='Metrics', loc='lower right', fontsize=14, title_fontsize=16)
     
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
 def show_unsub_preds_per_error_type(data_dicts, titles):
@@ -593,12 +598,12 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
     colors = {
         'Accuracy': '#2ca02c',                    # Green
         'Balanced Accuracy': '#006400',           # Dark Green
-        'Unsubstantiated Precision': '#d62728',   # Red
-        'Unsubstantiated Recall': '#1f77b4',      # Blue
-        'Unsubstantiated F1 Score': '#ff7f0e',    # Orange
-        'Substantiated Precision': '#d62728',     # Red
-        'Substantiated Recall': '#1f77b4',        # Blue
-        'Substantiated F1 Score': '#ff7f0e'       # Orange
+        'Unsubstantiated: Precision': '#d62728',   # Red
+        'Unsubstantiated: Recall': '#1f77b4',      # Blue
+        'Unsubstantiated: F1 Score': '#ff7f0e',    # Orange
+        'Substantiated: Precision': '#d62728',     # Red
+        'Substantiated: Recall': '#1f77b4',        # Blue
+        'Substantiated: F1 Score': '#ff7f0e'       # Orange
     }
     
     # Get model results
@@ -612,12 +617,12 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
     metrics_to_plot = [
         ('Accuracy', 0, 0),
         ('Balanced Accuracy', 0, 1), 
-        ('Unsubstantiated Precision', 1, 0),
-        ('Unsubstantiated Recall', 1, 1),
-        ('Unsubstantiated F1 Score', 1, 2),
-        ('Substantiated Precision', 2, 0),
-        ('Substantiated Recall', 2, 1),
-        ('Substantiated F1 Score', 2, 2)
+        ('Unsubstantiated: Precision', 1, 0),
+        ('Unsubstantiated: Recall', 1, 1),
+        ('Unsubstantiated: F1 Score', 1, 2),
+        ('Substantiated: Precision', 2, 0),
+        ('Substantiated: Recall', 2, 1),
+        ('Substantiated: F1 Score', 2, 2)
     ]
     
     # Calculate grid dimensions (3 columns, 3 rows)
@@ -725,4 +730,73 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
     axes[0, 2].set_visible(False)
     
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
+    plt.show()
+
+def show_best_models_comparison(best_model_configs, model_names=None, title="Best Model Configurations: Balanced Accuracy vs Unsubstantiated F1 Score", save_title=None):
+    """
+    Create a grouped bar chart comparing balanced accuracy and unsubstantiated F1 score for each model.
+    
+    Parameters:
+    best_model_configs: Dictionary with structure as shown in the example
+    model_names: Optional dictionary mapping model keys to display names
+    title: Title for the plot
+    """
+    # Define colors matching the existing color scheme
+    colors = {
+        'Balanced Accuracy': '#006400',  # Dark Green (matching existing scheme)
+        'Unsubstantiated F1': '#ff7f0e'  # Orange (matching existing scheme)
+    }
+    
+    # Extract data
+    models = list(best_model_configs.keys())
+    balanced_accuracies = [best_model_configs[model]['balanced_accuracy'] * 100 for model in models]
+    unsub_f1_scores = [best_model_configs[model]['results']['Unsubstantiated']['F1 Score'] * 100 for model in models]
+    
+    # Get display names for models
+    if model_names:
+        display_names = [model_names.get(model, model) for model in models]
+    else:
+        display_names = models
+    
+    # Set up the plot
+    fig, ax = plt.subplots(figsize=(12, 8))
+    
+    # Set width of bars and positions
+    bar_width = 0.35
+    x = np.arange(len(models))
+    
+    # Create bars
+    bars1 = ax.bar(x - bar_width/2, unsub_f1_scores, bar_width,
+                   label='Unsubstantiated F1 Score', color=colors['Unsubstantiated F1'], alpha=0.8)
+    bars2 = ax.bar(x + bar_width/2, balanced_accuracies, bar_width, 
+                   label='Balanced Accuracy', color=colors['Balanced Accuracy'], alpha=0.8)
+    
+    # Add value labels on top of bars
+    for bar in bars1:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height + 0.5,
+               f'{height:.1f}%', ha='center', va='bottom', fontsize=12)
+    
+    for bar in bars2:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height + 0.5,
+               f'{height:.1f}%', ha='center', va='bottom', fontsize=12)
+    
+    # Customize the plot
+    ax.set_xlabel('Models', fontsize=16)
+    ax.set_ylabel('Percentage (%)', fontsize=16)
+    ax.set_title(title, fontsize=18)
+    ax.set_xticks(x)
+    ax.set_xticklabels(display_names, rotation=45, ha='right', fontsize=14)
+    ax.legend(fontsize=14, loc='lower right')
+    ax.grid(axis='y', alpha=0.3)
+    ax.set_ylim(0, 100)
+    
+    # Increase tick label font sizes
+    ax.tick_params(axis='both', which='major', labelsize=14)
+    
+    # Adjust layout and show
+    plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
