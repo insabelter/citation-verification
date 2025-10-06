@@ -174,6 +174,7 @@ def display_model_results_table(model_results_dict):
         row = {'Model': model_name}
         
         # Extract metrics from the new schema
+        row['Accuracy'] = results.get('Accuracy', None)
         row['Balanced Accuracy'] = results.get('Balanced Accuracy', None)
         row['Precision (Unsubstantiated)'] = results.get('Unsubstantiated', {}).get('Precision', None)
         row['Recall (Unsubstantiated)'] = results.get('Unsubstantiated', {}).get('Recall', None)

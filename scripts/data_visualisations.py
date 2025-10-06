@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import matplotlib.patches as mpatches
 import numpy as np
+import matplotlib.gridspec as gridspec
 
 citation_functions = {
     "Use": ["Apply", "Extend"],
@@ -10,7 +11,187 @@ citation_functions = {
     "Background": ["Introduction/Bigger picture", "Unrelated/Unclear"]
 }
 
-def show_distribution(df, column_name, include_nan=True, sorting=None):
+def show_label_dist_comparison(label_dist, save_title=None):
+    """
+    Plot comparison of label distributions between original and re-annotated datasets.
+    
+    Parameters:
+    label_dist: Dictionary with structure as shown in the example
+    save_title: Optional title for saving the plot
+    """
+    # Define colors for each label type (consistent with other plot functions)
+    colors = {
+        "Fully Substantiated": "#2ca02c",      # Green (same as Accuracy)
+        "Substantiated": "#2ca02c",            # Green (same as Accuracy)
+        "Partially Substantiated": "#ffcc00",  # Orange-tinted yellow
+        "Unsubstantiated": "#c62828"           # Slightly darker red for consistency
+    }
+    
+    # Extract datasets and determine subplot widths based on number of bars
+    datasets = list(label_dist.keys())
+    dataset_items = [list(data.keys()) for data in label_dist.values()]
+    num_bars = [len(items) for items in dataset_items]
+    
+    # Create subplots with widths proportional to number of bars (making both plots more balanced)
+    fig = plt.figure(figsize=(12, 6))
+    # Adjust ratio to better match bar widths: use 2.2:1.5 instead of 3:1.5
+    width_ratios = [2.35, 1.5] if len(num_bars) >= 2 else [1, 1]
+    gs = gridspec.GridSpec(1, 2, width_ratios=width_ratios)
+    axes = [fig.add_subplot(gs[0, i]) for i in range(2)]
+    
+    # Define fixed bar width (reduced for narrower bars)
+    bar_width = 0.4
+    
+    # Store data for difference calculation
+    all_data = []
+    
+    for i, (dataset_name, data) in enumerate(label_dist.items()):
+        ax = axes[i]
+        
+        # Extract labels and counts
+        labels = list(data.keys())
+        counts = list(data.values())
+        
+        # Store data for later comparison
+        all_data.append((labels, counts))
+        
+        # Map colors to labels
+        bar_colors = [colors[label] for label in labels]
+        
+        # Create bar plot with fixed width and reduced spacing
+        x_positions = np.arange(len(labels)) * 0.6  # Smaller spacing between bars
+        bars = ax.bar(x_positions, counts, width=bar_width, color=bar_colors, alpha=0.8)
+        
+        # Set title and labels
+        ax.set_title(f'{dataset_name}', fontsize=14)
+        
+        # For the right plot, add extra padding to align x-axis label with left plot
+        if i == 1:
+            ax.set_xlabel('Labels', fontsize=12, labelpad=29)
+        else:
+            ax.set_xlabel('Labels', fontsize=12)
+            
+        if i == 0:  # Only set y-label for the first subplot
+            ax.set_ylabel('Count', fontsize=12)
+        ax.set_xticks(x_positions)
+        ax.set_xticklabels(labels, rotation=45, ha='right', fontsize=11)
+        
+        # Add the count values above each bar
+        max_height = max(counts)
+        offset = max_height * 0.01  # 1% of the maximum height for consistent spacing
+        
+        for bar, count in zip(bars, counts):
+            ax.annotate(str(count), (bar.get_x() + bar.get_width() / 2., bar.get_height() + offset), 
+                       ha='center', va='bottom', fontsize=12)
+        
+        # For the right plot (re-annotated dataset), add difference labels within bars
+        if i == 1 and len(all_data) >= 2:
+            original_labels, original_counts = all_data[0]
+            
+            # Create mapping from original labels to counts
+            original_map = {}
+            original_map["Fully Substantiated"] = original_counts[original_labels.index("Fully Substantiated")] if "Fully Substantiated" in original_labels else 0
+            original_map["Partially Substantiated"] = original_counts[original_labels.index("Partially Substantiated")] if "Partially Substantiated" in original_labels else 0
+            original_map["Unsubstantiated"] = original_counts[original_labels.index("Unsubstantiated")] if "Unsubstantiated" in original_labels else 0
+            
+            # Calculate differences and add labels within bars
+            for j, (bar, label, count) in enumerate(zip(bars, labels, counts)):
+                if label == "Substantiated":
+                    # Compare with Fully Substantiated only from original dataset
+                    diff = count - original_map["Fully Substantiated"]
+                elif label == "Unsubstantiated":
+                    # Compare with original Unsubstantiated
+                    diff = count - original_map["Unsubstantiated"]
+                else:
+                    diff = 0
+                
+                if diff != 0:
+                    sign = "+" if diff > 0 else ""
+                    # Position text at 95% of bar height to be very close to the top
+                    text_y = count * 0.93
+                    ax.text(bar.get_x() + bar.get_width() / 2., text_y, f'{sign}{diff}', 
+                           ha='center', va='center', fontsize=11, color='black')
+        
+        # Set fixed y-axis to ensure bars aren't cut off
+        ax.set_ylim(0, 160)
+    
+    # Adjust layout and show the plots
+    # Share y-axis between subplots
+    axes[1].sharey(axes[0])
+    plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
+    plt.show()
+
+def show_distribution_dict_comparison(data_dict, save_title=None, left_xlabel_pad=None, right_xlabel_pad=None):
+    """
+    Plot comparison of two distributions from a dictionary.
+    
+    Parameters:
+    data_dict: Dictionary with two keys, each containing a distribution dictionary
+    save_title: Optional title for saving the plot
+    left_xlabel_pad: Optional padding for the left plot's x-axis label
+    right_xlabel_pad: Optional padding for the right plot's x-axis label
+    """
+    # Extract the two distributions
+    keys = list(data_dict.keys())
+    if len(keys) != 2:
+        raise ValueError("Dictionary must contain exactly 2 distributions")
+    
+    # Find the maximum value across both distributions for consistent y-axis
+    all_values = []
+    for distribution in data_dict.values():
+        all_values.extend(distribution.values())
+    max_value = max(all_values) if all_values else 1
+    
+    # Create subplots for side-by-side bar charts
+    fig, axes = plt.subplots(1, 2, figsize=(16, 6), sharey=True)
+    
+    for i, (title, distribution) in enumerate(data_dict.items()):
+        ax = axes[i]
+        
+        # Convert to pandas Series for easier handling
+        series = pd.Series(distribution)
+        
+        # Create bar plot
+        bars = series.plot(kind='bar', ax=ax)
+        
+        # Set title and labels
+        ax.set_title(f'{title}', fontsize=14)
+        
+        # Apply custom padding for x-axis labels if specified
+        if i == 0 and left_xlabel_pad is not None:
+            ax.set_xlabel('Annotation Attribute Value', fontsize=14, labelpad=left_xlabel_pad)
+        elif i == 1 and right_xlabel_pad is not None:
+            ax.set_xlabel('Annotation Attribute Value', fontsize=14, labelpad=right_xlabel_pad)
+        else:
+            ax.set_xlabel('Annotation Attribute Value', fontsize=14)
+            
+        if i == 0:  # Only set y-label for the first subplot
+            ax.set_ylabel('Count', fontsize=14)
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=11)
+        ax.tick_params(axis='y', labelsize=11)  # Set y-axis tick label font size
+        
+        # Add the count values above each bar
+        offset = max_value * 0.01  # 1% of the maximum height for consistent spacing
+        
+        for bar in bars.patches:
+            height = bar.get_height()
+            if height > 0:  # Only add text for non-zero bars
+                ax.annotate(str(int(height)), 
+                           (bar.get_x() + bar.get_width() / 2., height + offset), 
+                           ha='center', va='bottom', fontsize=12)
+        
+        # Set consistent y-axis for both plots
+        ax.set_ylim(0, max_value * 1.1)  # 10% extra space at the top
+    
+    # Adjust layout and show the plots
+    plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
+    plt.show()
+
+def show_distribution(df, column_name, include_nan=True, sorting=None, save_title=None):
     # Count the occurrences of each source, including NaN values if specified
     source_counts = df[column_name].value_counts(dropna=(not include_nan))
 
@@ -24,19 +205,28 @@ def show_distribution(df, column_name, include_nan=True, sorting=None):
     # Plot the bar diagram
     plt.figure(figsize=(10, 6))
     ax = source_counts.plot(kind='bar')
-    plt.title('Distribution of column: ' + column_name)
+    if not save_title:
+        plt.title('Distribution of column: ' + column_name)
     plt.xlabel(column_name)
     plt.ylabel('Count')
     ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right')
 
-    # Add the total number above each bar, aligned vertically with the middle of the bar
+    # Add the total number above each bar with consistent spacing
+    max_height = max([p.get_height() for p in ax.patches])
+    offset = max_height * 0.01  # 1% of the maximum height for consistent spacing
+    
     for p in ax.patches:
-        ax.annotate(str(p.get_height()), (p.get_x() + p.get_width() / 2., p.get_height() + (p.get_width()*0.5)), 
-                    ha='center', va='center')
+        ax.annotate(str(int(p.get_height())), (p.get_x() + p.get_width() / 2., p.get_height() + offset), 
+                    ha='center', va='bottom')
+    
+    # Adjust y-axis to provide space for labels
+    ax.set_ylim(0, max_height * 1.1)  # 10% extra space at the top
 
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_distribution_pie(df, column_name, include_nan=True, sorting=None):
+def show_distribution_pie(df, column_name, include_nan=True, sorting=None, save_title=None):
     # Count the occurrences of each source, including NaN values if specified
     source_counts = df[column_name].value_counts(dropna=(not include_nan))
 
@@ -53,10 +243,13 @@ def show_distribution_pie(df, column_name, include_nan=True, sorting=None):
     # Plot the pie chart
     plt.figure(figsize=(8, 8))
     plt.pie(source_counts, labels=labels, autopct='%1.1f%%', startangle=90, counterclock=False)
-    plt.title('Distribution of column: ' + column_name)
+    if not save_title:
+        plt.title('Distribution of column: ' + column_name)
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df2_name="False Predicted Data", include_nan=True):
+def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df2_name="False Predicted Data", include_nan=True, save_title=None):
     # Count the occurrences of each value in the specified column for both dataframes, including NaN values
     source_counts_df1 = df1[column_name].value_counts(dropna=(not include_nan))
     source_counts_df2 = df2[column_name].value_counts(dropna=(not include_nan))
@@ -71,7 +264,8 @@ def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df
 
     # Plot the first dataframe
     ax1 = source_counts_df1.plot(kind='bar', ax=axes[0], color='skyblue')
-    axes[0].set_title(f'Distribution ({column_name}): {df1_name}')
+    if not save_title:
+        axes[0].set_title(f'Distribution ({column_name}): {df1_name}')
     axes[0].set_xlabel(column_name)
     axes[0].set_ylabel('Count')
     ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
@@ -83,7 +277,8 @@ def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df
 
     # Plot the second dataframe
     ax2 = source_counts_df2.plot(kind='bar', ax=axes[1], color='salmon')
-    axes[1].set_title(f'Distribution ({column_name}): {df2_name}')
+    if not save_title:
+        axes[1].set_title(f'Distribution ({column_name}): {df2_name}')
     axes[1].set_xlabel(column_name)
     ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')
 
@@ -94,9 +289,11 @@ def show_distribution_comparison(df1, df2, column_name, df1_name="Full Data", df
 
     # Adjust layout and show the plots
     plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_distribution_comparison_pie(df1, df2, column_name, df1_name="Full Data", df2_name="False Predicted Data", include_nan=True, label_threshold_percent=5):
+def show_distribution_comparison_pie(df1, df2, column_name, df1_name="Full Data", df2_name="False Predicted Data", include_nan=True, label_threshold_percent=5, save_title=None):
     # Count the occurrences of each value in the specified column for both dataframes, including NaN values
     source_counts_df1 = df1[column_name].value_counts(dropna=(not include_nan))
     source_counts_df2 = df2[column_name].value_counts(dropna=(not include_nan))
@@ -139,7 +336,8 @@ def show_distribution_comparison_pie(df1, df2, column_name, df1_name="Full Data"
         text.set_fontsize(10)
     for autotext in autotexts:
         autotext.set_fontsize(10)
-    axes[0].set_title(f'Distribution ({column_name}): {df1_name}')
+    if not save_title:
+        axes[0].set_title(f'Distribution ({column_name}): {df1_name}')
 
     # Plot the second dataframe
     total_df2 = source_counts_df2.sum()
@@ -152,13 +350,16 @@ def show_distribution_comparison_pie(df1, df2, column_name, df1_name="Full Data"
         text.set_fontsize(10)
     for autotext in autotexts:
         autotext.set_fontsize(10)
-    axes[1].set_title(f'Distribution ({column_name}): {df2_name}')
+    if not save_title:
+        axes[1].set_title(f'Distribution ({column_name}): {df2_name}')
 
     # Adjust layout and show the plots
     plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_retracted_distribution_pie(df):
+def show_retracted_distribution_pie(df, save_title=None):
     # Create a new column to categorize the rows
     df['Retracted Status'] = df.apply(lambda row: 'Reference and Citing' if row['Citing Article Retracted'] == 'Yes' and row['Reference Article Retracted'] == 'Yes' else 
                                     ('Citing Only' if row['Citing Article Retracted'] == 'Yes' else 
@@ -170,10 +371,13 @@ def show_retracted_distribution_pie(df):
     # Plot the pie chart
     plt.figure(figsize=(8, 8))
     plt.pie(retracted_counts, labels=retracted_counts.index, autopct='%1.1f%%', startangle=90, counterclock=False)
-    plt.title('Distribution of Retracted Articles')
+    if not save_title:
+        plt.title('Distribution of Retracted Articles')
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_source_distribution_citing_article_retracted(df):
+def show_source_distribution_citing_article_retracted(df, save_title=None):
     # Calculate the total count and the count of 'Yes' for 'Citing Article Retracted' for each source
     source_total_counts = df['Source'].value_counts()
     source_retracted_counts = df[df['Citing Article Retracted'] == 'Yes']['Source'].value_counts()
@@ -198,14 +402,17 @@ def show_source_distribution_citing_article_retracted(df):
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width() / 2., height, f'{percentage:.1f}%', ha='center', va='bottom')
 
-    plt.title('Distribution of Sources with Citing Article Retracted Percentage')
+    if not save_title:
+        plt.title('Distribution of Sources with Citing Article Retracted Percentage')
     plt.xlabel('Source')
     plt.ylabel('Count')
     plt.xticks(rotation=45, ha='right')
     plt.legend()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_citation_function_main_distribution_pie(df, show_totals=False):
+def show_citation_function_main_distribution_pie(df, show_totals=False, save_title=None):
     # Strip whitespaces from the "Citation Function: Main" column
     df = df[df["Citation Function: Main"].notna()].copy()
     df["Citation Function: Main"] = df["Citation Function: Main"].str.strip()
@@ -226,7 +433,10 @@ def show_citation_function_main_distribution_pie(df, show_totals=False):
     # Plot the pie chart
     plt.figure(figsize=(8, 8))
     plt.pie(source_counts, labels=labels, autopct='%1.1f%%', startangle=90, counterclock=False)
-    plt.title('Distribution of column: ' + "Citation Function: Main")
+    if not save_title:
+        plt.title('Distribution of column: ' + "Citation Function: Main")
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
 def get_color(sub_function):
@@ -255,7 +465,7 @@ def get_color(sub_function):
         print(f"Warning: {sub_function} not found in sub_function_colors.")
         return "#000000"  # Default color (black) for unknown categories
     
-def show_citation_function_sub_distribution_pie(df, show_totals=False):
+def show_citation_function_sub_distribution_pie(df, show_totals=False, save_title=None):
     sub_functions = [sub for sub_list in citation_functions.values() for sub in sub_list]
 
     # Strip whitespaces from the "Citation Function: Sub" column
@@ -281,10 +491,13 @@ def show_citation_function_sub_distribution_pie(df, show_totals=False):
     # Plot the pie chart with defined colors
     plt.figure(figsize=(8, 8))
     plt.pie(source_counts, labels=labels, autopct='%1.1f%%', startangle=90, counterclock=False, colors=colors)
-    plt.title('Distribution of column: ' + "Citation Function: Sub")
+    if not save_title:
+        plt.title('Distribution of column: ' + "Citation Function: Sub")
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison of Accuracies, Predictions, Correct Predictions and Correct Totals per Label across Datasets", labels=['unsubstantiate', 'fully substantiate'], smaller_figures=False):
+def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison of Accuracies, Predictions, Correct Predictions and Correct Totals per Label across Datasets", labels=['unsubstantiate', 'fully substantiate'], smaller_figures=False, save_title=None):
     """
     Plot the distribution of predictions, correct predictions, and total label counts for each dictionary.
 
@@ -308,10 +521,12 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
     # Create subplots
     if smaller_figures:
         fig, axes = plt.subplots(1, len(data_dicts), figsize=(10, 6), sharey=True)
-        fig.suptitle(title, fontsize=12)
+        if not save_title:
+            fig.suptitle(title, fontsize=12)
     else:
         fig, axes = plt.subplots(1, len(data_dicts), figsize=(18, 6), sharey=True)
-        fig.suptitle(title, fontsize=16)
+        if not save_title:
+            fig.suptitle(title, fontsize=16)
 
 
     # Fixed bar width
@@ -340,7 +555,8 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
             ax.plot([i - bar_width / 2, i + bar_width / 2], [correct_total, correct_total], linestyle='dotted', color='black', label='Correct Total' if i == 0 else "")
             ax.text(i, correct_total, f'{correct_total}', ha='center', va='bottom', fontsize=10, color='black')  # Add number to the dotted line
 
-        ax.set_title(f"{title}\nTotal Accuracy: {total_accuracy:.1%}")
+        if not save_title:
+            ax.set_title(f"{title}\nTotal Accuracy: {total_accuracy:.1%}")
         ax.set_ylabel("Count")
         ax.set_xticks(range(len(labels)))
         ax.set_xticklabels(labels, rotation=45, ha="right")
@@ -368,6 +584,8 @@ def show_preds_vs_correct_preds_vs_total(data_dicts, titles, title="Comparison o
     axes[0].legend(handles=legend_handles, loc='lower right')
 
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
 def show_metrics_per_label(model_results, title="Model Performance Metrics by Label", save_title=None):
@@ -380,13 +598,22 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
         'F1 Score': '#ff7f0e'         # Orange
     }
     
-    # Create subplots - one for each model
+    # Create subplots - maximum 2 models per row
     num_models = len(model_results)
-    fig, axes = plt.subplots(1, num_models, figsize=(8 * num_models, 8), sharey=True)
+    num_cols = min(2, num_models)  # Maximum 2 columns
+    num_rows = (num_models + 1) // 2  # Calculate rows needed
     
-    # Handle case where there's only one model
+    fig, axes = plt.subplots(num_rows, num_cols, figsize=(8 * num_cols, 8 * num_rows), sharey=True)
+    
+    # Handle different cases for axes array
     if num_models == 1:
         axes = [axes]
+    elif num_rows == 1:
+        # Single row with multiple columns
+        axes = axes if num_cols > 1 else [axes]
+    else:
+        # Multiple rows - flatten the array for easier indexing
+        axes = axes.flatten()
     
     fig.suptitle(title, fontsize=18)
     
@@ -478,12 +705,16 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
         if idx == 0:
             ax.legend(title='Metrics', loc='lower right', fontsize=14, title_fontsize=16)
     
+    # Hide any unused subplots if we have an odd number of models
+    if num_models % 2 == 1 and num_models > 1:
+        axes[num_models].set_visible(False)
+    
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
     if save_title:
         plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_unsub_preds_per_error_type(data_dicts, titles):
+def show_unsub_preds_per_error_type(data_dicts, titles, save_title=None):
     """
     Plots the distribution of error types within the unsubstantiated data rows and highlights the amount of correct predictions for each type.
 
@@ -519,7 +750,8 @@ def show_unsub_preds_per_error_type(data_dicts, titles):
             ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), f'{correct}', ha='center', va='bottom', fontsize=10)
 
         # Set title and labels
-        ax.set_title(title)
+        if not save_title:
+            ax.set_title(title)
         ax.set_xticks(x)
         ax.set_xticklabels(error_types, rotation=45, ha="right")
         ax.set_ylabel("Count")
@@ -527,6 +759,8 @@ def show_unsub_preds_per_error_type(data_dicts, titles):
 
     # Adjust layout
     plt.tight_layout()
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
 def get_division_text_for_metric(metric_name, attr_results):
@@ -584,7 +818,7 @@ def get_division_text_for_metric(metric_name, attr_results):
     
     return division_text
 
-def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
+def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, save_title=None):
     """
     Display one plot per metric (Accuracy, Balanced Accuracy, Unsubstantiated Precision/Recall/F1, Substantiated Precision/Recall/F1).
     Each plot shows the values for that metric across Total and all attribute values.
@@ -641,7 +875,8 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
     elif num_cols == 1:
         axes = axes.reshape(-1, 1)
     
-    fig.suptitle(f'{model_name} - Metrics by "{attribute_name}"', fontsize=16)
+    if not save_title:
+        fig.suptitle(f'{model_name} - Metrics by "{attribute_name}"', fontsize=16)
     
     # Plot each metric
     for metric_name, row, col in metrics_to_plot:
@@ -730,6 +965,8 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name):
     axes[0, 2].set_visible(False)
     
     plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust layout to fit the heading
+    if save_title:
+        plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
 def show_best_models_comparison(best_model_configs, model_names=None, title="Best Model Configurations: Balanced Accuracy vs Unsubstantiated F1 Score", save_title=None):
