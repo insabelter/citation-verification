@@ -1055,17 +1055,17 @@ def show_best_models_comparison(best_model_configs, model_names=None, title="Bes
         plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=None, attribute_names=None, attribute_value_orders=None):
+def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=None, attribute_names=None, attribute_value_orders=None, show_totals=True):
     """
     Display metrics for each annotation attribute in a 2-column grid layout.
-    Shows Balanced Accuracy and Unsubstantiated F1 Score for Total and each attribute value.
+    Shows Balanced Accuracy, Substantiated F1 Score, and Unsubstantiated F1 Score for Total and each attribute value.
     
     Parameters:
     annotation_results_dict: Dictionary with structure:
         {
             'attribute_name': {
-                'Total': {'Balanced Accuracy': ..., 'Unsubstantiated': {'F1 Score': ...}},
-                'attribute_value1': {'Balanced Accuracy': ..., 'Unsubstantiated': {'F1 Score': ...}},
+                'Total': {'Balanced Accuracy': ..., 'Substantiated': {'F1 Score': ...}, 'Unsubstantiated': {'F1 Score': ...}},
+                'attribute_value1': {'Balanced Accuracy': ..., 'Substantiated': {'F1 Score': ...}, 'Unsubstantiated': {'F1 Score': ...}},
                 ...
             }
         }
@@ -1086,11 +1086,13 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
             ...
         }
         Total is always plotted first regardless of this parameter.
+    show_totals: If True (default), shows Total bars in plots. If False, prints totals below the plot instead.
     """
-    # Define colors matching the existing color scheme
+    # Define colors for this specific function
     colors = {
         'Balanced Accuracy': '#1f77b4',  # Blue (matching existing scheme)
-        'Unsubstantiated F1': '#ff7f0e'  # Orange (matching existing scheme)
+        'Substantiated F1': '#2ca02c',   # Green
+        'Unsubstantiated F1': '#d62728'  # Red
     }
     
     # Get attribute names - use order from attribute_names dict if provided
@@ -1121,7 +1123,10 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
         axes = axes.reshape(-1, 1)
     
     if not save_title:
-        fig.suptitle('Model Performance by Annotation Attributes', fontsize=18)
+        fig.suptitle('Model Performance by Annotation Attributes', fontsize=22)
+    
+    # Store total values for printing when show_totals is False
+    total_values_for_printing = {}
     
     # Plot each attribute
     for idx, attribute_name in enumerate(attributes):
@@ -1134,6 +1139,15 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
         
         # Get attribute results
         attr_data = annotation_results_dict[attribute_name]
+        
+        # Extract and store total values for printing if show_totals is False
+        if not show_totals and 'Total' in attr_data:
+            total_data = attr_data['Total']
+            total_values_for_printing[display_name] = {
+                'Balanced Accuracy': total_data.get('Balanced Accuracy', 0) * 100,
+                'Substantiated F1': total_data.get('Substantiated', {}).get('F1 Score', 0) * 100,
+                'Unsubstantiated F1': total_data.get('Unsubstantiated', {}).get('F1 Score', 0) * 100
+            }
         
         # Extract attribute values and ensure Total is first
         attr_values_without_total = [val for val in attr_data.keys() if val != 'Total']
@@ -1163,10 +1177,15 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
                 remaining_values = [val for val in attr_values_without_total if val not in ordered_values]
                 attr_values_without_total = attr_values_ordered + remaining_values
         
-        attr_values = ['Total'] + attr_values_without_total
+        # Include Total in attr_values only if show_totals is True
+        if show_totals:
+            attr_values = ['Total'] + attr_values_without_total
+        else:
+            attr_values = attr_values_without_total
         
         # Extract metrics for each attribute value
         balanced_accuracies = []
+        sub_f1_scores = []
         unsub_f1_scores = []
         formatted_attr_values = []
         
@@ -1176,6 +1195,11 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
             # Extract Balanced Accuracy (convert to percentage)
             balanced_acc = value_data.get('Balanced Accuracy', 0) * 100
             balanced_accuracies.append(balanced_acc)
+            
+            # Extract Substantiated F1 Score (convert to percentage)
+            sub_data = value_data.get('Substantiated', {})
+            sub_f1 = sub_data.get('F1 Score', 0) * 100
+            sub_f1_scores.append(sub_f1)
             
             # Extract Unsubstantiated F1 Score (convert to percentage)
             unsub_data = value_data.get('Unsubstantiated', {})
@@ -1191,14 +1215,17 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
             formatted_attr_values.append(formatted_label)
         
         # Set width of bars and positions
-        bar_width = 0.35
+        bar_width = 0.25
         x = np.arange(len(attr_values))
         
-        # Create bars
-        bars1 = ax.bar(x - bar_width/2, balanced_accuracies, bar_width,
+        # Create bars (three bars: Balanced Accuracy, Substantiated F1, Unsubstantiated F1)
+        bars1 = ax.bar(x - bar_width, balanced_accuracies, bar_width,
                        label='Balanced Accuracy' if idx == 0 else "", 
                        color=colors['Balanced Accuracy'], alpha=0.8)
-        bars2 = ax.bar(x + bar_width/2, unsub_f1_scores, bar_width,
+        bars2 = ax.bar(x, sub_f1_scores, bar_width,
+                       label='Substantiated F1 Score' if idx == 0 else "", 
+                       color=colors['Substantiated F1'], alpha=0.8)
+        bars3 = ax.bar(x + bar_width, unsub_f1_scores, bar_width,
                        label='Unsubstantiated F1 Score' if idx == 0 else "", 
                        color=colors['Unsubstantiated F1'], alpha=0.8)
         
@@ -1206,49 +1233,78 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
         for bar, value in zip(bars1, balanced_accuracies):
             if value > 0:
                 ax.text(bar.get_x() + bar.get_width()/2., bar.get_height() + 0.5,
-                       f'{value:.1f}%', ha='center', va='bottom', fontsize=10)
+                       f'{value:.1f}%', ha='center', va='bottom', fontsize=11.5)
         
-        for bar, value in zip(bars2, unsub_f1_scores):
+        for bar, value in zip(bars2, sub_f1_scores):
             if value > 0:
                 ax.text(bar.get_x() + bar.get_width()/2., bar.get_height() + 0.5,
-                       f'{value:.1f}%', ha='center', va='bottom', fontsize=10)
+                       f'{value:.1f}%', ha='center', va='bottom', fontsize=11.5)
         
-        # Add difference text inside bars (skip Total bar)
-        total_balanced_acc = balanced_accuracies[0] if balanced_accuracies else 0
-        total_unsub_f1 = unsub_f1_scores[0] if unsub_f1_scores else 0
+        for bar, value in zip(bars3, unsub_f1_scores):
+            if value > 0:
+                ax.text(bar.get_x() + bar.get_width()/2., bar.get_height() + 0.5,
+                       f'{value:.1f}%', ha='center', va='bottom', fontsize=11.5)
         
-        for i, (bar1, bar2, balanced_acc, unsub_f1, attr_value) in enumerate(zip(bars1, bars2, balanced_accuracies, unsub_f1_scores, attr_values)):
-            if attr_value != 'Total' and balanced_acc > 0:
+        # Add difference text inside bars (skip Total bar when present, or use stored totals when not shown)
+        if show_totals:
+            total_balanced_acc = balanced_accuracies[0] if balanced_accuracies else 0
+            total_sub_f1 = sub_f1_scores[0] if sub_f1_scores else 0
+            total_unsub_f1 = unsub_f1_scores[0] if unsub_f1_scores else 0
+        else:
+            # Get totals from stored values for difference calculation
+            stored_totals = total_values_for_printing.get(display_name, {})
+            total_balanced_acc = stored_totals.get('Balanced Accuracy', 0)
+            total_sub_f1 = stored_totals.get('Substantiated F1', 0)
+            total_unsub_f1 = stored_totals.get('Unsubstantiated F1', 0)
+        
+        for i, (bar1, bar2, bar3, balanced_acc, sub_f1, unsub_f1, attr_value) in enumerate(zip(bars1, bars2, bars3, balanced_accuracies, sub_f1_scores, unsub_f1_scores, attr_values)):
+            # Show differences for all bars when show_totals is False, or skip Total when show_totals is True
+            show_diff = (not show_totals) or (show_totals and attr_value != 'Total')
+            
+            if show_diff and balanced_acc > 0:
                 # Difference for Balanced Accuracy
                 diff_acc = balanced_acc - total_balanced_acc
                 if abs(diff_acc) > 0.1:
                     sign = '+' if diff_acc > 0 else ''
-                    text_y = balanced_acc - 3  # Position near top of bar
+                    text_y = balanced_acc - 5  # Position with more space from top of bar
                     ax.text(bar1.get_x() + bar1.get_width()/2, text_y,
                            f'{sign}{diff_acc:.1f}%', ha='center', va='center', 
-                           fontsize=9, color='black')
+                           fontsize=11.5, color='black')
             
-            if attr_value != 'Total' and unsub_f1 > 0:
-                # Difference for Unsubstantiated F1
-                diff_f1 = unsub_f1 - total_unsub_f1
-                if abs(diff_f1) > 0.1:
-                    sign = '+' if diff_f1 > 0 else ''
-                    text_y = unsub_f1 - 3  # Position near top of bar
+            if show_diff and sub_f1 > 0:
+                # Difference for Substantiated F1
+                diff_sub_f1 = sub_f1 - total_sub_f1
+                if abs(diff_sub_f1) > 0.1:
+                    sign = '+' if diff_sub_f1 > 0 else ''
+                    text_y = sub_f1 - 5  # Position with more space from top of bar
                     ax.text(bar2.get_x() + bar2.get_width()/2, text_y,
-                           f'{sign}{diff_f1:.1f}%', ha='center', va='center', 
-                           fontsize=9, color='black')
+                           f'{sign}{diff_sub_f1:.1f}%', ha='center', va='center', 
+                           fontsize=11.5, color='black')
+            
+            if show_diff and unsub_f1 > 0:
+                # Difference for Unsubstantiated F1
+                diff_unsub_f1 = unsub_f1 - total_unsub_f1
+                if abs(diff_unsub_f1) > 0.1:
+                    sign = '+' if diff_unsub_f1 > 0 else ''
+                    text_y = unsub_f1 - 5  # Position with more space from top of bar
+                    ax.text(bar3.get_x() + bar3.get_width()/2, text_y,
+                           f'{sign}{diff_unsub_f1:.1f}%', ha='center', va='center', 
+                           fontsize=11.5, color='black')
         
         # Customize subplot
-        ax.set_title(f'{display_name}', fontsize=14)
-        ax.set_ylabel('Percentage (%)', fontsize=12)
+        ax.set_title(f'{display_name}', fontsize=18)
+        ax.set_ylabel('Percentage (%)', fontsize=16)
         ax.set_ylim(0, 100)
         ax.set_xticks(x)
-        ax.set_xticklabels(formatted_attr_values, rotation=45, ha='right', fontsize=10)
+        ax.set_xticklabels(formatted_attr_values, rotation=45, ha='right', fontsize=14)
         ax.grid(axis='y', alpha=0.3)
+        
+        # Increase tick label font sizes
+        ax.tick_params(axis='both', which='major', labelsize=14)
         
         # Add legend only to the first subplot
         if idx == 0:
-            ax.legend(fontsize=12, loc='lower right')
+            ax.legend(fontsize=16, loc='lower right')
     
     # Hide any unused subplots
     if num_attributes % 2 == 1 and num_attributes > 1:
@@ -1261,3 +1317,14 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
     if save_title:
         plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
+    
+    # Print total values if show_totals is False (only for the first attribute since they're the same)
+    if not show_totals and total_values_for_printing:
+        print("\nTotal Metrics:")
+        print("-" * 50)
+        # Get the first attribute's totals (they're the same for all attributes)
+        first_attr_name = list(total_values_for_printing.keys())[0]
+        totals = total_values_for_printing[first_attr_name]
+        print(f"Balanced Accuracy: {totals['Balanced Accuracy']:.1f}%")
+        print(f"Substantiated F1: {totals['Substantiated F1']:.1f}%")
+        print(f"Unsubstantiated F1: {totals['Unsubstantiated F1']:.1f}%")
