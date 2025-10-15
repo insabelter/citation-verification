@@ -210,6 +210,18 @@ def eval_predictions_per_attribute_value(df, attribute, include_relabelled_parti
     results = {}
     results['Total'] = eval_predictions(df, include_relabelled_partially=include_relabelled_partially)
     
+    # Special case for "Claim Contains Number or Formula" attribute
+    if attribute == "Claim Contains Number or Formula" and group_numbers_from == "Number/Formula":
+        # Group 'No' separately
+        df_no = df[df[attribute] == 'No']
+        results['No'] = eval_predictions(df_no, include_relabelled_partially=include_relabelled_partially)
+        
+        # Group 'Number' and 'Formula' together
+        df_number_formula = df[df[attribute].isin(['Number', 'Formula'])]
+        results['Number/\nFormula'] = eval_predictions(df_number_formula, include_relabelled_partially=include_relabelled_partially)
+        
+        return results
+    
     # Get unique attribute values and sort them
     attribute_values = df[attribute].unique()
     
@@ -369,6 +381,10 @@ def eval_attribute_subset_vs_rest(df, attribute, attribute_values):
     }
 
 def get_attribute_value_groups(df, attribute, group_numbers_from=False):
+    # Special case for "Claim Contains Number or Formula" attribute
+    if attribute == "Claim Contains Number or Formula" and group_numbers_from == "Number/Formula":
+        return [('No', ['No']), ('Number/\nFormula', ['Number', 'Formula'])]
+    
     attribute_values = df[attribute].unique()
     
     # Try to sort numerically first, fall back to alphabetical sorting
