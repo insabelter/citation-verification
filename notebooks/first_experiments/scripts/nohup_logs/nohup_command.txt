@@ -1,5 +1,0 @@
-nohup python prompt_large_local_model.py > prompt_large_local_model.log 2>&1 &
-
-ps aux | grep nohup
-
-2252286

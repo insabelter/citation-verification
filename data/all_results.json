@@ -7,7 +7,6 @@
                     "Label Total": 132,
                     "True Classifications": 119,
                     "False Classifications": 13,
-                    "Accuracy": 0.902,
                     "Precision": 0.704,
                     "Recall": 0.902,
                     "F1 Score": 0.791,
@@ -17,7 +16,6 @@
                     "Label Total": 115,
                     "True Classifications": 65,
                     "False Classifications": 50,
-                    "Accuracy": 0.565,
                     "Precision": 0.833,
                     "Recall": 0.565,
                     "F1 Score": 0.673,
@@ -25,7 +23,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.745,
+                "Accuracy": 0.745,
+                "Error Rate": 0.255,
                 "Balanced Accuracy": 0.734
             },
             "without_relabelled": {
@@ -34,7 +33,6 @@
                     "Label Total": 126,
                     "True Classifications": 113,
                     "False Classifications": 13,
-                    "Accuracy": 0.897,
                     "Precision": 0.72,
                     "Recall": 0.897,
                     "F1 Score": 0.799,
@@ -44,7 +42,6 @@
                     "Label Total": 107,
                     "True Classifications": 63,
                     "False Classifications": 44,
-                    "Accuracy": 0.589,
                     "Precision": 0.829,
                     "Recall": 0.589,
                     "F1 Score": 0.689,
@@ -52,7 +49,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.755,
+                "Accuracy": 0.755,
+                "Error Rate": 0.245,
                 "Balanced Accuracy": 0.743
             }
         },
@@ -63,7 +61,6 @@
                     "Label Total": 132,
                     "True Classifications": 118,
                     "False Classifications": 14,
-                    "Accuracy": 0.894,
                     "Precision": 0.738,
                     "Recall": 0.894,
                     "F1 Score": 0.809,
@@ -73,7 +70,6 @@
                     "Label Total": 115,
                     "True Classifications": 73,
                     "False Classifications": 42,
-                    "Accuracy": 0.635,
                     "Precision": 0.839,
                     "Recall": 0.635,
                     "F1 Score": 0.723,
@@ -81,7 +77,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.773,
+                "Accuracy": 0.773,
+                "Error Rate": 0.227,
                 "Balanced Accuracy": 0.764
             },
             "without_relabelled": {
@@ -90,7 +87,6 @@
                     "Label Total": 126,
                     "True Classifications": 112,
                     "False Classifications": 14,
-                    "Accuracy": 0.889,
                     "Precision": 0.742,
                     "Recall": 0.889,
                     "F1 Score": 0.809,
@@ -100,7 +96,6 @@
                     "Label Total": 107,
                     "True Classifications": 68,
                     "False Classifications": 39,
-                    "Accuracy": 0.636,
                     "Precision": 0.829,
                     "Recall": 0.636,
                     "F1 Score": 0.72,
@@ -108,7 +103,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.773,
+                "Accuracy": 0.773,
+                "Error Rate": 0.227,
                 "Balanced Accuracy": 0.762
             }
         },
@@ -119,7 +115,6 @@
                     "Label Total": 132,
                     "True Classifications": 126,
                     "False Classifications": 6,
-                    "Accuracy": 0.955,
                     "Precision": 0.649,
                     "Recall": 0.955,
                     "F1 Score": 0.773,
@@ -129,7 +124,6 @@
                     "Label Total": 115,
                     "True Classifications": 47,
                     "False Classifications": 68,
-                    "Accuracy": 0.409,
                     "Precision": 0.887,
                     "Recall": 0.409,
                     "F1 Score": 0.56,
@@ -137,7 +131,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.7,
+                "Accuracy": 0.7,
+                "Error Rate": 0.3,
                 "Balanced Accuracy": 0.682
             },
             "without_relabelled": {
@@ -146,7 +141,6 @@
                     "Label Total": 126,
                     "True Classifications": 120,
                     "False Classifications": 6,
-                    "Accuracy": 0.952,
                     "Precision": 0.659,
                     "Recall": 0.952,
                     "F1 Score": 0.779,
@@ -156,7 +150,6 @@
                     "Label Total": 107,
                     "True Classifications": 45,
                     "False Classifications": 62,
-                    "Accuracy": 0.421,
                     "Precision": 0.882,
                     "Recall": 0.421,
                     "F1 Score": 0.57,
@@ -164,7 +157,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.708,
+                "Accuracy": 0.708,
+                "Error Rate": 0.292,
                 "Balanced Accuracy": 0.686
             }
         },
@@ -175,7 +169,6 @@
                     "Label Total": 132,
                     "True Classifications": 126,
                     "False Classifications": 6,
-                    "Accuracy": 0.955,
                     "Precision": 0.636,
                     "Recall": 0.955,
                     "F1 Score": 0.764,
@@ -185,7 +178,6 @@
                     "Label Total": 115,
                     "True Classifications": 43,
                     "False Classifications": 72,
-                    "Accuracy": 0.374,
                     "Precision": 0.878,
                     "Recall": 0.374,
                     "F1 Score": 0.525,
@@ -194,7 +186,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.684,
+                "Accuracy": 0.684,
+                "Error Rate": 0.316,
                 "Balanced Accuracy": 0.664
             },
             "without_relabelled": {
@@ -203,7 +196,6 @@
                     "Label Total": 126,
                     "True Classifications": 120,
                     "False Classifications": 6,
-                    "Accuracy": 0.952,
                     "Precision": 0.645,
                     "Recall": 0.952,
                     "F1 Score": 0.769,
@@ -213,7 +205,6 @@
                     "Label Total": 107,
                     "True Classifications": 41,
                     "False Classifications": 66,
-                    "Accuracy": 0.383,
                     "Precision": 0.872,
                     "Recall": 0.383,
                     "F1 Score": 0.532,
@@ -222,7 +213,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.691,
+                "Accuracy": 0.691,
+                "Error Rate": 0.309,
                 "Balanced Accuracy": 0.667
             }
         }
@@ -235,7 +227,6 @@
                     "Label Total": 132,
                     "True Classifications": 108,
                     "False Classifications": 24,
-                    "Accuracy": 0.818,
                     "Precision": 0.777,
                     "Recall": 0.818,
                     "F1 Score": 0.797,
@@ -245,13 +236,13 @@
                     "Label Total": 115,
                     "True Classifications": 84,
                     "False Classifications": 31,
-                    "Accuracy": 0.73,
                     "Precision": 0.778,
                     "Recall": 0.73,
                     "F1 Score": 0.753,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.777,
+                "Accuracy": 0.777,
+                "Error Rate": 0.223,
                 "Balanced Accuracy": 0.774
             },
             "without_relabelled": {
@@ -260,7 +251,6 @@
                     "Label Total": 126,
                     "True Classifications": 103,
                     "False Classifications": 23,
-                    "Accuracy": 0.817,
                     "Precision": 0.798,
                     "Recall": 0.817,
                     "F1 Score": 0.807,
@@ -270,13 +260,13 @@
                     "Label Total": 107,
                     "True Classifications": 81,
                     "False Classifications": 26,
-                    "Accuracy": 0.757,
                     "Precision": 0.779,
                     "Recall": 0.757,
                     "F1 Score": 0.768,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.79,
+                "Accuracy": 0.79,
+                "Error Rate": 0.21,
                 "Balanced Accuracy": 0.787
             }
         },
@@ -287,7 +277,6 @@
                     "Label Total": 132,
                     "True Classifications": 105,
                     "False Classifications": 27,
-                    "Accuracy": 0.795,
                     "Precision": 0.778,
                     "Recall": 0.795,
                     "F1 Score": 0.786,
@@ -297,13 +286,13 @@
                     "Label Total": 115,
                     "True Classifications": 85,
                     "False Classifications": 30,
-                    "Accuracy": 0.739,
                     "Precision": 0.759,
                     "Recall": 0.739,
                     "F1 Score": 0.749,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.769,
+                "Accuracy": 0.769,
+                "Error Rate": 0.231,
                 "Balanced Accuracy": 0.767
             },
             "without_relabelled": {
@@ -312,7 +301,6 @@
                     "Label Total": 126,
                     "True Classifications": 100,
                     "False Classifications": 26,
-                    "Accuracy": 0.794,
                     "Precision": 0.8,
                     "Recall": 0.794,
                     "F1 Score": 0.797,
@@ -322,13 +310,13 @@
                     "Label Total": 107,
                     "True Classifications": 82,
                     "False Classifications": 25,
-                    "Accuracy": 0.766,
                     "Precision": 0.759,
                     "Recall": 0.766,
                     "F1 Score": 0.762,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.781,
+                "Accuracy": 0.781,
+                "Error Rate": 0.219,
                 "Balanced Accuracy": 0.78
             }
         },
@@ -339,7 +327,6 @@
                     "Label Total": 132,
                     "True Classifications": 110,
                     "False Classifications": 22,
-                    "Accuracy": 0.833,
                     "Precision": 0.743,
                     "Recall": 0.833,
                     "F1 Score": 0.785,
@@ -349,13 +336,13 @@
                     "Label Total": 115,
                     "True Classifications": 77,
                     "False Classifications": 38,
-                    "Accuracy": 0.67,
                     "Precision": 0.778,
                     "Recall": 0.67,
                     "F1 Score": 0.72,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.757,
+                "Accuracy": 0.757,
+                "Error Rate": 0.243,
                 "Balanced Accuracy": 0.752
             },
             "without_relabelled": {
@@ -364,7 +351,6 @@
                     "Label Total": 126,
                     "True Classifications": 105,
                     "False Classifications": 21,
-                    "Accuracy": 0.833,
                     "Precision": 0.766,
                     "Recall": 0.833,
                     "F1 Score": 0.798,
@@ -374,13 +360,13 @@
                     "Label Total": 107,
                     "True Classifications": 75,
                     "False Classifications": 32,
-                    "Accuracy": 0.701,
                     "Precision": 0.781,
                     "Recall": 0.701,
                     "F1 Score": 0.739,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.773,
+                "Accuracy": 0.773,
+                "Error Rate": 0.227,
                 "Balanced Accuracy": 0.767
             }
         },
@@ -391,7 +377,6 @@
                     "Label Total": 132,
                     "True Classifications": 112,
                     "False Classifications": 20,
-                    "Accuracy": 0.848,
                     "Precision": 0.747,
                     "Recall": 0.848,
                     "F1 Score": 0.794,
@@ -401,13 +386,13 @@
                     "Label Total": 115,
                     "True Classifications": 77,
                     "False Classifications": 38,
-                    "Accuracy": 0.67,
                     "Precision": 0.794,
                     "Recall": 0.67,
                     "F1 Score": 0.727,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.765,
+                "Accuracy": 0.765,
+                "Error Rate": 0.235,
                 "Balanced Accuracy": 0.759
             },
             "without_relabelled": {
@@ -416,7 +401,6 @@
                     "Label Total": 126,
                     "True Classifications": 106,
                     "False Classifications": 20,
-                    "Accuracy": 0.841,
                     "Precision": 0.768,
                     "Recall": 0.841,
                     "F1 Score": 0.803,
@@ -426,13 +410,13 @@
                     "Label Total": 107,
                     "True Classifications": 75,
                     "False Classifications": 32,
-                    "Accuracy": 0.701,
                     "Precision": 0.789,
                     "Recall": 0.701,
                     "F1 Score": 0.742,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.777,
+                "Accuracy": 0.777,
+                "Error Rate": 0.223,
                 "Balanced Accuracy": 0.771
             }
         }
@@ -445,7 +429,6 @@
                     "Label Total": 132,
                     "True Classifications": 102,
                     "False Classifications": 30,
-                    "Accuracy": 0.773,
                     "Precision": 0.864,
                     "Recall": 0.773,
                     "F1 Score": 0.816,
@@ -455,13 +438,13 @@
                     "Label Total": 115,
                     "True Classifications": 99,
                     "False Classifications": 16,
-                    "Accuracy": 0.861,
                     "Precision": 0.767,
                     "Recall": 0.861,
                     "F1 Score": 0.811,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.814,
+                "Accuracy": 0.814,
+                "Error Rate": 0.186,
                 "Balanced Accuracy": 0.817
             },
             "without_relabelled": {
@@ -470,7 +453,6 @@
                     "Label Total": 126,
                     "True Classifications": 99,
                     "False Classifications": 27,
-                    "Accuracy": 0.786,
                     "Precision": 0.892,
                     "Recall": 0.786,
                     "F1 Score": 0.836,
@@ -480,13 +462,13 @@
                     "Label Total": 107,
                     "True Classifications": 95,
                     "False Classifications": 12,
-                    "Accuracy": 0.888,
                     "Precision": 0.779,
                     "Recall": 0.888,
                     "F1 Score": 0.83,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.833,
+                "Accuracy": 0.833,
+                "Error Rate": 0.167,
                 "Balanced Accuracy": 0.837
             }
         },
@@ -497,7 +479,6 @@
                     "Label Total": 132,
                     "True Classifications": 103,
                     "False Classifications": 29,
-                    "Accuracy": 0.78,
                     "Precision": 0.837,
                     "Recall": 0.78,
                     "F1 Score": 0.807,
@@ -507,13 +488,13 @@
                     "Label Total": 115,
                     "True Classifications": 95,
                     "False Classifications": 20,
-                    "Accuracy": 0.826,
                     "Precision": 0.766,
                     "Recall": 0.826,
                     "F1 Score": 0.795,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.802,
+                "Accuracy": 0.802,
+                "Error Rate": 0.198,
                 "Balanced Accuracy": 0.803
             },
             "without_relabelled": {
@@ -522,7 +503,6 @@
                     "Label Total": 126,
                     "True Classifications": 99,
                     "False Classifications": 27,
-                    "Accuracy": 0.786,
                     "Precision": 0.861,
                     "Recall": 0.786,
                     "F1 Score": 0.822,
@@ -532,13 +512,13 @@
                     "Label Total": 107,
                     "True Classifications": 91,
                     "False Classifications": 16,
-                    "Accuracy": 0.85,
                     "Precision": 0.771,
                     "Recall": 0.85,
                     "F1 Score": 0.809,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.815,
+                "Accuracy": 0.815,
+                "Error Rate": 0.185,
                 "Balanced Accuracy": 0.818
             }
         },
@@ -549,7 +529,6 @@
                     "Label Total": 132,
                     "True Classifications": 105,
                     "False Classifications": 27,
-                    "Accuracy": 0.795,
                     "Precision": 0.854,
                     "Recall": 0.795,
                     "F1 Score": 0.823,
@@ -559,13 +538,13 @@
                     "Label Total": 115,
                     "True Classifications": 97,
                     "False Classifications": 18,
-                    "Accuracy": 0.843,
                     "Precision": 0.782,
                     "Recall": 0.843,
                     "F1 Score": 0.811,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.818,
+                "Accuracy": 0.818,
+                "Error Rate": 0.182,
                 "Balanced Accuracy": 0.819
             },
             "without_relabelled": {
@@ -574,7 +553,6 @@
                     "Label Total": 126,
                     "True Classifications": 101,
                     "False Classifications": 25,
-                    "Accuracy": 0.802,
                     "Precision": 0.886,
                     "Recall": 0.802,
                     "F1 Score": 0.842,
@@ -584,13 +562,13 @@
                     "Label Total": 107,
                     "True Classifications": 94,
                     "False Classifications": 13,
-                    "Accuracy": 0.879,
                     "Precision": 0.79,
                     "Recall": 0.879,
                     "F1 Score": 0.832,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.837,
+                "Accuracy": 0.837,
+                "Error Rate": 0.163,
                 "Balanced Accuracy": 0.841
             }
         },
@@ -601,7 +579,6 @@
                     "Label Total": 132,
                     "True Classifications": 112,
                     "False Classifications": 20,
-                    "Accuracy": 0.848,
                     "Precision": 0.842,
                     "Recall": 0.848,
                     "F1 Score": 0.845,
@@ -611,13 +588,13 @@
                     "Label Total": 115,
                     "True Classifications": 94,
                     "False Classifications": 21,
-                    "Accuracy": 0.817,
                     "Precision": 0.825,
                     "Recall": 0.817,
                     "F1 Score": 0.821,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.834,
+                "Accuracy": 0.834,
+                "Error Rate": 0.166,
                 "Balanced Accuracy": 0.833
             },
             "without_relabelled": {
@@ -626,7 +603,6 @@
                     "Label Total": 126,
                     "True Classifications": 107,
                     "False Classifications": 19,
-                    "Accuracy": 0.849,
                     "Precision": 0.87,
                     "Recall": 0.849,
                     "F1 Score": 0.859,
@@ -636,13 +612,13 @@
                     "Label Total": 107,
                     "True Classifications": 91,
                     "False Classifications": 16,
-                    "Accuracy": 0.85,
                     "Precision": 0.827,
                     "Recall": 0.85,
                     "F1 Score": 0.838,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.85,
+                "Accuracy": 0.85,
+                "Error Rate": 0.15,
                 "Balanced Accuracy": 0.849
             }
         }
@@ -655,7 +631,6 @@
                     "Label Total": 132,
                     "True Classifications": 116,
                     "False Classifications": 16,
-                    "Accuracy": 0.879,
                     "Precision": 0.841,
                     "Recall": 0.879,
                     "F1 Score": 0.86,
@@ -665,13 +640,13 @@
                     "Label Total": 115,
                     "True Classifications": 93,
                     "False Classifications": 22,
-                    "Accuracy": 0.809,
                     "Precision": 0.853,
                     "Recall": 0.809,
                     "F1 Score": 0.83,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.846,
+                "Accuracy": 0.846,
+                "Error Rate": 0.154,
                 "Balanced Accuracy": 0.844
             },
             "without_relabelled": {
@@ -680,7 +655,6 @@
                     "Label Total": 126,
                     "True Classifications": 112,
                     "False Classifications": 14,
-                    "Accuracy": 0.889,
                     "Precision": 0.868,
                     "Recall": 0.889,
                     "F1 Score": 0.878,
@@ -690,13 +664,13 @@
                     "Label Total": 107,
                     "True Classifications": 90,
                     "False Classifications": 17,
-                    "Accuracy": 0.841,
                     "Precision": 0.865,
                     "Recall": 0.841,
                     "F1 Score": 0.853,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.867,
+                "Accuracy": 0.867,
+                "Error Rate": 0.133,
                 "Balanced Accuracy": 0.865
             }
         },
@@ -707,7 +681,6 @@
                     "Label Total": 132,
                     "True Classifications": 116,
                     "False Classifications": 16,
-                    "Accuracy": 0.879,
                     "Precision": 0.841,
                     "Recall": 0.879,
                     "F1 Score": 0.86,
@@ -717,13 +690,13 @@
                     "Label Total": 115,
                     "True Classifications": 93,
                     "False Classifications": 22,
-                    "Accuracy": 0.809,
                     "Precision": 0.853,
                     "Recall": 0.809,
                     "F1 Score": 0.83,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.846,
+                "Accuracy": 0.846,
+                "Error Rate": 0.154,
                 "Balanced Accuracy": 0.844
             },
             "without_relabelled": {
@@ -732,7 +705,6 @@
                     "Label Total": 126,
                     "True Classifications": 111,
                     "False Classifications": 15,
-                    "Accuracy": 0.881,
                     "Precision": 0.867,
                     "Recall": 0.881,
                     "F1 Score": 0.874,
@@ -742,13 +714,13 @@
                     "Label Total": 107,
                     "True Classifications": 90,
                     "False Classifications": 17,
-                    "Accuracy": 0.841,
                     "Precision": 0.857,
                     "Recall": 0.841,
                     "F1 Score": 0.849,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.863,
+                "Accuracy": 0.863,
+                "Error Rate": 0.137,
                 "Balanced Accuracy": 0.861
             }
         },
@@ -759,7 +731,6 @@
                     "Label Total": 132,
                     "True Classifications": 116,
                     "False Classifications": 16,
-                    "Accuracy": 0.879,
                     "Precision": 0.823,
                     "Recall": 0.879,
                     "F1 Score": 0.85,
@@ -769,13 +740,13 @@
                     "Label Total": 115,
                     "True Classifications": 90,
                     "False Classifications": 25,
-                    "Accuracy": 0.783,
                     "Precision": 0.849,
                     "Recall": 0.783,
                     "F1 Score": 0.815,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.834,
+                "Accuracy": 0.834,
+                "Error Rate": 0.166,
                 "Balanced Accuracy": 0.831
             },
             "without_relabelled": {
@@ -784,7 +755,6 @@
                     "Label Total": 126,
                     "True Classifications": 112,
                     "False Classifications": 14,
-                    "Accuracy": 0.889,
                     "Precision": 0.842,
                     "Recall": 0.889,
                     "F1 Score": 0.865,
@@ -794,13 +764,13 @@
                     "Label Total": 107,
                     "True Classifications": 86,
                     "False Classifications": 21,
-                    "Accuracy": 0.804,
                     "Precision": 0.86,
                     "Recall": 0.804,
                     "F1 Score": 0.831,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.85,
+                "Accuracy": 0.85,
+                "Error Rate": 0.15,
                 "Balanced Accuracy": 0.847
             }
         },
@@ -811,7 +781,6 @@
                     "Label Total": 132,
                     "True Classifications": 119,
                     "False Classifications": 13,
-                    "Accuracy": 0.902,
                     "Precision": 0.844,
                     "Recall": 0.902,
                     "F1 Score": 0.872,
@@ -821,13 +790,13 @@
                     "Label Total": 115,
                     "True Classifications": 93,
                     "False Classifications": 22,
-                    "Accuracy": 0.809,
                     "Precision": 0.877,
                     "Recall": 0.809,
                     "F1 Score": 0.842,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.858,
+                "Accuracy": 0.858,
+                "Error Rate": 0.142,
                 "Balanced Accuracy": 0.856
             },
             "without_relabelled": {
@@ -836,7 +805,6 @@
                     "Label Total": 126,
                     "True Classifications": 115,
                     "False Classifications": 11,
-                    "Accuracy": 0.913,
                     "Precision": 0.865,
                     "Recall": 0.913,
                     "F1 Score": 0.888,
@@ -846,118 +814,14 @@
                     "Label Total": 107,
                     "True Classifications": 89,
                     "False Classifications": 18,
-                    "Accuracy": 0.832,
                     "Precision": 0.89,
                     "Recall": 0.832,
                     "F1 Score": 0.86,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.876,
+                "Accuracy": 0.876,
+                "Error Rate": 0.124,
                 "Balanced Accuracy": 0.873
-            }
-        },
-        "only_text_256_20_AI_prompt": {
-            "all": {
-                "Total": 247,
-                "Substantiated": {
-                    "Label Total": 132,
-                    "True Classifications": 116,
-                    "False Classifications": 16,
-                    "Accuracy": 0.879,
-                    "Precision": 0.853,
-                    "Recall": 0.879,
-                    "F1 Score": 0.866,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 115,
-                    "True Classifications": 95,
-                    "False Classifications": 20,
-                    "Accuracy": 0.826,
-                    "Precision": 0.856,
-                    "Recall": 0.826,
-                    "F1 Score": 0.841,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.854,
-                "Balanced Accuracy": 0.853
-            },
-            "without_relabelled": {
-                "Total": 233,
-                "Substantiated": {
-                    "Label Total": 126,
-                    "True Classifications": 111,
-                    "False Classifications": 15,
-                    "Accuracy": 0.881,
-                    "Precision": 0.867,
-                    "Recall": 0.881,
-                    "F1 Score": 0.874,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 107,
-                    "True Classifications": 90,
-                    "False Classifications": 17,
-                    "Accuracy": 0.841,
-                    "Precision": 0.857,
-                    "Recall": 0.841,
-                    "F1 Score": 0.849,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.863,
-                "Balanced Accuracy": 0.861
-            }
-        },
-        "only_text_1024_20_AI_prompt": {
-            "all": {
-                "Total": 247,
-                "Substantiated": {
-                    "Label Total": 132,
-                    "True Classifications": 119,
-                    "False Classifications": 13,
-                    "Accuracy": 0.902,
-                    "Precision": 0.856,
-                    "Recall": 0.902,
-                    "F1 Score": 0.878,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 115,
-                    "True Classifications": 95,
-                    "False Classifications": 20,
-                    "Accuracy": 0.826,
-                    "Precision": 0.88,
-                    "Recall": 0.826,
-                    "F1 Score": 0.852,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.866,
-                "Balanced Accuracy": 0.864
-            },
-            "without_relabelled": {
-                "Total": 233,
-                "Substantiated": {
-                    "Label Total": 126,
-                    "True Classifications": 114,
-                    "False Classifications": 12,
-                    "Accuracy": 0.905,
-                    "Precision": 0.877,
-                    "Recall": 0.905,
-                    "F1 Score": 0.891,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 107,
-                    "True Classifications": 91,
-                    "False Classifications": 16,
-                    "Accuracy": 0.85,
-                    "Precision": 0.883,
-                    "Recall": 0.85,
-                    "F1 Score": 0.866,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.88,
-                "Balanced Accuracy": 0.877
             }
         }
     },
@@ -969,7 +833,6 @@
                     "Label Total": 132,
                     "True Classifications": 99,
                     "False Classifications": 33,
-                    "Accuracy": 0.75,
                     "Precision": 0.861,
                     "Recall": 0.75,
                     "F1 Score": 0.802,
@@ -979,13 +842,13 @@
                     "Label Total": 115,
                     "True Classifications": 99,
                     "False Classifications": 16,
-                    "Accuracy": 0.861,
                     "Precision": 0.75,
                     "Recall": 0.861,
                     "F1 Score": 0.802,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.802,
+                "Accuracy": 0.802,
+                "Error Rate": 0.198,
                 "Balanced Accuracy": 0.805
             },
             "without_relabelled": {
@@ -994,7 +857,6 @@
                     "Label Total": 126,
                     "True Classifications": 94,
                     "False Classifications": 32,
-                    "Accuracy": 0.746,
                     "Precision": 0.904,
                     "Recall": 0.746,
                     "F1 Score": 0.817,
@@ -1004,13 +866,13 @@
                     "Label Total": 107,
                     "True Classifications": 97,
                     "False Classifications": 10,
-                    "Accuracy": 0.907,
                     "Precision": 0.752,
                     "Recall": 0.907,
                     "F1 Score": 0.822,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.82,
+                "Accuracy": 0.82,
+                "Error Rate": 0.18,
                 "Balanced Accuracy": 0.827
             }
         },
@@ -1021,7 +883,6 @@
                     "Label Total": 132,
                     "True Classifications": 98,
                     "False Classifications": 34,
-                    "Accuracy": 0.742,
                     "Precision": 0.875,
                     "Recall": 0.742,
                     "F1 Score": 0.803,
@@ -1031,13 +892,13 @@
                     "Label Total": 115,
                     "True Classifications": 101,
                     "False Classifications": 14,
-                    "Accuracy": 0.878,
                     "Precision": 0.748,
                     "Recall": 0.878,
                     "F1 Score": 0.808,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.806,
+                "Accuracy": 0.806,
+                "Error Rate": 0.194,
                 "Balanced Accuracy": 0.81
             },
             "without_relabelled": {
@@ -1046,7 +907,6 @@
                     "Label Total": 126,
                     "True Classifications": 94,
                     "False Classifications": 32,
-                    "Accuracy": 0.746,
                     "Precision": 0.922,
                     "Recall": 0.746,
                     "F1 Score": 0.825,
@@ -1056,13 +916,13 @@
                     "Label Total": 107,
                     "True Classifications": 99,
                     "False Classifications": 8,
-                    "Accuracy": 0.925,
                     "Precision": 0.756,
                     "Recall": 0.925,
                     "F1 Score": 0.832,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.828,
+                "Accuracy": 0.828,
+                "Error Rate": 0.172,
                 "Balanced Accuracy": 0.836
             }
         },
@@ -1073,7 +933,6 @@
                     "Label Total": 132,
                     "True Classifications": 96,
                     "False Classifications": 36,
-                    "Accuracy": 0.727,
                     "Precision": 0.873,
                     "Recall": 0.727,
                     "F1 Score": 0.793,
@@ -1083,7 +942,6 @@
                     "Label Total": 115,
                     "True Classifications": 101,
                     "False Classifications": 14,
-                    "Accuracy": 0.878,
                     "Precision": 0.737,
                     "Recall": 0.878,
                     "F1 Score": 0.801,
@@ -1091,7 +949,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.798,
+                "Accuracy": 0.798,
+                "Error Rate": 0.202,
                 "Balanced Accuracy": 0.802
             },
             "without_relabelled": {
@@ -1100,7 +959,6 @@
                     "Label Total": 126,
                     "True Classifications": 92,
                     "False Classifications": 34,
-                    "Accuracy": 0.73,
                     "Precision": 0.92,
                     "Recall": 0.73,
                     "F1 Score": 0.814,
@@ -1110,7 +968,6 @@
                     "Label Total": 107,
                     "True Classifications": 99,
                     "False Classifications": 8,
-                    "Accuracy": 0.925,
                     "Precision": 0.744,
                     "Recall": 0.925,
                     "F1 Score": 0.825,
@@ -1118,7 +975,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.82,
+                "Accuracy": 0.82,
+                "Error Rate": 0.18,
                 "Balanced Accuracy": 0.828
             }
         },
@@ -1129,7 +987,6 @@
                     "Label Total": 132,
                     "True Classifications": 99,
                     "False Classifications": 33,
-                    "Accuracy": 0.75,
                     "Precision": 0.884,
                     "Recall": 0.75,
                     "F1 Score": 0.812,
@@ -1139,13 +996,13 @@
                     "Label Total": 115,
                     "True Classifications": 102,
                     "False Classifications": 13,
-                    "Accuracy": 0.887,
                     "Precision": 0.756,
                     "Recall": 0.887,
                     "F1 Score": 0.816,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.814,
+                "Accuracy": 0.814,
+                "Error Rate": 0.186,
                 "Balanced Accuracy": 0.819
             },
             "without_relabelled": {
@@ -1154,7 +1011,6 @@
                     "Label Total": 126,
                     "True Classifications": 95,
                     "False Classifications": 31,
-                    "Accuracy": 0.754,
                     "Precision": 0.922,
                     "Recall": 0.754,
                     "F1 Score": 0.83,
@@ -1164,118 +1020,14 @@
                     "Label Total": 107,
                     "True Classifications": 99,
                     "False Classifications": 8,
-                    "Accuracy": 0.925,
                     "Precision": 0.762,
                     "Recall": 0.925,
                     "F1 Score": 0.836,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.833,
+                "Accuracy": 0.833,
+                "Error Rate": 0.167,
                 "Balanced Accuracy": 0.84
-            }
-        },
-        "only_text_256_20_AI_prompt": {
-            "all": {
-                "Total": 247,
-                "Substantiated": {
-                    "Label Total": 132,
-                    "True Classifications": 104,
-                    "False Classifications": 28,
-                    "Accuracy": 0.788,
-                    "Precision": 0.852,
-                    "Recall": 0.788,
-                    "F1 Score": 0.819,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 115,
-                    "True Classifications": 97,
-                    "False Classifications": 18,
-                    "Accuracy": 0.843,
-                    "Precision": 0.776,
-                    "Recall": 0.843,
-                    "F1 Score": 0.808,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.814,
-                "Balanced Accuracy": 0.816
-            },
-            "without_relabelled": {
-                "Total": 233,
-                "Substantiated": {
-                    "Label Total": 126,
-                    "True Classifications": 100,
-                    "False Classifications": 26,
-                    "Accuracy": 0.794,
-                    "Precision": 0.893,
-                    "Recall": 0.794,
-                    "F1 Score": 0.841,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 107,
-                    "True Classifications": 95,
-                    "False Classifications": 12,
-                    "Accuracy": 0.888,
-                    "Precision": 0.785,
-                    "Recall": 0.888,
-                    "F1 Score": 0.833,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.837,
-                "Balanced Accuracy": 0.841
-            }
-        },
-        "only_text_1024_20_AI_prompt": {
-            "all": {
-                "Total": 247,
-                "Substantiated": {
-                    "Label Total": 132,
-                    "True Classifications": 104,
-                    "False Classifications": 28,
-                    "Accuracy": 0.788,
-                    "Precision": 0.867,
-                    "Recall": 0.788,
-                    "F1 Score": 0.826,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 115,
-                    "True Classifications": 99,
-                    "False Classifications": 16,
-                    "Accuracy": 0.861,
-                    "Precision": 0.78,
-                    "Recall": 0.861,
-                    "F1 Score": 0.819,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.822,
-                "Balanced Accuracy": 0.825
-            },
-            "without_relabelled": {
-                "Total": 233,
-                "Substantiated": {
-                    "Label Total": 126,
-                    "True Classifications": 100,
-                    "False Classifications": 26,
-                    "Accuracy": 0.794,
-                    "Precision": 0.909,
-                    "Recall": 0.794,
-                    "F1 Score": 0.848,
-                    "Invalid_Labels": []
-                },
-                "Unsubstantiated": {
-                    "Label Total": 107,
-                    "True Classifications": 97,
-                    "False Classifications": 10,
-                    "Accuracy": 0.907,
-                    "Precision": 0.789,
-                    "Recall": 0.907,
-                    "F1 Score": 0.844,
-                    "Invalid_Labels": []
-                },
-                "Total Accuracy": 0.845,
-                "Balanced Accuracy": 0.851
             }
         }
     },
@@ -1287,7 +1039,6 @@
                     "Label Total": 132,
                     "True Classifications": 85,
                     "False Classifications": 47,
-                    "Accuracy": 0.644,
                     "Precision": 0.876,
                     "Recall": 0.644,
                     "F1 Score": 0.742,
@@ -1301,7 +1052,6 @@
                     "Label Total": 115,
                     "True Classifications": 103,
                     "False Classifications": 12,
-                    "Accuracy": 0.896,
                     "Precision": 0.687,
                     "Recall": 0.896,
                     "F1 Score": 0.778,
@@ -1309,7 +1059,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.761,
+                "Accuracy": 0.761,
+                "Error Rate": 0.239,
                 "Balanced Accuracy": 0.77
             },
             "without_relabelled": {
@@ -1318,7 +1069,6 @@
                     "Label Total": 126,
                     "True Classifications": 83,
                     "False Classifications": 43,
-                    "Accuracy": 0.659,
                     "Precision": 0.902,
                     "Recall": 0.659,
                     "F1 Score": 0.762,
@@ -1332,13 +1082,13 @@
                     "Label Total": 107,
                     "True Classifications": 98,
                     "False Classifications": 9,
-                    "Accuracy": 0.916,
                     "Precision": 0.695,
                     "Recall": 0.916,
                     "F1 Score": 0.79,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.777,
+                "Accuracy": 0.777,
+                "Error Rate": 0.223,
                 "Balanced Accuracy": 0.788
             }
         },
@@ -1349,7 +1099,6 @@
                     "Label Total": 132,
                     "True Classifications": 94,
                     "False Classifications": 38,
-                    "Accuracy": 0.712,
                     "Precision": 0.862,
                     "Recall": 0.712,
                     "F1 Score": 0.78,
@@ -1362,7 +1111,6 @@
                     "Label Total": 115,
                     "True Classifications": 100,
                     "False Classifications": 15,
-                    "Accuracy": 0.87,
                     "Precision": 0.725,
                     "Recall": 0.87,
                     "F1 Score": 0.791,
@@ -1370,7 +1118,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.785,
+                "Accuracy": 0.785,
+                "Error Rate": 0.215,
                 "Balanced Accuracy": 0.791
             },
             "without_relabelled": {
@@ -1379,7 +1128,6 @@
                     "Label Total": 126,
                     "True Classifications": 90,
                     "False Classifications": 36,
-                    "Accuracy": 0.714,
                     "Precision": 0.909,
                     "Recall": 0.714,
                     "F1 Score": 0.8,
@@ -1392,13 +1140,13 @@
                     "Label Total": 107,
                     "True Classifications": 98,
                     "False Classifications": 9,
-                    "Accuracy": 0.916,
                     "Precision": 0.731,
                     "Recall": 0.916,
                     "F1 Score": 0.813,
                     "Invalid_Labels": []
                 },
-                "Total Accuracy": 0.807,
+                "Accuracy": 0.807,
+                "Error Rate": 0.193,
                 "Balanced Accuracy": 0.815
             }
         },
@@ -1409,7 +1157,6 @@
                     "Label Total": 132,
                     "True Classifications": 37,
                     "False Classifications": 95,
-                    "Accuracy": 0.28,
                     "Precision": 0.298,
                     "Recall": 0.28,
                     "F1 Score": 0.289,
@@ -1508,7 +1255,6 @@
                     "Label Total": 115,
                     "True Classifications": 28,
                     "False Classifications": 87,
-                    "Accuracy": 0.243,
                     "Precision": 0.228,
                     "Recall": 0.243,
                     "F1 Score": 0.235,
@@ -1587,7 +1333,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.263,
+                "Accuracy": 0.263,
+                "Error Rate": 0.737,
                 "Balanced Accuracy": 0.262
             },
             "without_relabelled": {
@@ -1596,7 +1343,6 @@
                     "Label Total": 126,
                     "True Classifications": 35,
                     "False Classifications": 91,
-                    "Accuracy": 0.278,
                     "Precision": 0.304,
                     "Recall": 0.278,
                     "F1 Score": 0.29,
@@ -1691,7 +1437,6 @@
                     "Label Total": 107,
                     "True Classifications": 27,
                     "False Classifications": 80,
-                    "Accuracy": 0.252,
                     "Precision": 0.229,
                     "Recall": 0.252,
                     "F1 Score": 0.24,
@@ -1765,7 +1510,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.266,
+                "Accuracy": 0.266,
+                "Error Rate": 0.734,
                 "Balanced Accuracy": 0.265
             }
         },
@@ -1776,7 +1522,6 @@
                     "Label Total": 132,
                     "True Classifications": 26,
                     "False Classifications": 106,
-                    "Accuracy": 0.197,
                     "Precision": 0.198,
                     "Recall": 0.197,
                     "F1 Score": 0.197,
@@ -1889,7 +1634,6 @@
                     "Label Total": 115,
                     "True Classifications": 10,
                     "False Classifications": 105,
-                    "Accuracy": 0.087,
                     "Precision": 0.086,
                     "Recall": 0.087,
                     "F1 Score": 0.086,
@@ -1986,7 +1730,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.146,
+                "Accuracy": 0.146,
+                "Error Rate": 0.854,
                 "Balanced Accuracy": 0.142
             },
             "without_relabelled": {
@@ -1995,7 +1740,6 @@
                     "Label Total": 126,
                     "True Classifications": 24,
                     "False Classifications": 102,
-                    "Accuracy": 0.19,
                     "Precision": 0.197,
                     "Recall": 0.19,
                     "F1 Score": 0.193,
@@ -2104,7 +1848,6 @@
                     "Label Total": 107,
                     "True Classifications": 9,
                     "False Classifications": 98,
-                    "Accuracy": 0.084,
                     "Precision": 0.081,
                     "Recall": 0.084,
                     "F1 Score": 0.082,
@@ -2197,7 +1940,8 @@
                         null
                     ]
                 },
-                "Total Accuracy": 0.142,
+                "Accuracy": 0.142,
+                "Error Rate": 0.858,
                 "Balanced Accuracy": 0.137
             }
         }

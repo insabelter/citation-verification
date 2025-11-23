@@ -1,6 +1,83 @@
-from tabulate import tabulate
 import pandas as pd
-from IPython.display import display
+import json
+import re
+
+# ------------ DataFrame Loading and Reshaping ------------
+
+def _sort_df(df):
+    df = df.sort_values(by=['Citing Article ID', 'Reference Article ID'], ascending=[True, True]).reset_index(drop=True)
+    return df
+
+def _remove_json_colons(json_text):
+    if json_text and '{' in json_text and '}' in json_text:
+        json_text = json_text[json_text.find('{'):json_text.rfind('}') + 1]
+    return json_text
+
+def _find_label_within_non_json_text(text):
+    if not 'label' in text.lower():
+        return None
+    if 'unsubstantiated' in text.lower():
+        return 'Unsubstantiated'
+    elif 'substantiated' in text.lower():
+        return 'Substantiated'
+    return None
+
+# Add extra columns for the model classification label and explanation by extracting the information from the JSON
+# If the JSON is misformed due to leading ```json and trailing ``` then remove them
+# Make sure that correct label and model label are both lower case and do not end with d (unsubstaniate instead of unsubstantiated)
+def _reshape_model_classification(df):
+    for index, row in df.iterrows():
+        if row['Reference Article Downloaded'] == 'Yes':
+            try:
+                row['Model Classification'] = _remove_json_colons(row['Model Classification'])
+                model_classification = json.loads(row['Model Classification'])
+                df.at[row.name, 'Model Classification Label'] = model_classification['label']
+                df.at[row.name, 'Model Classification Explanation'] = model_classification['explanation']
+            except (json.JSONDecodeError, KeyError) as e:
+                label = _find_label_within_non_json_text(row['Model Classification'])
+                if label:
+                    print(f"Using extracted label ({label}) from non JSON text!")
+                    df.at[row.name, 'Model Classification Label'] = label
+                    df.at[row.name, 'Model Classification Explanation'] = row['Model Classification']
+                else:
+                    print(f"Row {index} Model Classification could not be decoded: {e}")
+                    print(row['Model Classification'])
+                    df.at[row.name, 'Model Classification Label'] = None
+                    df.at[row.name, 'Model Classification Explanation'] = None
+        else:
+            df.at[row.name, 'Model Classification Label'] = None
+            df.at[row.name, 'Model Classification Explanation'] = None
+        df.at[row.name, 'Label'] = df.at[row.name, 'Label']
+    return df
+
+def _add_claims_to_substantiate_min_max(df):
+    def extract_min_max(val):
+        if isinstance(val, str):
+            match = re.match(r"\[(\d+)(?:-(\d+))?\]", val)
+            if match:
+                min_val = int(match.group(1))
+                max_val = int(match.group(2)) if match.group(2) else min_val
+                return min_val, max_val
+        return None, None
+
+    min_max = df['Amount Claims to Substantiate'].apply(extract_min_max)
+    df['Amount Claims to Substantiate: Minimum'] = min_max.apply(lambda x: x[0])
+    df['Amount Claims to Substantiate: Maximum'] = min_max.apply(lambda x: x[1])
+    return df
+
+def load_df(chunking, only_text, model, ai_prompt=False):
+    path = f"../data/dfs/{'only_text_' if only_text else ''}{chunking}/{model}/{'AI_prompt/' if ai_prompt else ''}ReferenceErrorDetection_data_with_prompt_results.pkl"
+    df = pd.read_pickle(path)
+    return df
+
+def load_df_for_analysis(chunking, only_text, model, ai_prompt=False):
+    df = load_df(chunking, only_text, model, ai_prompt=ai_prompt)
+    df = _add_claims_to_substantiate_min_max(df)
+    df = _sort_df(df)
+    df = _reshape_model_classification(df)
+    return df
+
+# ------------ Functions for Results Evaluation ------------
 
 def eval_predictions(df, include_relabelled_partially=True, include_not_originally_downloaded=True):
     G_Total = 0
@@ -83,128 +160,6 @@ def eval_predictions(df, include_relabelled_partially=True, include_not_original
     results['Balanced Accuracy'] = round((results['Substantiated']['Recall'] + results['Unsubstantiated']['Recall']) / 2, 3)
 
     return results
-    
-# def count_preds_for_label(type_predictions_dict, label):
-#     """
-#     Count the number of predictions for a specific label in a results dictionary.
-#     """
-#     label_count = 0
-#     for _, count in type_predictions_dict.items():
-#         label_count += count[label]
-#     return label_count
-
-# def print_table_label_accuracies(label_accuracies, string_given=False, two_labels=False):
-#     if two_labels:
-#         if string_given:
-#             table_data = [
-#                 [model, 
-#                 f"{accuracies['unsubstantiate']}", 
-#                 f"{accuracies['fully substantiate']}", 
-#                 f"{accuracies['overall']}"]
-#                 for model, accuracies in label_accuracies.items()
-#             ]
-#         else:
-#             table_data = [
-#                 [model, 
-#                 f"{accuracies['unsubstantiate'] * 100:.1f}", 
-#                 f"{accuracies['fully substantiate'] * 100:.1f}", 
-#                 f"{accuracies['overall'] * 100:.1f}"]
-#                 for model, accuracies in label_accuracies.items()
-#             ]
-#     else:
-#         if string_given:
-#             table_data = [
-#                 [model, 
-#                 f"{accuracies['unsubstantiate']}", 
-#                 f"{accuracies['partially substantiate']}", 
-#                 f"{accuracies['fully substantiate']}", 
-#                 f"{accuracies['overall']}"]
-#                 for model, accuracies in label_accuracies.items()
-#             ]
-#         else:
-#             table_data = [
-#                 [model, 
-#                 f"{accuracies['unsubstantiate'] * 100:.1f}", 
-#                 f"{accuracies['partially substantiate'] * 100:.1f}", 
-#                 f"{accuracies['fully substantiate'] * 100:.1f}", 
-#                 f"{accuracies['overall'] * 100:.1f}"]
-#                 for model, accuracies in label_accuracies.items()
-#             ]
-
-#     # Define headers
-#     if two_labels:
-#         headers = ['Model', 'Un', 'Fully', 'Overall']
-#     else:
-#         headers = ['Model', 'Un', 'Partially', 'Fully', 'Overall']
-
-#     # Display the table
-#     print(tabulate(table_data, headers=headers, tablefmt='pretty'))
-
-# def calc_preds_per_error_type(df):
-#     """
-#     Calculates the number total, correct and false class predictions for the unsubstantiated rows per error type in the DataFrame.
-#     """
-#     error_types = list(df['Error Type'][df['Error Type'].notna()].unique())
-#     error_types.sort()
-
-#     preds_per_error_type = {
-#         error_type: {
-#             "total": 0,
-#             "correct_class": 0,
-#             "false_class": 0
-#         } for error_type in error_types
-#     }
-
-#     for _, row in df[df['Label'] == 'unsubstantiate'].iterrows():
-#         assert pd.notna(row['Error Type']), f"Error Type is NaN for row: {row}"
-#         error_type = row['Error Type']
-#         preds_per_error_type[error_type]['total'] += 1
-#         if row['Model Classification Label'] == row['Label']:
-#             preds_per_error_type[error_type]['correct_class'] += 1
-#         else:
-#             preds_per_error_type[error_type]['false_class'] += 1
-
-#     return preds_per_error_type
-
-def display_model_results_table(model_results_dict):
-    # Create a list to store the DataFrame data
-    df_data = []
-    
-    for model_name, results in model_results_dict.items():
-        row = {'Model': model_name}
-        
-        # Extract metrics from the new schema
-        row['Accuracy'] = results.get('Accuracy', None)
-        row['Balanced Accuracy'] = results.get('Balanced Accuracy', None)
-        row['Precision (Unsubstantiated)'] = results.get('Unsubstantiated', {}).get('Precision', None)
-        row['Recall (Unsubstantiated)'] = results.get('Unsubstantiated', {}).get('Recall', None)
-        row['F1 Score (Unsubstantiated)'] = results.get('Unsubstantiated', {}).get('F1 Score', None)
-        row['Precision (Substantiated)'] = results.get('Substantiated', {}).get('Precision', None)
-        row['Recall (Substantiated)'] = results.get('Substantiated', {}).get('Recall', None)
-        row['F1 Score (Substantiated)'] = results.get('Substantiated', {}).get('F1 Score', None)
-        
-        df_data.append(row)
-    
-    # Create DataFrame
-    df = pd.DataFrame(df_data)
-    df.set_index('Model', inplace=True)
-    
-    # Display the DataFrame
-    display(df)
-
-# def get_preds_results(results):
-#     return {
-#         "Unsubstantiated": { # negative class
-#             "preds": results['TN'] + results['FN'],
-#             "correct_preds": results['TN'],
-#             "correct_total": results['N (Unsubstantiated)'],
-#         },
-#         "Substantiated": { # positive class
-#             "preds": results['TP'] + results['FP'],
-#             "correct_preds": results['TP'],
-#             "correct_total": results['P (Substantiated)'],
-#         },
-#     }
 
 def eval_predictions_per_attribute_value(df, attribute, include_relabelled_partially, group_numbers_from=False):
     results = {}
@@ -261,104 +216,6 @@ def eval_predictions_per_attribute_value(df, attribute, include_relabelled_parti
     
     return results
 
-def display_attribute_results_table(results_dict, attribute, use_pandas=True):
-    """
-    Display a table of model results by attribute values showing only accuracy.
-    
-    Parameters:
-    results_dict: Dictionary with structure {model_name: {attribute_value: {results...}}}
-    use_pandas: If True, use pandas DataFrame display; if False, use tabulate
-    
-    Returns:
-    pandas.DataFrame: The results table
-    """
-    
-    # Get all unique attribute values from the first model
-    first_model = list(results_dict.keys())[0]
-    attribute_values = list(results_dict[first_model].keys())
-    
-    # Create data for the table
-    table_data = []
-    for model_name, model_results in results_dict.items():
-        row = [model_name]
-        accuracies = []
-        for attr_value in attribute_values:
-            if attr_value in model_results and 'accuracy' in model_results[attr_value]:
-                accuracy = model_results[attr_value]['accuracy']
-                row.append(f"{accuracy * 100:.1f}%")
-                accuracies.append(accuracy)
-            else:
-                row.append("N/A")
-                accuracies.append(None)
-        
-        table_data.append(row)
-    
-    # Create DataFrame
-    columns = ['Model', 'Total'] + [f'"{value_name}"' for value_name in attribute_values if value_name != 'Total']
-    df = pd.DataFrame(table_data, columns=columns)
-    df.set_index('Model', inplace=True)
-    
-    print(f"Results for attribute '{attribute}':")
-    # Display based on preference
-    if use_pandas:
-        display(df)
-    else:
-        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
-
-def display_attribute_differences_to_total_table(results_dict, attribute, use_pandas=True):
-    """
-    Display a table showing the difference between each attribute value accuracy and the total accuracy.
-    
-    Parameters:
-    results_dict: Dictionary with structure {model_name: {attribute_value: {results...}}}
-    attribute: The attribute name being analyzed
-    use_pandas: If True, use pandas DataFrame display; if False, use tabulate
-    
-    Returns:
-    pandas.DataFrame: The results table with differences to total
-    """
-    
-    # Get all unique attribute values from the first model (excluding 'Total')
-    first_model = list(results_dict.keys())[0]
-    attribute_values = [val for val in results_dict[first_model].keys() if val != 'Total']
-    
-    # Create data for the table
-    table_data = []
-    for model_name, model_results in results_dict.items():
-        row = [model_name]
-        
-        # Get total accuracy for this model
-        total_accuracy = None
-        if 'Total' in model_results and 'accuracy' in model_results['Total']:
-            total_accuracy = model_results['Total']['accuracy']
-        
-        # Calculate differences for each attribute value
-        for attr_value in attribute_values:
-            if (attr_value in model_results and 
-                'accuracy' in model_results[attr_value] and 
-                total_accuracy is not None):
-                
-                attr_accuracy = model_results[attr_value]['accuracy']
-                difference = attr_accuracy - total_accuracy
-                row.append(f"{difference * 100:+.1f}%")
-            else:
-                row.append("N/A")
-        
-        table_data.append(row)
-    
-    # Create DataFrame
-    columns = ['Model'] + [f'"{value_name}"' for value_name in attribute_values]
-    df = pd.DataFrame(table_data, columns=columns)
-    df.set_index('Model', inplace=True)
-    
-    print(f"Differences to Total for attribute '{attribute}' (positive = better than total):")
-    # Display based on preference
-    if use_pandas:
-        display(df)
-    else:
-        print(tabulate(df, headers=df.columns, tablefmt='grid', stralign='center'))
-
-# Evaluate per attribute value 
 def eval_per_attribute_value(df, attribute, attribute_values_per_group):
     # attribute_groups: [('1', [1]), ('2', [2]), ('>= 3', [3, 4, 5, 6, 7, 8])]
     results = {}
@@ -366,19 +223,6 @@ def eval_per_attribute_value(df, attribute, attribute_values_per_group):
         group_df = df[df[attribute].isin(attribute_values)]
         results[group_name] = eval_predictions(group_df)
     return results
-
-def eval_attribute_subset_vs_rest(df, attribute, attribute_values):
-    # Create subset and rest DataFrames
-    subset_df = df[df[attribute].isin(attribute_values)]
-    rest_df = df[~df[attribute].isin(attribute_values)]
-    
-    subset_results = eval_predictions(subset_df, include_relabelled_partially=True)
-    rest_results = eval_predictions(rest_df, include_relabelled_partially=True)
-    
-    return {
-        'Subset': subset_results,
-        'Rest': rest_results,
-    }
 
 def get_attribute_value_groups(df, attribute, group_numbers_from=False):
     # Special case for "Claim Contains Number or Formula" attribute
