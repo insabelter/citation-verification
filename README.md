@@ -16,64 +16,64 @@ In order to not cancel the process on a remote session logout, it can be useful 
 `nohup python prompt_openai_model.py > nohup_logs/<log_name>.log 2>&1 &`
 
 ### Dependencies:
-- **Standard Library:**
+- **Standard Library:** <br>
 glob, json, os, re, sys, xml.etree.ElementTree
-- **Data Processing & Analysis:**
+- **Data Processing & Analysis:** <br>
 pandas, numpy, scipy
-- **Web & Requests:**
+- **Web & Requests:** <br>
 lxml, requests
-- **Visualization:**
+- **Visualization:** <br>
 matplotlib, IPython.display
-- **LLM-related:**
+- **LLM-related:** <br>
 llama_index, ollama, openai
 
 ## Repository Structure
 ### Notebooks:
-1. **Dataset Analysis:**
+1. **Dataset Analysis:** <br>
     Plots of data distributions within the reannotated dataset
-2. **PDF Text Extraction:**
+2. **PDF Text Extraction:** <br>
     PDF to TEI conversion using GROBID + raw paper body text extraction (PBTE)
-3. **Reference Paper Chunk Retrieval:**
+3. **Reference Paper Chunk Retrieval:** <br>
     Retrieving top three most relevant chunks for each reference paper using IndexLlama
-4. **Prompt Creation:**
+4. **Prompt Creation:** <br>
     Testing the prompt creation functions from 'create_prompts.py' script on examples
-5. **OpenAI Model Prompting:**
+5. **OpenAI Model Prompting:** <br>
     Notebook for prompting an OpenAI model step-wise and manually checking its progress (alternative to automated 'prompt_openai_model.py' script)
-6. **Model Responses Evaluation:**
+6. **Model Responses Evaluation:** <br>
     Gathering results from all parameter configurations for all models and saving it to 'all_results.json'
-7. **Results Evaluation and Visualization:**
+7. **Results Evaluation and Visualization:** <br>
     Notebook containing results for configuration parameter analyses and significance testing of annotation attribute value group performance differences
 
 ### Scripts:
-- **create_prompts.py:**
+- **create_prompts.py:** <br>
     Helper functions to create the classification prompt based on a dataset row
-- **data_visualizations.py:**
+- **data_visualizations.py:** <br>
     Helper functions for visualizations for dataset and results analyses
-- **df_calculations.py:**
+- **df_calculations.py:** <br>
     Helper functions for loading dataset dataframes (with llm answers) and evaluating the answers by calculating the performance metrics
-- **prompt_large_local_model.py:**
+- **prompt_large_local_model.py:** <br>
     Script for automated prompting of local ollama model (suited for nohup command)
-- **prompt_openai_model.py:**
+- **prompt_openai_model.py:** <br>
     Script for automated batched prompting of OpenAI model (suited for nohup command)
-- **significance_tests.py:**
+- **significance_tests.py:** <br>
     Helper functions for performing the significance tests for the results evaluation
 
 ## Data:
-- **ReferenceErrorDetection_data.xlsx:**
+- **ReferenceErrorDetection_data.xlsx:** <br>
     Original Dataset by Zhang et al. (downloaded from https://github.com/tianmai-zhang/ReferenceErrorDetection)
-- **ReferenceErrorDetection_data_extended_annotation.xlsx:**
+- **ReferenceErrorDetection_data_extended_annotation.xlsx:** <br>
     Cleaned and reannotated dataset used for experiments of master's thesis
-- **all_results.json:**
+- **all_results.json:** <br>
     JSON file containing evaluated metrics for all tested parameter configurations
-- **results_per_attribute.json:**
+- **results_per_attribute.json:** <br>
     JSON file containing metrics per annotation attribute for best classification configuration (LLM: GPT-4.1)
-- **papers/:**
+- **papers/:** <br>
     All Downloaded PDFs for reference and citation papers
-- **extractions/:**
+- **extractions/:** <br>
     Extracted reference paper texts in TEI format and raw body text converted to .txt files
-- **batch_responses/:**
+- **batch_responses/:** <br>
     LLM responses for all configurations of classification prompting
-- **dfs/:**
+- **dfs/:** <br>
     Pickled dataset dataframes extended with model responses for results evaluation
 
 ## Master's Thesis Abstract
