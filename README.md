@@ -60,7 +60,7 @@ llama_index, ollama, openai
 
 ## Data:
 - **ReferenceErrorDetection_data.xlsx:** <br>
-    Original Dataset by Zhang et al. (downloaded from https://github.com/tianmai-zhang/ReferenceErrorDetection)
+    Original Dataset by Zhang and Abernethy (downloaded from https://github.com/tianmai-zhang/ReferenceErrorDetection)
 - **ReferenceErrorDetection_data_extended_annotation.xlsx:** <br>
     Cleaned and reannotated dataset used for experiments of master's thesis
 - **all_results.json:** <br>
