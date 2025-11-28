@@ -176,20 +176,20 @@ def show_distribution_dict_comparison(data_dict, save_title=None, left_xlabel_pa
         bars = series.plot(kind='bar', ax=ax)
         
         # Set title and labels
-        ax.set_title(f'{display_title}', fontsize=14)
+        ax.set_title(f'{display_title}', fontsize=18)
         
         # Apply custom padding for x-axis labels if specified
         if i == 0 and left_xlabel_pad is not None:
-            ax.set_xlabel('Annotation Attribute Value', fontsize=14, labelpad=left_xlabel_pad)
+            ax.set_xlabel('Annotation Attribute Value', fontsize=16, labelpad=left_xlabel_pad)
         elif i == 1 and right_xlabel_pad is not None:
-            ax.set_xlabel('Annotation Attribute Value', fontsize=14, labelpad=right_xlabel_pad)
+            ax.set_xlabel('Annotation Attribute Value', fontsize=16, labelpad=right_xlabel_pad)
         else:
-            ax.set_xlabel('Annotation Attribute Value', fontsize=14)
+            ax.set_xlabel('Annotation Attribute Value', fontsize=16)
             
         if i == 0:  # Only set y-label for the first subplot
-            ax.set_ylabel('Count', fontsize=14)
-        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=11)
-        ax.tick_params(axis='y', labelsize=11)  # Set y-axis tick label font size
+            ax.set_ylabel('Count', fontsize=16)
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right', fontsize=14)
+        ax.tick_params(axis='y', labelsize=14)  # Set y-axis tick label font size
         
         # Add the count values above each bar
         offset = max_value * 0.01  # 1% of the maximum height for consistent spacing
@@ -199,7 +199,7 @@ def show_distribution_dict_comparison(data_dict, save_title=None, left_xlabel_pa
             if height > 0:  # Only add text for non-zero bars
                 ax.annotate(str(int(height)), 
                            (bar.get_x() + bar.get_width() / 2., height + offset), 
-                           ha='center', va='bottom', fontsize=12)
+                           ha='center', va='bottom', fontsize=14)
         
         # Set consistent y-axis for both plots
         ax.set_ylim(0, max_value * 1.1)  # 10% extra space at the top
@@ -278,7 +278,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
         'Balanced Accuracy': '#1f77b4', # Blue
         'Precision': '#d62728',       # Red
         'Recall': '#2ca02c',          # Green
-        'F1 Score': '#ff7f0e'         # Orange
+        'F1-Score': '#ff7f0e'         # Orange
     }
     
     # Create subplots - maximum 2 models per row
@@ -303,7 +303,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
     # Define bar positions and width
     labels = ['Total', 'Substantiated', 'Unsubstantiated']
     total_metrics = ['Accuracy', 'Balanced Accuracy']
-    label_metrics = ['Precision', 'Recall', 'F1 Score']
+    label_metrics = ['Precision', 'Recall', 'F1-Score']
     bar_width = 0.35
     
     # Plot for each model
@@ -375,7 +375,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
         
         # Customize subplot
         ax.set_title(f'{model_name}', fontsize=16)
-        ax.set_ylabel('Percentage (%)', fontsize=16)
+        ax.set_ylabel('Metric Score (%)', fontsize=16)
         ax.set_ylim(0, 100)
         ax.set_xticks(x)
         ax.set_xticklabels(labels, fontsize=14)
@@ -468,10 +468,10 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
         'Balanced Accuracy': '#1f77b4',           # Blue
         'Unsubstantiated: Precision': '#d62728',   # Red
         'Unsubstantiated: Recall': '#2ca02c',      # Green
-        'Unsubstantiated: F1 Score': '#ff7f0e',    # Orange
+        'Unsubstantiated: F1-Score': '#ff7f0e',    # Orange
         'Substantiated: Precision': '#d62728',     # Red
         'Substantiated: Recall': '#2ca02c',        # Green
-        'Substantiated: F1 Score': '#ff7f0e'       # Orange
+        'Substantiated: F1-Score': '#ff7f0e'       # Orange
     }
     
     # Get model results
@@ -487,10 +487,10 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
         ('Balanced Accuracy', 0, 1), 
         ('Unsubstantiated: Precision', 1, 0),
         ('Unsubstantiated: Recall', 1, 1),
-        ('Unsubstantiated: F1 Score', 1, 2),
+        ('Unsubstantiated: F1-Score', 1, 2),
         ('Substantiated: Precision', 2, 0),
         ('Substantiated: Recall', 2, 1),
-        ('Substantiated: F1 Score', 2, 2)
+        ('Substantiated: F1-Score', 2, 2)
     ]
     
     # Calculate grid dimensions (3 columns, 3 rows)
@@ -532,8 +532,8 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
                     value = unsub_results.get('Precision', 0) * 100
                 elif 'Recall' in metric_name:
                     value = unsub_results.get('Recall', 0) * 100
-                elif 'F1 Score' in metric_name:
-                    value = unsub_results.get('F1 Score', 0) * 100
+                elif 'F1-Score' in metric_name:
+                    value = unsub_results.get('F1-Score', 0) * 100
                 else:
                     value = 0
             elif metric_name.startswith('Substantiated'):
@@ -542,8 +542,8 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
                     value = sub_results.get('Precision', 0) * 100
                 elif 'Recall' in metric_name:
                     value = sub_results.get('Recall', 0) * 100
-                elif 'F1 Score' in metric_name:
-                    value = sub_results.get('F1 Score', 0) * 100
+                elif 'F1-Score' in metric_name:
+                    value = sub_results.get('F1-Score', 0) * 100
                 else:
                     value = 0
             else:
@@ -575,8 +575,8 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
                            f'{sign}{diff:.1f}%', ha='center', va='center', 
                            fontsize=10, color='black')
         
-        # Add division text at bottom of bars (skip F1 Score and Balanced Accuracy)
-        if 'F1 Score' not in metric_name and 'Balanced Accuracy' not in metric_name:
+        # Add division text at bottom of bars (skip F1-Score and Balanced Accuracy)
+        if 'F1-Score' not in metric_name and 'Balanced Accuracy' not in metric_name:
             for i, (bar, attr_value) in enumerate(zip(bars, attribute_values)):
                 attr_results = model_results.get(attr_value, {})
                 division_text = _get_division_text_for_metric(metric_name, attr_results)
@@ -589,7 +589,7 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
         
         # Customize subplot
         ax.set_title(f'{metric_name}', fontsize=12)
-        ax.set_ylabel('Percentage (%)', fontsize=10)
+        ax.set_ylabel('Metric Score (%)', fontsize=10)
         ax.set_ylim(0, 110)  # Extra space for labels
         ax.set_xticks(x)
         ax.set_xticklabels(attribute_values, rotation=45, ha='right', fontsize=9)
@@ -603,7 +603,7 @@ def show_metrics_by_attribute_values(results_dict, attribute_name, model_name, s
         plt.savefig(f"plots/{save_title}.pdf", bbox_inches="tight")
     plt.show()
 
-def show_best_models_comparison(best_model_configs, model_names=None, title="Best Model Configurations: Balanced Accuracy vs Unsubstantiated F1 Score", save_title=None):
+def show_best_models_comparison(best_model_configs, model_names=None, title="Best Model Configurations: Balanced Accuracy vs Unsubstantiated F1-Score", save_title=None):
     """
     Create a grouped bar chart comparing balanced accuracy and unsubstantiated F1 score for each model.
     
@@ -621,7 +621,7 @@ def show_best_models_comparison(best_model_configs, model_names=None, title="Bes
     # Extract data
     models = list(best_model_configs.keys())
     balanced_accuracies = [best_model_configs[model]['balanced_accuracy'] * 100 for model in models]
-    unsub_f1_scores = [best_model_configs[model]['results']['Unsubstantiated']['F1 Score'] * 100 for model in models]
+    unsub_f1_scores = [best_model_configs[model]['results']['Unsubstantiated']['F1-Score'] * 100 for model in models]
     
     # Get display names for models
     if model_names:
@@ -640,7 +640,7 @@ def show_best_models_comparison(best_model_configs, model_names=None, title="Bes
     bars1 = ax.bar(x - bar_width/2, balanced_accuracies, bar_width, 
                    label='Balanced Accuracy', color=colors['Balanced Accuracy'], alpha=0.8)
     bars2 = ax.bar(x + bar_width/2, unsub_f1_scores, bar_width,
-                   label='Unsubstantiated F1 Score', color=colors['Unsubstantiated F1'], alpha=0.8)
+                   label='Unsubstantiated F1-Score', color=colors['Unsubstantiated F1'], alpha=0.8)
     
     # Add value labels on top of bars
     for bar in bars1:
@@ -654,8 +654,8 @@ def show_best_models_comparison(best_model_configs, model_names=None, title="Bes
                f'{height:.1f}%', ha='center', va='bottom', fontsize=12)
     
     # Customize the plot
-    ax.set_xlabel('Models', fontsize=16)
-    ax.set_ylabel('Percentage (%)', fontsize=16)
+    ax.set_xlabel('Model', fontsize=16)
+    ax.set_ylabel('Metric Score (%)', fontsize=16)
     ax.set_title(title, fontsize=18)
     ax.set_xticks(x)
     ax.set_xticklabels(display_names, rotation=45, ha='right', fontsize=14)
@@ -675,14 +675,14 @@ def show_best_models_comparison(best_model_configs, model_names=None, title="Bes
 def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=None, attribute_names=None, attribute_value_orders=None, show_totals=True):
     """
     Display metrics for each annotation attribute in a 2-column grid layout.
-    Shows Balanced Accuracy, Substantiated F1 Score, and Unsubstantiated F1 Score for Total and each attribute value.
+    Shows Balanced Accuracy, Substantiated F1-Score, and Unsubstantiated F1-Score for Total and each attribute value.
     
     Parameters:
     annotation_results_dict: Dictionary with structure:
         {
             'attribute_name': {
-                'Total': {'Balanced Accuracy': ..., 'Substantiated': {'F1 Score': ...}, 'Unsubstantiated': {'F1 Score': ...}},
-                'attribute_value1': {'Balanced Accuracy': ..., 'Substantiated': {'F1 Score': ...}, 'Unsubstantiated': {'F1 Score': ...}},
+                'Total': {'Balanced Accuracy': ..., 'Substantiated': {'F1-Score': ...}, 'Unsubstantiated': {'F1-Score': ...}},
+                'attribute_value1': {'Balanced Accuracy': ..., 'Substantiated': {'F1-Score': ...}, 'Unsubstantiated': {'F1-Score': ...}},
                 ...
             }
         }
@@ -762,8 +762,8 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
             total_data = attr_data['Total']
             total_values_for_printing[display_name] = {
                 'Balanced Accuracy': total_data.get('Balanced Accuracy', 0) * 100,
-                'Substantiated F1': total_data.get('Substantiated', {}).get('F1 Score', 0) * 100,
-                'Unsubstantiated F1': total_data.get('Unsubstantiated', {}).get('F1 Score', 0) * 100
+                'Substantiated F1': total_data.get('Substantiated', {}).get('F1-Score', 0) * 100,
+                'Unsubstantiated F1': total_data.get('Unsubstantiated', {}).get('F1-Score', 0) * 100
             }
         
         # Extract attribute values and ensure Total is first
@@ -813,14 +813,14 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
             balanced_acc = value_data.get('Balanced Accuracy', 0) * 100
             balanced_accuracies.append(balanced_acc)
             
-            # Extract Substantiated F1 Score (convert to percentage)
+            # Extract Substantiated F1-Score (convert to percentage)
             sub_data = value_data.get('Substantiated', {})
-            sub_f1 = sub_data.get('F1 Score', 0) * 100
+            sub_f1 = sub_data.get('F1-Score', 0) * 100
             sub_f1_scores.append(sub_f1)
             
-            # Extract Unsubstantiated F1 Score (convert to percentage)
+            # Extract Unsubstantiated F1-Score (convert to percentage)
             unsub_data = value_data.get('Unsubstantiated', {})
-            unsub_f1 = unsub_data.get('F1 Score', 0) * 100
+            unsub_f1 = unsub_data.get('F1-Score', 0) * 100
             unsub_f1_scores.append(unsub_f1)
             
             # Get total count for this attribute value and format the label
@@ -840,10 +840,10 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
                        label='Balanced Accuracy' if idx == 0 else "", 
                        color=colors['Balanced Accuracy'], alpha=0.8)
         bars2 = ax.bar(x, sub_f1_scores, bar_width,
-                       label='Substantiated F1 Score' if idx == 0 else "", 
+                       label='Substantiated F1-Score' if idx == 0 else "", 
                        color=colors['Substantiated F1'], alpha=0.8)
         bars3 = ax.bar(x + bar_width, unsub_f1_scores, bar_width,
-                       label='Unsubstantiated F1 Score' if idx == 0 else "", 
+                       label='Unsubstantiated F1-Score' if idx == 0 else "", 
                        color=colors['Unsubstantiated F1'], alpha=0.8)
         
         # Add value labels on top of bars
@@ -910,7 +910,7 @@ def show_metrics_by_annotation_attributes(annotation_results_dict, save_title=No
         
         # Customize subplot
         ax.set_title(f'{display_name}', fontsize=18)
-        ax.set_ylabel('Percentage (%)', fontsize=16)
+        ax.set_ylabel('Metric Score (%)', fontsize=16)
         ax.set_ylim(0, 100)
         ax.set_xticks(x)
         ax.set_xticklabels(formatted_attr_values, rotation=45, ha='right', fontsize=14)

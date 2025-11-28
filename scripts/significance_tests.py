@@ -254,12 +254,12 @@ def calc_permutation_test_total_sub_unsub(df, attribute, group_numbers_from=Fals
         'Substantiated': {
             'Precision': ['Substantiated', 'Precision'],
             'Recall': ['Substantiated', 'Recall'],
-            'F1 Score': ['Substantiated', 'F1 Score']
+            'F1-Score': ['Substantiated', 'F1-Score']
         },
         'Unsubstantiated': {
             'Precision': ['Unsubstantiated', 'Precision'],
             'Recall': ['Unsubstantiated', 'Recall'],
-            'F1 Score': ['Unsubstantiated', 'F1 Score']
+            'F1-Score': ['Unsubstantiated', 'F1-Score']
         }
     }
     
@@ -357,7 +357,7 @@ def display_permutation_test_results(significance_results):
         pandas.DataFrame: The formatted results table
     """
     # Define the desired row order
-    metric_order = ['Balanced Accuracy', 'Accuracy', 'Precision', 'Recall', 'F1 Score']
+    metric_order = ['Balanced Accuracy', 'Accuracy', 'Precision', 'Recall', 'F1-Score']
     
     # Collect all unique metric names across all categories
     all_metrics = set()

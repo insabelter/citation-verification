@@ -8,7 +8,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -17,7 +17,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -32,7 +32,7 @@
         "False Classifications": 11,
         "Precision": 0.817,
         "Recall": 0.874,
-        "F1 Score": 0.845,
+        "F1-Score": 0.845,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -41,7 +41,7 @@
         "False Classifications": 17,
         "Precision": 0.871,
         "Recall": 0.813,
-        "F1 Score": 0.841,
+        "F1-Score": 0.841,
         "Invalid_Labels": []
       },
       "Accuracy": 0.843,
@@ -56,7 +56,7 @@
         "False Classifications": 2,
         "Precision": 0.896,
         "Recall": 0.956,
-        "F1 Score": 0.925,
+        "F1-Score": 0.925,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -65,7 +65,7 @@
         "False Classifications": 5,
         "Precision": 0.905,
         "Recall": 0.792,
-        "F1 Score": 0.845,
+        "F1-Score": 0.845,
         "Invalid_Labels": []
       },
       "Accuracy": 0.899,
@@ -82,7 +82,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -91,7 +91,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -106,7 +106,7 @@
         "False Classifications": 8,
         "Precision": 0.85,
         "Recall": 0.927,
-        "F1 Score": 0.887,
+        "F1-Score": 0.887,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -115,7 +115,7 @@
         "False Classifications": 18,
         "Precision": 0.908,
         "Recall": 0.814,
-        "F1 Score": 0.858,
+        "F1-Score": 0.858,
         "Invalid_Labels": []
       },
       "Accuracy": 0.874,
@@ -130,7 +130,7 @@
         "False Classifications": 5,
         "Precision": 0.81,
         "Recall": 0.773,
-        "F1 Score": 0.791,
+        "F1-Score": 0.791,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -139,7 +139,7 @@
         "False Classifications": 4,
         "Precision": 0.737,
         "Recall": 0.778,
-        "F1 Score": 0.757,
+        "F1-Score": 0.757,
         "Invalid_Labels": []
       },
       "Accuracy": 0.775,
@@ -156,7 +156,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -165,7 +165,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -180,7 +180,7 @@
         "False Classifications": 10,
         "Precision": 0.816,
         "Recall": 0.889,
-        "F1 Score": 0.851,
+        "F1-Score": 0.851,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -189,7 +189,7 @@
         "False Classifications": 18,
         "Precision": 0.895,
         "Recall": 0.825,
-        "F1 Score": 0.859,
+        "F1-Score": 0.859,
         "Invalid_Labels": []
       },
       "Accuracy": 0.855,
@@ -204,7 +204,7 @@
         "False Classifications": 3,
         "Precision": 0.907,
         "Recall": 0.929,
-        "F1 Score": 0.918,
+        "F1-Score": 0.918,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -213,7 +213,7 @@
         "False Classifications": 4,
         "Precision": 0.727,
         "Recall": 0.667,
-        "F1 Score": 0.696,
+        "F1-Score": 0.696,
         "Invalid_Labels": []
       },
       "Accuracy": 0.87,
@@ -230,7 +230,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -239,7 +239,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -254,7 +254,7 @@
         "False Classifications": 6,
         "Precision": 0.781,
         "Recall": 0.893,
-        "F1 Score": 0.833,
+        "F1-Score": 0.833,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -263,7 +263,7 @@
         "False Classifications": 14,
         "Precision": 0.875,
         "Recall": 0.75,
-        "F1 Score": 0.808,
+        "F1-Score": 0.808,
         "Invalid_Labels": []
       },
       "Accuracy": 0.821,
@@ -278,7 +278,7 @@
         "False Classifications": 7,
         "Precision": 0.896,
         "Recall": 0.908,
-        "F1 Score": 0.902,
+        "F1-Score": 0.902,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -287,7 +287,7 @@
         "False Classifications": 8,
         "Precision": 0.879,
         "Recall": 0.864,
-        "F1 Score": 0.871,
+        "F1-Score": 0.871,
         "Invalid_Labels": []
       },
       "Accuracy": 0.889,
@@ -304,7 +304,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -313,7 +313,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -328,7 +328,7 @@
         "False Classifications": 5,
         "Precision": 0.857,
         "Recall": 0.906,
-        "F1 Score": 0.881,
+        "F1-Score": 0.881,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -337,7 +337,7 @@
         "False Classifications": 8,
         "Precision": 0.857,
         "Recall": 0.789,
-        "F1 Score": 0.822,
+        "F1-Score": 0.822,
         "Invalid_Labels": []
       },
       "Accuracy": 0.857,
@@ -352,7 +352,7 @@
         "False Classifications": 4,
         "Precision": 0.886,
         "Recall": 0.907,
-        "F1 Score": 0.896,
+        "F1-Score": 0.896,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -361,7 +361,7 @@
         "False Classifications": 5,
         "Precision": 0.765,
         "Recall": 0.722,
-        "F1 Score": 0.743,
+        "F1-Score": 0.743,
         "Invalid_Labels": []
       },
       "Accuracy": 0.852,
@@ -376,7 +376,7 @@
         "False Classifications": 4,
         "Precision": 0.78,
         "Recall": 0.889,
-        "F1 Score": 0.831,
+        "F1-Score": 0.831,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -385,7 +385,7 @@
         "False Classifications": 9,
         "Precision": 0.926,
         "Recall": 0.847,
-        "F1 Score": 0.885,
+        "F1-Score": 0.885,
         "Invalid_Labels": []
       },
       "Accuracy": 0.863,
@@ -402,7 +402,7 @@
         "False Classifications": 13,
         "Precision": 0.844,
         "Recall": 0.902,
-        "F1 Score": 0.872,
+        "F1-Score": 0.872,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -411,7 +411,7 @@
         "False Classifications": 22,
         "Precision": 0.877,
         "Recall": 0.809,
-        "F1 Score": 0.842,
+        "F1-Score": 0.842,
         "Invalid_Labels": []
       },
       "Accuracy": 0.858,
@@ -426,7 +426,7 @@
         "False Classifications": 8,
         "Precision": 0.905,
         "Recall": 0.893,
-        "F1 Score": 0.899,
+        "F1-Score": 0.899,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -435,7 +435,7 @@
         "False Classifications": 7,
         "Precision": 0.846,
         "Recall": 0.863,
-        "F1 Score": 0.854,
+        "F1-Score": 0.854,
         "Invalid_Labels": []
       },
       "Accuracy": 0.881,
@@ -450,7 +450,7 @@
         "False Classifications": 5,
         "Precision": 0.776,
         "Recall": 0.912,
-        "F1 Score": 0.839,
+        "F1-Score": 0.839,
         "Invalid_Labels": []
       },
       "Unsubstantiated": {
@@ -459,7 +459,7 @@
         "False Classifications": 15,
         "Precision": 0.907,
         "Recall": 0.766,
-        "F1 Score": 0.831,
+        "F1-Score": 0.831,
         "Invalid_Labels": []
       },
       "Accuracy": 0.835,

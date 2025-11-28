@@ -138,7 +138,7 @@ def eval_predictions(df, include_relabelled_partially=True, include_not_original
             'False Classifications': Sub_False,
             'Precision': round(Sub_True / (Sub_True + Unsub_False) if (Sub_True + Unsub_False) > 0 else 0.0, 3),
             'Recall': round(Sub_True / Sub_Correct_Total if Sub_Correct_Total > 0 else 0.0, 3),
-            'F1 Score': 0,
+            'F1-Score': 0,
             'Invalid_Labels': invalid_labels['Substantiated']
         },
         'Unsubstantiated': {
@@ -147,15 +147,15 @@ def eval_predictions(df, include_relabelled_partially=True, include_not_original
             'False Classifications': Unsub_False,
             'Precision': round(Unsub_True / (Unsub_True + Sub_False) if (Unsub_True + Sub_False) > 0 else 0.0, 3),
             'Recall': round(Unsub_True / Unsub_Correct_Total if Unsub_Correct_Total > 0 else 0.0, 3),
-            'F1 Score': 0,
+            'F1-Score': 0,
             'Invalid_Labels': invalid_labels['Unsubstantiated']
         },
         'Accuracy': round((Sub_True + Unsub_True) / G_Total if G_Total > 0 else 0.0, 3),
         'Error Rate': round((Sub_False + Unsub_False) / G_Total if G_Total > 0 else 0.0, 3),
         'Balanced Accuracy': 0
     }
-    results['Substantiated']['F1 Score'] = round(2 * ((results['Substantiated']['Precision'] * results['Substantiated']['Recall']) / (results['Substantiated']['Precision'] + results['Substantiated']['Recall'])) if (results['Substantiated']['Precision'] + results['Substantiated']['Recall']) > 0 else 0.0, 3)
-    results['Unsubstantiated']['F1 Score'] = round(2 * ((results['Unsubstantiated']['Precision'] * results['Unsubstantiated']['Recall']) / (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall'])) if (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall']) > 0 else 0.0, 3)
+    results['Substantiated']['F1-Score'] = round(2 * ((results['Substantiated']['Precision'] * results['Substantiated']['Recall']) / (results['Substantiated']['Precision'] + results['Substantiated']['Recall'])) if (results['Substantiated']['Precision'] + results['Substantiated']['Recall']) > 0 else 0.0, 3)
+    results['Unsubstantiated']['F1-Score'] = round(2 * ((results['Unsubstantiated']['Precision'] * results['Unsubstantiated']['Recall']) / (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall'])) if (results['Unsubstantiated']['Precision'] + results['Unsubstantiated']['Recall']) > 0 else 0.0, 3)
 
     results['Balanced Accuracy'] = round((results['Substantiated']['Recall'] + results['Unsubstantiated']['Recall']) / 2, 3)
 
