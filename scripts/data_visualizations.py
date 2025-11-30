@@ -61,9 +61,9 @@ def show_label_dist_comparison(label_dist, save_title=None):
         
         # For the right plot, add extra padding to align x-axis label with left plot
         if i == 1:
-            ax.set_xlabel('Labels', fontsize=12, labelpad=29)
+            ax.set_xlabel('Label', fontsize=12, labelpad=29)
         else:
-            ax.set_xlabel('Labels', fontsize=12)
+            ax.set_xlabel('Label', fontsize=12)
             
         if i == 0:  # Only set y-label for the first subplot
             ax.set_ylabel('Count', fontsize=12)
@@ -298,7 +298,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
         # Multiple rows - flatten the array for easier indexing
         axes = axes.flatten()
     
-    fig.suptitle(title, fontsize=18)
+    fig.suptitle(title, fontsize=22)
     
     # Define bar positions and width
     labels = ['Total', 'Substantiated', 'Unsubstantiated']
@@ -333,7 +333,7 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
             # Add value labels on top of bars
             if total_values[i] > 0:
                 ax.text(bars[0].get_x() + bars[0].get_width()/2, bars[0].get_height() + 1,
-                       f'{total_values[i]:.1f}%', ha='center', va='bottom', fontsize=12)
+                       f'{total_values[i]:.1f}%', ha='center', va='bottom', fontsize=14)
         
         # Extract metrics for both label types
         substantiated_metrics = []
@@ -367,26 +367,26 @@ def show_metrics_per_label(model_results, title="Model Performance Metrics by La
             # Add value labels on top of bars
             if substantiated_metrics[i] > 0:
                 ax.text(bars_sub[0].get_x() + bars_sub[0].get_width()/2, bars_sub[0].get_height() + 1,
-                       f'{substantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=12)
+                       f'{substantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=14)
             
             if unsubstantiated_metrics[i] > 0:
                 ax.text(bars_unsub[0].get_x() + bars_unsub[0].get_width()/2, bars_unsub[0].get_height() + 1,
-                       f'{unsubstantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=12)
+                       f'{unsubstantiated_metrics[i]:.1f}%', ha='center', va='bottom', fontsize=14)
         
         # Customize subplot
-        ax.set_title(f'{model_name}', fontsize=16)
-        ax.set_ylabel('Metric Score (%)', fontsize=16)
+        ax.set_title(f'{model_name}', fontsize=20)
+        ax.set_ylabel('Metric Score (%)', fontsize=18)
         ax.set_ylim(0, 100)
         ax.set_xticks(x)
-        ax.set_xticklabels(labels, fontsize=14)
+        ax.set_xticklabels(labels, fontsize=16)
         ax.grid(axis='y', alpha=0.3)
         
         # Increase tick label font sizes
-        ax.tick_params(axis='both', which='major', labelsize=14)
+        ax.tick_params(axis='both', which='major', labelsize=16)
         
         # Add legend only to the first subplot
         if idx == 0:
-            ax.legend(title='Metrics', loc='lower right', fontsize=14, title_fontsize=16)
+            ax.legend(title='Metrics', loc='lower right', fontsize=16, title_fontsize=18)
     
     # Hide any unused subplots if we have an odd number of models
     if num_models % 2 == 1 and num_models > 1:
